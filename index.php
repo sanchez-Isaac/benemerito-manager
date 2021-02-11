@@ -85,7 +85,7 @@ WHERE  email = '$username' and password = '$password';";
                     $_SESSION['last_name'] = $row[3];
                     $_SESSION['birthdate'] = $row[4];
                     $_SESSION['zoomoffice'] = $row[5];
-                    $_SESSION['email'] = $row[5];
+                    $_SESSION['email'] = $row[6];
                 }
 
             }
