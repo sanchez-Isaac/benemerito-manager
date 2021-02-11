@@ -2,10 +2,10 @@
 session_start();
 include_once 'DbConnect.php';
 
-if(!isset($_SESSION['username']))
-{
-    header('location: index.php?Login=False');
-}
+//if(!isset($_SESSION['username']))
+//{
+ //   header('location: index.php?Login=False');
+//}
 
 ?>
 
