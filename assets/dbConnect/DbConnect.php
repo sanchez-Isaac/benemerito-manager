@@ -1,10 +1,10 @@
 <?php
 function get_db()
 {
-    $host = "ec2-54-235-167-210.compute-1.amazonaws.com";
-    $user = "bgioyeuxgspzay";
-    $pass = "2bde081d61adcb0a3e6eb77f86b4832fa740494bb0fcfa470ab271c5f5dd80fa";
-    $db = "dedc617q6k4b6s";
+    $host = "ec2-52-205-3-3.compute-1.amazonaws.com";
+    $user = "bpvauyourahyry";
+    $pass = "e13f54fc213726759cec2f027188d2775ab64c82bb5695b52f094256c188c565";
+    $db = "d3qu8jujp6d1nl";
     $port = "5432";
 
     $con = pg_connect("host=$host port=$port dbname=$db user=$user password=$pass")

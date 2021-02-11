@@ -6,7 +6,7 @@ if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Ad
 {
     header('location: assets/views/adminHome.php?Login=True');
 }
-else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Customer" )
+else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" )
 {
     header('location:  
      /                              views/teacher_Home.php?Login=True');
@@ -19,20 +19,22 @@ else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged 
 if(isset($_POST['login_btn'])){
 
     $username = pg_escape_string($_POST['username']);
-    $password = md5(pg_escape_string($_POST['password']));
+    $password = (pg_escape_string($_POST['password']));
+
+    //$password = md5(pg_escape_string($_POST['password']));
     // $password= md5($password); // Hashes the passwords (this is only to register new users)
-    $query = "SELECT * FROM admin WHERE user_name = '$username' AND password = '$password'";
+    $query = "SELECT * FROM admin WHERE email = '$username' AND password = '$password'";
     $resultLogin = pg_query( $con, $query);
 
-// SECOND LOGIN - NOT ADMIN
-    $query2 = "SELECT * FROM identification WHERE email = '$username' and password = '$password';";
+   // SECOND LOGIN - NOT ADMIN
+    $query2 = "SELECT * FROM teacher WHERE email = '$username' and password = '$password';";
     $resultLogin2 = pg_query( $con, $query2);
 
 
     //GET USER INFO
-    $u_D_Query = "SELECT  cu.customer_id, ad.ext_home_number, ad.street, ad.city, ad.state, ad.zip, ad.telephone, id.email, cu.first_name, cu.middle_name, cu.last_name, ad.country
-FROM address ad, identification id, customers cu
-WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and id.email = '$username' and id.password = '$password';";
+    $u_D_Query = "SELECT  admin_id, adm_name, middle_name, last_name, birthdate, zoomoffice, email, teacher_id
+FROM admin, teacher
+WHERE teacher_id and admin_id = '$username' and id.password = '$password';";
     $resultUserData = pg_query( $con, $u_D_Query);
 
 
