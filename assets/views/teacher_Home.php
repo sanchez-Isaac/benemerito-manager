@@ -1,5 +1,8 @@
 <?php
 session_start();
+include_once 'DbConnect.php';
+
+
 
 if(!isset($_SESSION['username']))
 {
