@@ -7,7 +7,7 @@ include_once 'DbConnect.php';
  //   header('location: index.php?Login=False');
 //}
 echo '<pre>';
-print_r($_SESSION['user_id']);
+print_r($_SESSION);
 echo '</pre>';
 ?>
 
@@ -37,8 +37,7 @@ echo '</pre>';
 
 
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
