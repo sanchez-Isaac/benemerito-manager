@@ -13,9 +13,6 @@ else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged 
 }
 
 
-
-
-
 if(isset($_POST['login_btn'])){
 
     $username = pg_escape_string($_POST['username']);
@@ -36,9 +33,6 @@ if(isset($_POST['login_btn'])){
 FROM ad admin, te teacher
 WHERE  ad.email = '$username' and ad.password = '$password' or te.email = '$username' and te.password = '$password';";
     $resultUserData = pg_query( $con, $u_D_Query);
-
-
-
 
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in";
@@ -97,7 +91,6 @@ WHERE  ad.email = '$username' and ad.password = '$password' or te.email = '$user
         echo "<script type='text/javascript'>alert(\"$error\");</script>";
     }
 }
-
 
 
 ?>
