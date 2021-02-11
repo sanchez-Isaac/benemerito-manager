@@ -68,22 +68,22 @@ WHERE  email = '$username' and password = '$password';";
 
 
 
+
+
+
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in Admin";
         $_SESSION['username'] = $username;
-        if (pg_num_rows($resultUserData) > 0) {
-            while ($row = pg_fetch_array($resultUserData)) {
-
-                $_SESSION['user_id'] = $row[0];
-                $_SESSION['user_name'] = $row[1];
-                $_SESSION['middle_name'] = $row[2];
-                $_SESSION['last_name'] = $row[3];
-                $_SESSION['birthdate'] = $row[4];
-                $_SESSION['zoomoffice'] = $row[5];
-                $_SESSION['email'] = $row[6];
-                $_SESSION['password'] = $row[7];
-            }
-
+        while ($row = pg_fetch_array($resultUserData)) {
+            $_SESSION['user_id'] = $row[0];
+            $_SESSION['user_name'] = $row[1];
+            $_SESSION['middle_name'] = $row[2];
+            $_SESSION['last_name'] = $row[3];
+            $_SESSION['birthdate'] = $row[4];
+            $_SESSION['zoomoffice'] = $row[5];
+            $_SESSION['email'] = $row[6];
+            $_SESSION['password'] = $row[7];
+        }
         header("location: assets/views/adminHome.php");
     }
     else if (pg_num_rows($resultLogin) != 1) {
@@ -108,6 +108,7 @@ WHERE  email = '$username' and password = '$password';";
             header("location: assets/views/teacher_Home.php");
         }
     }
+
     else{
         $_SESSION['message'] = "ERROR, User or password incorrect";
         $error = $_SESSION['message'];
