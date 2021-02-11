@@ -23,6 +23,7 @@ if(!isset($_SESSION['username']))
 </head>
 
 <body>
+<title>Home Page</title>
 
 <div class="header">
     <h1 class="headtitle"> Welcome <?php echo $_SESSION['first_name']. " " . $_SESSION['last_name'] ; ?></h1>
