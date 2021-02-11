@@ -32,9 +32,9 @@ if(isset($_POST['login_btn'])){
 
 
     //GET USER INFO
-    $u_D_Query = "SELECT  admin_id, adm_name, middle_name, last_name, birthdate, zoomoffice, email, teacher_id
-FROM admin, teacher
-WHERE teacher_id and admin_id = '$username' and id.password = '$password';";
+    $u_D_Query = "SELECT  ad.admin_id, ad.adm_name, ad.middle_name, ad.last_name, ad.birthdate, ad.zoomoffice, ad.email, te.teacher_id, te.adm_name, te.middle_name, te.last_name, te.birthdate, te.zoomoffice, te.email
+FROM ad admin, te teacher
+WHERE  ad.email = '$username' and ad.password = '$password' or te.email = '$username' and te.password = '$password';";
     $resultUserData = pg_query( $con, $u_D_Query);
 
 
@@ -42,13 +42,13 @@ WHERE teacher_id and admin_id = '$username' and id.password = '$password';";
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in";
         $_SESSION['username'] = $username;
-        header("location: home.php");
+        header("location: adminHome.php");
     }
     else if(pg_num_rows($resultLogin) != 1) { // NEW LINE FOR SECOND LOGIN
         if(pg_num_rows($resultLogin2) == 1) {
             $_SESSION['message'] = "You are logged in ";
             $_SESSION['username'] = $username;
-            header("location: Customer_home.php");
+            header("location: teacher_Home.php");
         }
         else{
             $_SESSION['message'] = "ERROR, User or password incorrect";
@@ -67,7 +67,7 @@ WHERE teacher_id and admin_id = '$username' and id.password = '$password';";
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in Admin";
         $_SESSION['username'] = $username;
-        header("location: home.php");
+        header("location: adminHome.php");
     }
     else if (pg_num_rows($resultLogin) != 1) {
         if (pg_num_rows($resultLogin2) == 1) {
@@ -93,7 +93,7 @@ WHERE teacher_id and admin_id = '$username' and id.password = '$password';";
                 }
 
             }
-            header("location: Customer_home.php");
+            header("location: teacher_Home.php");
         }
     }
     else{
