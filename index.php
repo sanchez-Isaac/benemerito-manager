@@ -39,6 +39,7 @@ WHERE  ad.email = '$username' and ad.password = '$password' or te.email = '$user
 
 
 
+
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in";
         $_SESSION['username'] = $username;
@@ -71,25 +72,19 @@ WHERE  ad.email = '$username' and ad.password = '$password' or te.email = '$user
     }
     else if (pg_num_rows($resultLogin) != 1) {
         if (pg_num_rows($resultLogin2) == 1) {
-            $_SESSION['message'] = "You are logged in Customer";
+            $_SESSION['message'] = "You are logged in Teacher";
             $_SESSION['username'] = $username;
 
             if (pg_num_rows($resultUserData) > 0) {
                 while ($row = pg_fetch_array($resultUserData)) {
 
-                    $_SESSION['customer_id'] = $row[0];
-                    $_SESSION['ext_home_number'] = $row[1];
-                    $_SESSION['street'] = $row[2];
-                    $_SESSION['city'] = $row[3];
-                    $_SESSION['state'] = $row[4];
-                    $_SESSION['zip'] = $row[5];
-                    $_SESSION['telephone'] = $row[6];
-                    $_SESSION['email'] = $row[7];
-                    $_SESSION['first_name'] = $row[8];
-                    $_SESSION['middle_name'] = $row[9];
-                    $_SESSION['last_name'] = $row[10];
-                    $_SESSION['country'] = $row[11];
-
+                    $_SESSION['admin_id'] = $row[0];
+                    $_SESSION['adm_name'] = $row[1];
+                    $_SESSION['middle_name'] = $row[2];
+                    $_SESSION['last_name'] = $row[3];
+                    $_SESSION['birthdate'] = $row[4];
+                    $_SESSION['zoomoffice'] = $row[5];
+                    $_SESSION['teacher_id'] = $row[6];
                 }
 
             }
