@@ -2,16 +2,10 @@
 session_start();
 include_once 'DbConnect.php';
 
-if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" )
+ if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" )
 {
-
-    header('location: ./adminHome.php?Login=True');
+    header('location: teacher_Home.php?Login=True');
 }
-else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" )
-{
-    header('location: ./teacher_Home.php?Login=True');
-}
-
 
 
 //TO DO
