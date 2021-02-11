@@ -5,11 +5,11 @@ include_once 'DbConnect.php';
 if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" )
 {
 
-    header('location: adminHome.php?Login=True');
+    header('location: /adminHome.php?Login=True');
 }
 else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" )
 {
-    header('location: teacher_Home.php?Login=True');
+    header('location: /teacher_Home.php?Login=True');
 }
 
 
