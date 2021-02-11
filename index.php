@@ -73,12 +73,12 @@ WHERE  ad.email = '$username' and ad.password = '$password' or te.email = '$user
                 while ($row = pg_fetch_array($resultUserData)) {
 
                     $_SESSION['admin_id'] = $row[0];
-                    $_SESSION['adm_name'] = $row[1];
-                    $_SESSION['middle_name'] = $row[2];
-                    $_SESSION['last_name'] = $row[3];
-                    $_SESSION['birthdate'] = $row[4];
-                    $_SESSION['zoomoffice'] = $row[5];
-                    $_SESSION['teacher_id'] = $row[6];
+                    //$_SESSION['adm_name'] = $row[1];
+                    //$_SESSION['middle_name'] = $row[2];
+                    //$_SESSION['last_name'] = $row[3];
+                    //$_SESSION['birthdate'] = $row[4];
+                    //$_SESSION['zoomoffice'] = $row[5];
+                    //$_SESSION['teacher_id'] = $row[6];
                 }
 
             }
