@@ -2,6 +2,20 @@
 session_start();
 include_once 'DbConnect.php';
 
+if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" )
+{
+
+    header('location: assets/views/adminHome.php?Login=True');
+}
+else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" )
+{
+    header('location: assets/views/teacher_Home.php?Login=True');
+}
+
+//TO DO
+//Admin and teacher differentiation!!!
+
+
 if(!isset($_SESSION['username']))
 {
     header('location: index.php?Login=False');
