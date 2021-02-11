@@ -6,7 +6,9 @@ include_once 'DbConnect.php';
 //{
  //   header('location: index.php?Login=False');
 //}
-
+echo '<pre>';
+print_r($_SESSION);
+echo '</pre>';
 ?>
 
 <!DOCTYPE html>
