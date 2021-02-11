@@ -4,33 +4,31 @@ $con = get_db();
 
 
 //This code will take you to the home-admin / home-teacher you are supposed to be.
-if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" )
+if(isset($_SESSION['email']) && $_SESSION['message'] == "You are logged in Admin" )
 {
 
     header('location: assets/views/adminHome.php?Login=True');
 }
-else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" )
+else if(isset($_SESSION['email']) && $_SESSION['message'] == "You are logged in Teacher" )
 {
     header('location: assets/views/teacher_Home.php?Login=True');
 }
 
-echo '<pre>';
-print_r($_SESSION);
-echo '</pre>';
+
 
 
 if(isset($_POST['login_btn'])){
 
-    $username = pg_escape_string($_POST['username']);
+    $email = pg_escape_string($_POST['email']);
     $password = (pg_escape_string($_POST['password']));
 
     //$password = md5(pg_escape_string($_POST['password']));
     // $password= md5($password); // Hashes the passwords (this is only to register new users)
-    $query = "SELECT * FROM admin WHERE email = '$username' AND password = '$password'";
+    $query = "SELECT * FROM admin WHERE email = '$email' AND password = '$password'";
     $resultLogin = pg_query( $con, $query);
 
    // SECOND LOGIN - NOT ADMIN
-    $query2 = "SELECT * FROM teacher WHERE email = '$username' and password = '$password';";
+    $query2 = "SELECT * FROM teacher WHERE email = '$email' and password = '$password';";
     $resultLogin2 = pg_query( $con, $query2);
 
 
@@ -38,20 +36,20 @@ if(isset($_POST['login_btn'])){
 
     //GET USER INFO
     $u_D_Query = "SELECT  * FROM  admin
-WHERE  email = '$username' and password = '$password' UNION
+WHERE  email = '$email' and password = '$password' UNION
 SELECT * FROM teacher
-WHERE  email = '$username' and password = '$password';";
+WHERE  email = '$email' and password = '$password';";
     $resultUserData = pg_query( $con, $u_D_Query);
 
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in";
-        $_SESSION['username'] = $username;
+        $_SESSION['email'] = email;
         header("location: assets/views/adminHome.php");
     }
     else if(pg_num_rows($resultLogin) != 1) { // NEW LINE FOR SECOND LOGIN
         if(pg_num_rows($resultLogin2) == 1) {
             $_SESSION['message'] = "You are logged in ";
-            $_SESSION['username'] = $username;
+            $_SESSION['email'] = email;
             header("location: assets/views/teacher_Home.php");
         }
         else{
@@ -70,13 +68,13 @@ WHERE  email = '$username' and password = '$password';";
 
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in Admin";
-        $_SESSION['username'] = $username;
+        $_SESSION['email'] = $email;
         header("location: assets/views/adminHome.php");
     }
     else if (pg_num_rows($resultLogin) != 1) {
         if (pg_num_rows($resultLogin2) == 1) {
             $_SESSION['message'] = "You are logged in Teacher";
-            $_SESSION['username'] = $username;
+            $_SESSION['email'] = $email;
 
             if (pg_num_rows($resultUserData) > 0) {
                 while ($row = pg_fetch_array($resultUserData)) {

@@ -27,7 +27,7 @@ echo '</pre>';
 <title>Home Page</title>
 
 <div class="header">
-    <h1 class="headtitle"> Welcome <?php echo $_SESSION['username']. " " . $_SESSION['last_name'] ; ?></h1>
+    <h1 class="headtitle"> Welcome <?php echo $_SESSION['email']. " " . $_SESSION['last_name'] ; ?></h1>
     <br>
     <br>
 </div>
