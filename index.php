@@ -8,8 +8,7 @@ if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Ad
 }
 else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" )
 {
-    header('location:  
-     /                              views/teacher_Home.php?Login=True');
+    header('location: assets/views/teacher_Home.php?Login=True');
 }
 
 
@@ -37,13 +36,13 @@ WHERE  ad.email = '$username' and ad.password = '$password' or te.email = '$user
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in";
         $_SESSION['username'] = $username;
-        header("location: adminHome.php");
+        header("location: assets/views/adminHome.php");
     }
     else if(pg_num_rows($resultLogin) != 1) { // NEW LINE FOR SECOND LOGIN
         if(pg_num_rows($resultLogin2) == 1) {
             $_SESSION['message'] = "You are logged in ";
             $_SESSION['username'] = $username;
-            header("location: teacher_Home.php");
+            header("location: assets/views/teacher_Home.php");
         }
         else{
             $_SESSION['message'] = "ERROR, User or password incorrect";
@@ -62,7 +61,7 @@ WHERE  ad.email = '$username' and ad.password = '$password' or te.email = '$user
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in Admin";
         $_SESSION['username'] = $username;
-        header("location: adminHome.php");
+        header("location: assets/views/adminHome.php");
     }
     else if (pg_num_rows($resultLogin) != 1) {
         if (pg_num_rows($resultLogin2) == 1) {
@@ -73,16 +72,16 @@ WHERE  ad.email = '$username' and ad.password = '$password' or te.email = '$user
                 while ($row = pg_fetch_array($resultUserData)) {
 
                     $_SESSION['admin_id'] = $row[0];
-                    //$_SESSION['adm_name'] = $row[1];
-                    //$_SESSION['middle_name'] = $row[2];
-                    //$_SESSION['last_name'] = $row[3];
-                    //$_SESSION['birthdate'] = $row[4];
-                    //$_SESSION['zoomoffice'] = $row[5];
-                    //$_SESSION['teacher_id'] = $row[6];
+                    $_SESSION['adm_name'] = $row[1];
+                    $_SESSION['middle_name'] = $row[2];
+                    $_SESSION['last_name'] = $row[3];
+                    $_SESSION['birthdate'] = $row[4];
+                    $_SESSION['zoomoffice'] = $row[5];
+                    $_SESSION['teacher_id'] = $row[6];
                 }
 
             }
-            header("location: teacher_Home.php");
+            header("location: assets/views/teacher_Home.php");
         }
     }
     else{
