@@ -130,7 +130,7 @@ WHERE teacher_id and admin_id = '$username' and id.password = '$password';";
         <br>
         <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
         <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div>
+        <div class="form-group"><button class="btn btn-primary btn-block" name="login_btn" type="submit">Log In</button></div>
 
         <a class="forgot" href="#">Forgot your email or password?</a>
 
