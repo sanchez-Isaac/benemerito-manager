@@ -14,8 +14,9 @@ else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged 
     header('location: assets/views/teacher_Home.php?Login=True');
 }
 
+echo '<pre>';
 print_r($_SESSION);
-
+echo '</pre>';
 
 
 if(isset($_POST['login_btn'])){
