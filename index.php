@@ -2,6 +2,8 @@
 require ('assets/dbConnect/DbConnect.php');
 $con = get_db();
 
+
+//This code will take you to the home-admin / home-teacher you are supposed to be.
 if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" )
 {
     header('location: assets/views/adminHome.php?Login=True');
@@ -10,6 +12,9 @@ else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged 
 {
     header('location: assets/views/teacher_Home.php?Login=True');
 }
+
+
+
 
 
 if(isset($_POST['login_btn'])){
@@ -27,10 +32,13 @@ if(isset($_POST['login_btn'])){
     $resultLogin2 = pg_query( $con, $query2);
 
 
+
+
     //GET USER INFO
-    $u_D_Query = "SELECT  ad.admin_id, ad.adm_name, ad.middle_name, ad.last_name, ad.birthdate, ad.zoomoffice, ad.email, te.teacher_id, te.adm_name, te.middle_name, te.last_name, te.birthdate, te.zoomoffice, te.email
-FROM ad admin, te teacher
-WHERE  ad.email = '$username' and ad.password = '$password' or te.email = '$username' and te.password = '$password';";
+    $u_D_Query = "SELECT  * FROM  admin
+WHERE  email = '$username' and password = '$password' UNION
+SELECT * FROM teacher
+WHERE  email = '$username' and password = '$password';";
     $resultUserData = pg_query( $con, $u_D_Query);
 
     if(pg_num_rows($resultLogin) == 1) {
@@ -71,13 +79,13 @@ WHERE  ad.email = '$username' and ad.password = '$password' or te.email = '$user
             if (pg_num_rows($resultUserData) > 0) {
                 while ($row = pg_fetch_array($resultUserData)) {
 
-                    $_SESSION['admin_id'] = $row[0];
-                    $_SESSION['adm_name'] = $row[1];
+                    $_SESSION['user_id'] = $row[0];
+                    $_SESSION['user_name'] = $row[1];
                     $_SESSION['middle_name'] = $row[2];
                     $_SESSION['last_name'] = $row[3];
                     $_SESSION['birthdate'] = $row[4];
                     $_SESSION['zoomoffice'] = $row[5];
-                    $_SESSION['teacher_id'] = $row[6];
+                    $_SESSION['email'] = $row[5];
                 }
 
             }
