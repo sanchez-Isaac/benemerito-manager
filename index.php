@@ -1,4 +1,5 @@
 <?php
+session_start();
 require ('assets/dbConnect/DbConnect.php');
 $con = get_db();
 
@@ -129,10 +130,6 @@ WHERE  email = '$username' and password = '$password';";
         <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
         <div class="form-group"><button class="btn btn-primary btn-block" name="login_btn" type="submit">Log In</button></div>
 
-</div>
-<input type="submit" name="login_btn" value="Login" class="btn btn-info btn-block">
-<div class="labelor"><b>Or</b></div>
-</div>
         <a class="forgot" href="#">Forgot your email or password?</a>
 
     </form>
