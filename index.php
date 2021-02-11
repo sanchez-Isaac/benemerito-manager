@@ -37,6 +37,8 @@ if(isset($_POST['login_btn'])){
 
     //GET USER INFO
     $u_D_Query = "SELECT  * FROM  admin
+WHERE  email = '$username' and password = '$password' UNION
+SELECT * FROM teacher
 WHERE  email = '$username' and password = '$password';";
     $resultUserData = pg_query( $con, $u_D_Query);
 
@@ -85,6 +87,7 @@ WHERE  email = '$username' and password = '$password';";
                     $_SESSION['birthdate'] = $row[4];
                     $_SESSION['zoomoffice'] = $row[5];
                     $_SESSION['email'] = $row[6];
+                    $_SESSION['password'] = $row[7];
                 }
 
             }
