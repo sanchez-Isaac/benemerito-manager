@@ -67,6 +67,7 @@
 }
 
 .benelogo{
-  max-width: 90%;
+  /*gives the size to the logo*/
+  max-width: 55%;
   height: auto;
 }

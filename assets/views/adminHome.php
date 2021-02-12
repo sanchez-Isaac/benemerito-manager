@@ -65,11 +65,11 @@ echo '</pre>';
                     <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#"></a>
                         <div class="collapse navbar-collapse" id="navcol-1">
                             <ul class="nav navbar-nav mr-auto" >
-                                <li class="nav-item"><a class="nav-link active" id="active" href="#">Home</a></li>
-                                <!-- Not a good practice to edit style on html,
-                                 but I couldn't do it on the CSS file -->
-                                <li style="padding-left:10px;padding-right:10px; class="nav-item"><a class="nav-link" href="#">Profile</a></li>
-
+                                <li class="nav-item"><a class="nav-link active" id="active" href="#">Home</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Profile</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Students</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Teachers</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Register</a></li><p class="desapair"> -- </p>
 
                                 </li>
                             </ul><span class="navbar-text actions"> <a class="btn btn-primary action-button" role="button" href="#">Log Out</a></span>
