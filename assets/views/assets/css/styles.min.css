@@ -39,7 +39,7 @@
     display:inline-block;
     text-align:center;
     border-radius:50%;
-    border:1px solid #ccc;
+    border:1px #ccc;
     margin:0 8px;
     color:inherit;
     opacity:.75
@@ -225,7 +225,7 @@
 
 
 /* this overides the possitions to the best location */
-.footer-basic .social {
+.footer-basic {
     position: fixed;
     left: 0;
     bottom: 0;
