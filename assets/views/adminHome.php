@@ -72,7 +72,14 @@ echo '</pre>';
                                 <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Register</a></li><p class="desapair"> -- </p>
 
                                 </li>
-                            </ul><span class="navbar-text actions"> <a class="btn btn-primary action-button" role="button" href="#">Log Out</a></span>
+                            </ul>
+
+                            <form action="logout.php">
+                                <span class="navbar-text actions">
+                                    <button class="btn btn-primary action-button" role="button" type="submit" href="#">Log Out</button>
+                                </span>
+                            </form>
+
                         </div>
                     </div>
                 </nav><!-- End: Navigation with Button -->
