@@ -47,7 +47,12 @@ echo '</pre>';
     <div class="container">
         <div class="row">
             <!-- Start: school-logo -->
-            <div class="col-auto col-md-4 col-xl-2 offset-xl-0"></div><!-- End: school-logo -->
+            <div class="col-auto col-md-4 col-xl-2 offset-xl-0">
+                <img class="benelogo" src="../assets/img/benemerito.png" alt="Benemerito logo">
+
+
+
+            </div><!-- End: school-logo -->
             <!-- Start: profesor-admin-name -->
             <div class="col-md-4 col-lg-8 col-xl-10 offset-xl-0"></div><!-- End: profesor-admin-name -->
             <!-- Start: nav-bar -->
