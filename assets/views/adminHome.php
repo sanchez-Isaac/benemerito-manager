@@ -81,13 +81,6 @@ echo '</pre>';
                                     <button class="btn btn-primary action-button" role="button" type="submit" href="#">Log Out</button>
                                 </span>
                             </form>
-
-
-
-
-
-
-
                         </div>
                     </div>
                 </nav><!-- End: Navigation with Button -->
@@ -110,12 +103,41 @@ echo '</pre>';
 
 </div><!-- End: 1 Row 3 Columns -->
 <!-- Start: Footer Basic -->
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p><p><h2>test space</h2></p><p><h2>test space</h2></p><p><h2>test space</h2></p><p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p><p><h2>test space</h2></p><p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
 
 
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p><h2>test space</h2></p>
+<br>
+<br>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<br>
 
 <div class="footer-basic">
     <footer>
@@ -130,7 +152,7 @@ echo '</pre>';
             <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
         </ul><!-- End: Links -->
         <!-- Start: Copyright -->
-        <p class="copyright">Company Name © 2017</p><!-- End: Copyright -->
+        <p class="copyright">Senior Project BYU-I © 2021</p><!-- End: Copyright -->
     </footer>
 </div><!-- End: Footer Basic -->
 <script src="assets/js/jquery.min.js"></script>
