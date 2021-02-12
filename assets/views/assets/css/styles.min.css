@@ -202,7 +202,7 @@
     color:#fff
 }
 .navigation-clean-button .navbar-text .action-button,.navigation-clean-button .navbar-text .action-button:active,.navigation-clean-button .navbar-text .action-button:hover {
-    background: #007bff;
+    background: #0275d8;
     border-radius:20px;
     font-size:inherit;
     color:#fff;
@@ -214,13 +214,13 @@
     font-size:inherit
 }
 .navigation-clean-button .navbar-text .action-button:hover {
-    background: #0275d8
+    background: #007bff
 }
 .navigation-clean-button.navbar-dark .action-button,.navigation-clean-button.navbar-dark .action-button:active {
-    background: #0275d8
+    background: #007bff
 }
 .navigation-clean-button.navbar-dark .action-button:hover {
-    background: #0275d8
+    background: #007bf
 }
 
 
