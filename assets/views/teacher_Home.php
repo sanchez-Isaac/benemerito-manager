@@ -63,7 +63,7 @@ echo '</pre>';
                                 <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"></a>
                                     <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
                                 </li>
-                            </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="#">Log Out</a></span>
+                            </ul><span class="navbar-text actions"> <a class="btn btn-primary action-button" role="button" href="#">Log Out</a></span>
                         </div>
                     </div>
                 </nav><!-- End: Navigation with Button -->
