@@ -30,7 +30,7 @@ echo '</pre>';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Untitled</title>
+    <title>Teacher - Benemerito</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
@@ -41,6 +41,7 @@ echo '</pre>';
 <body>
 <title>Home Page</title>
 
+
 <!-- Start: 1 Row 1 Column -->
 <div></div><!-- End: 1 Row 1 Column -->
 <!-- Start: 1 Row 3 Columns -->
@@ -48,22 +49,34 @@ echo '</pre>';
     <div class="container">
         <div class="row">
             <!-- Start: school-logo -->
-            <div class="col-auto col-md-4 col-xl-2 offset-xl-0"></div><!-- End: school-logo -->
+            <div class="col-auto col-md-4 col-xl-2 offset-xl-0">
+                <img class="benelogo" src="../../assets/img/benemerito.png" alt="Benemerito-logo">
+            </div><!-- End: school-logo -->
+
             <!-- Start: profesor-admin-name -->
-            <div class="col-md-4 col-lg-8 col-xl-10 offset-xl-0"></div><!-- End: profesor-admin-name -->
+            <div class="col-md-4 col-lg-8 col-xl-10 offset-xl-0">
+                <br>
+
+                <h2 class="headtitle"> Welcome Admin <?php echo $_SESSION['user_name']. " " . $_SESSION['last_name'] ; ?></h2>
+
+            </div><!-- End: profesor- admin-name -->
             <!-- Start: nav-bar -->
             <div class="col-md-12 col-xl-12">
                 <!-- Start: Navigation with Button -->
                 <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
                     <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#"></a>
                         <div class="collapse navbar-collapse" id="navcol-1">
-                            <ul class="nav navbar-nav mr-auto">
-                                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
-                                <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"></a>
-                                    <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                            <ul class="nav navbar-nav mr-auto" >
+                                <li class="nav-item"><a class="nav-link active" id="active" href="#">Home</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Profile</a></li><p class="desapair"> -- </p>
                                 </li>
-                            </ul><span class="navbar-text actions"> <a class="btn btn-primary action-button" role="button" href="#">Log Out</a></span>
+                            </ul>
+
+                            <form action="logout.php">
+                                <span class="navbar-text actions">
+                                    <button class="btn btn-primary action-button" role="button" type="submit" href="#">Log Out</button>
+                                </span>
+                            </form>
                         </div>
                     </div>
                 </nav><!-- End: Navigation with Button -->
@@ -83,8 +96,13 @@ echo '</pre>';
             <div class="col-1 col-sm-1 col-md-1 col-lg-2 col-xl-2"></div><!-- End: part-of-grid2 -->
         </div>
     </div>
+
 </div><!-- End: 1 Row 3 Columns -->
 <!-- Start: Footer Basic -->
+
+
+
+
 <div class="footer-basic">
     <footer>
         <!-- Start: Social Icons -->

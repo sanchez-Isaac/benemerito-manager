@@ -29,7 +29,7 @@ echo '</pre>';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Untitled</title>
+    <title>Admin - Benemerito</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
@@ -39,6 +39,8 @@ echo '</pre>';
 
 <body>
 <title>Home Page</title>
+
+
 
 <!-- Start: 1 Row 1 Column -->
 <div></div><!-- End: 1 Row 1 Column -->
@@ -80,6 +82,12 @@ echo '</pre>';
                                 </span>
                             </form>
 
+
+
+
+
+
+
                         </div>
                     </div>
                 </nav><!-- End: Navigation with Button -->
@@ -102,6 +110,12 @@ echo '</pre>';
 
 </div><!-- End: 1 Row 3 Columns -->
 <!-- Start: Footer Basic -->
+
+
+
+
+
+
 
 <div class="footer-basic">
     <footer>
