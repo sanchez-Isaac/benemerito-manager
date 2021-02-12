@@ -84,7 +84,7 @@ echo '</pre>';
 </div><!-- End: 1 Row 3 Columns -->
 <!-- Start: Footer Basic -->
 <div class="footer-basic">
-    <footer id="footer">
+    <footer>
         <!-- Start: Social Icons -->
         <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div><!-- End: Social Icons -->
         <!-- Start: Links -->

@@ -225,7 +225,7 @@
 
 
 /* this overides the possitions to the best location */
-.footer-basic {
+.footer-basic .social {
     position: fixed;
     left: 0;
     bottom: 0;
