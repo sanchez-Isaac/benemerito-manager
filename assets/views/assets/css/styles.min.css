@@ -122,24 +122,44 @@
 }
 .navigation-clean-button.navbar-dark .navbar-nav a.active,.navigation-clean-button.navbar-dark .navbar-nav a.active:focus,.navigation-clean-button.navbar-dark .navbar-nav a.active:hover,.navigation-clean-button.navbar-light .navbar-nav a.active,.navigation-clean-button.navbar-light .navbar-nav a.active:focus,.navigation-clean-button.navbar-light .navbar-nav a.active:hover
 {
-    color:#8f8f8f;
+
+    /*  gives format to the active link in nav bar, it requires
+    the id active to work, please dont delete id active on html*/
+    color: #ffffff;
+    background-color:#0062cc;
+    border-radius: 20px;
     box-shadow:none;
     background:0 0;
     pointer-events:none
+
 }
+#active{
+    background-color: #0062cc;
+}
+
+
 .navigation-clean-button.navbar .navbar-nav .nav-link
 {
-    padding-left:18px;
-    padding-right:18px
+/*Gives size to the nav bar options button links*/
+    padding-left:63px;
+    padding-right:63px
 }
 .navigation-clean-button.navbar-light .navbar-nav .nav-link
 {
-    color:#465765
+/*Gives color to font of the nav options not active*/
+    color: #000000
+
 }
 .navigation-clean-button.navbar-light .navbar-nav .nav-link:focus,.navigation-clean-button.navbar-light .navbar-nav .nav-link:hover
 {
-    color:#37434d!important;
-    background-color:transparent
+
+    /*Gives color to the nav options not active on hover*/
+    transition: background-color .35s;
+    color:#fff!important;
+    background-color:#0062cc;
+    border-radius: 20px;
+
+
 }
 .navigation-clean-button .navbar-nav>li>.dropdown-menu
 {
@@ -159,14 +179,18 @@
     background:#eee;color:inherit
 }
 .navigation-clean-button.navbar-dark {
+
     background-color:#1f2021;
     color:#fff
 }
 .navigation-clean-button.navbar-dark .actions .login,.navigation-clean-button.navbar-dark .navbar-nav .nav-link {
+
     color:#dfe8ee
 }
 .navigation-clean-button.navbar-dark .navbar-nav .nav-link:focus,.navigation-clean-button.navbar-dark .navbar-nav .nav-link:hover {
-    color:#fff!important;background-color:transparent
+    color:#fff!important;
+    background-color:transparent;
+
 }
 .navigation-clean-button.navbar-dark .navbar-nav>li>.dropdown-menu {
     background-color:#1f2021
@@ -224,10 +248,16 @@
 }
 
 
-/* this overides the possitions to the best location */
+/* this overides the possitions of the footer */
 .footer-basic {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;      /* Footer height */
+}
+
+.benelogo{
+    /*gives the size to the logo*/
+    max-width: 55%;
+    height: auto;
 }

@@ -48,24 +48,29 @@ echo '</pre>';
         <div class="row">
             <!-- Start: school-logo -->
             <div class="col-auto col-md-4 col-xl-2 offset-xl-0">
-                <img class="benelogo" src="../assets/img/benemerito.png" alt="Benemerito logo">
-
-
-
+                <img class="benelogo" src="../../assets/img/benemerito.png" alt="Benemerito-logo">
             </div><!-- End: school-logo -->
+
             <!-- Start: profesor-admin-name -->
-            <div class="col-md-4 col-lg-8 col-xl-10 offset-xl-0"></div><!-- End: profesor-admin-name -->
+            <div class="col-md-4 col-lg-8 col-xl-10 offset-xl-0">
+                <br>
+
+                <h2 class="headtitle"> Welcome <?php echo $_SESSION['first_name']. " " . $_SESSION['last_name'] ; ?></h2>
+
+            </div><!-- End: profesor-admin-name -->
             <!-- Start: nav-bar -->
             <div class="col-md-12 col-xl-12">
                 <!-- Start: Navigation with Button -->
                 <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
                     <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#"></a>
                         <div class="collapse navbar-collapse" id="navcol-1">
-                            <ul class="nav navbar-nav mr-auto">
-                                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
-                                <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"></a>
-                                    <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                            <ul class="nav navbar-nav mr-auto" >
+                                <li class="nav-item"><a class="nav-link active" id="active" href="#">Home</a></li>
+                                <!-- Not a good practice to edit style on html,
+                                 but I couldn't do it on the CSS file -->
+                                <li style="padding-left:10px;padding-right:10px; class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+
+
                                 </li>
                             </ul><span class="navbar-text actions"> <a class="btn btn-primary action-button" role="button" href="#">Log Out</a></span>
                         </div>
@@ -87,8 +92,10 @@ echo '</pre>';
             <div class="col-1 col-sm-1 col-md-1 col-lg-2 col-xl-2"></div><!-- End: part-of-grid2 -->
         </div>
     </div>
+
 </div><!-- End: 1 Row 3 Columns -->
 <!-- Start: Footer Basic -->
+
 <div class="footer-basic">
     <footer>
         <!-- Start: Social Icons -->
