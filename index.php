@@ -140,9 +140,15 @@ WHERE  email = '$username' and password = '$password';";
 
         <div class="illustration"><i  ></i><img class="benelogo" src="assets/img/benemerito.png" alt="Benemerito logo"></div>
         <br>
-        <div class="form-group"><input class="form-control" type="email" name="username" placeholder="Email"></div>
-        <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-        <div class="form-group"><button class="btn btn-primary btn-block" name="login_btn" type="submit">Log In</button></div>
+        <div class="form-group">
+            <input class="form-control" type="email" name="username" placeholder="Email" required >
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="password" name="password" placeholder="Password" required autofocus>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary btn-block" name="login_btn" type="submit">Log In</button>
+        </div>
 
         <a class="forgot" href="#">Forgot your email or password?</a>
 
