@@ -3,22 +3,21 @@ session_start();
 include_once 'DbConnect.php';
 
 
-if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" )
-{
 
+//Admin and teacher differentiation!!!
+ if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" )
+{
     header('location: adminHome.php?Login=True');
 }
 
 
-
-//TO DO
-//Admin and teacher differentiation!!!
-
+//If no one is logged in, return to login page
 if(!isset($_SESSION['username']))
 {
-    header('location: index.php?Login=False');
+    header('location: ../../index.php?Login=False');
 }
 
+//Testing purposes
 echo '<pre>';
 print_r($_SESSION);
 echo '</pre>';
