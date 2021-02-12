@@ -57,7 +57,7 @@ echo '</pre>';
 
                 <h2 class="headtitle"> Welcome Admin <?php echo $_SESSION['user_name']. " " . $_SESSION['last_name'] ; ?></h2>
 
-            </div><!-- End: profesor-admin-name -->
+            </div><!-- End: profesor- admin-name -->
             <!-- Start: nav-bar -->
             <div class="col-md-12 col-xl-12">
                 <!-- Start: Navigation with Button -->
