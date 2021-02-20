@@ -30,7 +30,7 @@ echo '</pre>';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Teacher - Benemerito</title>
+    <title>Admin - Benemerito</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
@@ -40,6 +40,7 @@ echo '</pre>';
 
 <body>
 <title>Home Page</title>
+
 
 
 <!-- Start: 1 Row 1 Column -->
@@ -57,7 +58,11 @@ echo '</pre>';
             <div class="col-md-4 col-lg-8 col-xl-10 offset-xl-0">
                 <br>
 
-                <h2 class="headtitle"> Welcome Teacher <?php echo $_SESSION['user_name']. " " . $_SESSION['last_name'] ; ?></h2>
+                <h2 class="headtitle"> Welcome Admin <br />
+                    <b>Warning</b>:  Undefined array key "user_name" in <b>C:\Users\idsm_\OneDrive\Documents\BYU-I Online\ACSE 499 Senior Project\Project\assets\views\adminHome.php</b> on line <b>60</b><br />
+                    <br />
+                    <b>Warning</b>:  Undefined array key "last_name" in <b>C:\Users\idsm_\OneDrive\Documents\BYU-I Online\ACSE 499 Senior Project\Project\assets\views\adminHome.php</b> on line <b>60</b><br />
+                </h2>
 
             </div><!-- End: profesor- admin-name -->
             <!-- Start: nav-bar -->
@@ -69,6 +74,10 @@ echo '</pre>';
                             <ul class="nav navbar-nav mr-auto" >
                                 <li class="nav-item"><a class="nav-link active" id="active" href="#">Home</a></li><p class="desapair"> -- </p>
                                 <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Profile</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Students</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Teachers</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Register</a></li><p class="desapair"> -- </p>
+
                                 </li>
                             </ul>
 
@@ -99,9 +108,41 @@ echo '</pre>';
 
 </div><!-- End: 1 Row 3 Columns -->
 <!-- Start: Footer Basic -->
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p><p><h2>test space</h2></p><p><h2>test space</h2></p><p><h2>test space</h2></p><p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p><p><h2>test space</h2></p><p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
 
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p><h2>test space</h2></p>
+<br>
+<br>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<p><h2>test space</h2></p>
+<br>
 
 <div class="footer-basic">
     <footer>
@@ -116,7 +157,7 @@ echo '</pre>';
             <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
         </ul><!-- End: Links -->
         <!-- Start: Copyright -->
-        <p class="copyright">Company Name © 2017</p><!-- End: Copyright -->
+        <p class="copyright">Senior Project BYU-I © 2021</p><!-- End: Copyright -->
     </footer>
 </div><!-- End: Footer Basic -->
 <script src="assets/js/jquery.min.js"></script>
