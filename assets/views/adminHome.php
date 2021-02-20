@@ -58,7 +58,7 @@ echo '</pre>';
             <div class="col-md-4 col-lg-8 col-xl-10 offset-xl-0">
                 <br>
 
-                <h2 class="headtitle"> Welcome Admin <?php echo $_SESSION['user_name']. " " . $_SESSION['last_name'] ; ?></h2>
+                <h2 class="headtitle"> Welcome Admin </h2>
 
             </div><!-- End: profesor- admin-name -->
             <!-- Start: nav-bar -->
@@ -148,7 +148,7 @@ echo '</pre>';
                 <!-- Start: table for picture -->
                 <div class="col-md-5 col-lg-5 col-xl-5">
 
-                    <div class="topright">     &#32 &#32 &#32 &#32
+                    <div class="topright">
                         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140"  fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
                             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path>
@@ -156,6 +156,7 @@ echo '</pre>';
                         <br>
                         <br>
                         <h4 class="movepos"> <?php   echo $_SESSION['user_name']. " " . $_SESSION['middle_name']. " " . $_SESSION['last_name']; ?></h4>
+                        <h5>Admin</h5>
                     </div>
 
                 </div><!-- End: table for picture -->
