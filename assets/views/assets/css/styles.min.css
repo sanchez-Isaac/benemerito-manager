@@ -276,7 +276,7 @@
     color:#ffffff;
 }
 .topright {
-    position: absolute;
+    position: center;
     top: 8px;
     right: 16px;
     font-size: 18px;
