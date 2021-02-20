@@ -156,7 +156,7 @@ echo '</pre>';
                         <br>
                         <br>
                         <h4 class="movepos"> <?php   echo $_SESSION['user_name']. " " . $_SESSION['middle_name']. " " . $_SESSION['last_name']; ?></h4>
-                        <h5>Admin</h5>
+                        <h6>Admin</h6>
                     </div>
 
                 </div><!-- End: table for picture -->
@@ -175,6 +175,13 @@ echo '</pre>';
 
 </div><!-- End: 1 Row 3 Columns -->
 <!-- Start: Footer Basic -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <div class="footer-basic">
     <footer>
