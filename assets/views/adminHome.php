@@ -155,11 +155,8 @@ echo '</pre>';
                         </svg>
                         <br>
                         <br>
-                        <?php echo '<h3>'; $_SESSION['user_name']. " " . $_SESSION['last_name'];echo '</h3>'; ?>
+                        <h3> <?php   $_SESSION['user_name']. " " . $_SESSION['last_name'] ?></h3>
                     </div>
-
-
-
 
                 </div><!-- End: table for picture -->
                 <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 offset-xl-0"></div>
