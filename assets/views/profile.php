@@ -100,7 +100,7 @@ echo '</pre>';
         <div class="row">
             <!-- Start: Teacher/admin name -->
             <div class="col-sm-6 col-md-12">
-                <table class="table">
+                <table >
                     <tr>
                         <td>Name:</td>
                         <td> <?php echo $_SESSION['user_name']; ?></td>
