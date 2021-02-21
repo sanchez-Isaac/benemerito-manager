@@ -112,9 +112,38 @@ echo '</pre>';
     <div>
 
         <div class="container">
-            <h3><?php echo $_SESSION['user_name']." ". $_SESSION['middle_name']. " ". $_SESSION['last_name'] ; ?></h3>
-            <h7>Admin Profile</h7>
-            <br><br>
+            <?php
+            if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" && $_SESSION['middle_name'] != "")
+            {
+
+                echo '<h3>'.$_SESSION['user_name']." ". $_SESSION['middle_name']. " ". $_SESSION['last_name']. '</h3>';
+                echo '<h7>Teacher Profile</h7>';
+            }
+            else
+            if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" && $_SESSION['middle_name'] != "")
+            {
+                echo '<h3>'.$_SESSION['user_name']." ". $_SESSION['middle_name']. " ". $_SESSION['last_name']. '</h3>';
+                echo '<h7>Admin Profile</h7>';
+
+            }
+            else
+            if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" && $_SESSION['middle_name'] == "")
+                {
+                    echo '<h3>'.$_SESSION['user_name']." ". $_SESSION['last_name']. '</h3>';
+                    echo '<h7>Admin Profile</h7>';
+
+                }
+            else
+                if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" && $_SESSION['middle_name'] == "")
+                {
+                    echo '<h3>'.$_SESSION['user_name']." ". $_SESSION['last_name']. '</h3>';
+                    echo '<h7>Teacher Profile</h7>';
+
+                }
+
+            ?>
+
+            <br><br><br>
 
             <div class="row">
 
