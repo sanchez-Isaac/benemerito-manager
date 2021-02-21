@@ -285,5 +285,8 @@
     top: 8px;
     right: 1px;
 }
-#editprofile{position: absolute;
+#editprofile{
+    position: absolute;
+    top: 8px;
+    right: 1px;
 }
