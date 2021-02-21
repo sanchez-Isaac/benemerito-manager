@@ -128,7 +128,7 @@ echo '</pre>';
                         </tr>
                     </table>
 
-                    <hr style="height: 10px">
+                    <hr style="border-top: 1px solid #000000">
                     <button type="button" class="btn btn-primary" id="editprofile" style="float: right">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
