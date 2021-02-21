@@ -100,7 +100,32 @@ echo '</pre>';
         <div class="row">
             <!-- Start: Teacher/admin name -->
             <div class="col-sm-6 col-md-12">
-
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td> <?php echo $_SESSION['user_name']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Middle name:</td>
+                        <td><td> <?php echo $_SESSION['middle_name']; ?></td></td>
+                    </tr>
+                    <tr>
+                        <td>last name:</td>
+                        <td> <?php echo $_SESSION['last_name']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Birthdate:</td>
+                        <td> <?php echo $_SESSION['birthdate']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td> <?php echo $_SESSION['email']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Zoom Office:</td>
+                        <td> <?php echo $_SESSION['zoomoffice']; ?></td>
+                    </tr>
+                </table>
 
 
 
