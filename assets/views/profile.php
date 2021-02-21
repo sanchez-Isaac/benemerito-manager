@@ -104,7 +104,7 @@ echo '</pre>';
 </div><!-- End: 1 Row 3 Columns -->
 <!-- Start: 1 Row 3 Columns -->
 
-<br><br><br><br><br>
+<br><br><br>
 <div>
     <!-- Start: 1 Row 1 Column -->
     <div></div><!-- End: 1 Row 1 Column -->
@@ -113,7 +113,8 @@ echo '</pre>';
 
         <div class="container">
             <h3><?php echo $_SESSION['user_name']." ". $_SESSION['middle_name']. " ". $_SESSION['last_name'] ; ?></h3>
-            <h5>Admin Profile</h5>
+            <h7>Admin Profile</h7>
+            <br><br>
 
             <div class="row">
 
