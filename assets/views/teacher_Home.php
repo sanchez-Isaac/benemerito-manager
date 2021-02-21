@@ -58,10 +58,7 @@ echo '</pre>';
             <div class="col-md-4 col-lg-8 col-xl-10 offset-xl-0">
                 <br>
 
-                <h2 class="headtitle"> Welcome Admin <br />
-                    <b>Warning</b>:  Undefined array key "user_name" in <b>C:\Users\idsm_\OneDrive\Documents\BYU-I Online\ACSE 499 Senior Project\Project\assets\views\adminHome.php</b> on line <b>60</b><br />
-                    <br />
-                    <b>Warning</b>:  Undefined array key "last_name" in <b>C:\Users\idsm_\OneDrive\Documents\BYU-I Online\ACSE 499 Senior Project\Project\assets\views\adminHome.php</b> on line <b>60</b><br />
+                <h2 class="headtitle"> Welcome Teacher <br />
                 </h2>
 
             </div><!-- End: profesor- admin-name -->
@@ -72,8 +69,8 @@ echo '</pre>';
                     <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#"></a>
                         <div class="collapse navbar-collapse" id="navcol-1">
                             <ul class="nav navbar-nav mr-auto" >
-                                <li class="nav-item"><a class="nav-link active" id="active" href="#">Home</a></li><p class="desapair"> -- </p>
-                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Profile</a></li><p class="desapair"> -- </p>
+                                <li class="nav-item"><a class="nav-link active" id="active" href="adminHome.php">Home</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="profile.php">Profile</a></li><p class="desapair"> -- </p>
                                 <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Students</a></li><p class="desapair"> -- </p>
                                 <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Teachers</a></li><p class="desapair"> -- </p>
                                 <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Register</a></li><p class="desapair"> -- </p>
@@ -108,21 +105,7 @@ echo '</pre>';
 
 </div><!-- End: 1 Row 3 Columns -->
 <!-- Start: Footer Basic -->
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p><p><h2>test space</h2></p><p><h2>test space</h2></p><p><h2>test space</h2></p><p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p><p><h2>test space</h2></p><p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
+
 
 
 <br>
@@ -136,12 +119,7 @@ echo '</pre>';
 <p><h2>test space</h2></p>
 <br>
 <br>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
-<p><h2>test space</h2></p>
+
 <br>
 
 <div class="footer-basic">
