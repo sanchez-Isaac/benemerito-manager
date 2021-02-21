@@ -137,7 +137,37 @@ echo '</pre>';
             <!-- Start: empty -->
             <div class="col-sm-12 col-md-1 col-lg-1 col-xl-2"></div><!-- End: empty -->
             <!-- Start: image teacher/admin -->
-            <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5"></div><!-- End: image teacher/admin -->
+            <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+
+
+                <table class="table">
+                    <tr>
+                        <td>Name:</td>
+                        <td>test</td>
+                    </tr>
+                    <tr>
+                        <td>Middle name:</td>
+                        <td>test</td>
+                    </tr>
+                    <tr>
+                        <td>last name:</td>
+                        <td>test</td>
+                    </tr>
+                    <tr>
+                        <td>Birthdate:</td>
+                        <td>test</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>test</td>
+                    </tr>
+                    <tr>
+                        <td>Zoom Office:</td>
+                        <td>test</td>
+                    </tr>
+                </table>
+
+            </div><!-- End: image teacher/admin -->
         </div>
     </div>
 </div><!-- End: 2 Rows 1+3 Columns -->
