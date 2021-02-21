@@ -140,7 +140,7 @@ echo '</pre>';
                             <td> <?php echo $_SESSION['zoomoffice']; ?></td>
                         </tr>
                     </table>
-                    <br><br>
+                    <br>
                     <hr style="border-top: 1px solid #000000">
                     <button type="button" class="btn btn-primary" id="editprofile" style="float: right">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
