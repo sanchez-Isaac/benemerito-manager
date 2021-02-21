@@ -92,90 +92,73 @@ echo '</pre>';
 <!-- Start: 1 Row 3 Columns -->
 
 <br><br><br><br><br>
-<!-- Start: 1 Row 1 Column -->
-<div></div><!-- End: 1 Row 1 Column -->
-<!-- Start: 2 Rows 1+3 Columns -->
 <div>
-    <div class="container">
-        <div class="row">
-            <!-- Start: Teacher/admin name -->
-            <div class="col-sm-6 col-md-12">
-                <table >
-                    <tr>
-                        <td>Name:</td>
-                        <td> <?php echo $_SESSION['user_name']; ?></td>
-                    </tr>
-                    <tr>
-                        <td>Middle name:</td>
-                        <td> <?php echo $_SESSION['middle_name']; ?></td>
-                    </tr>
-                    <tr>
-                        <td>last name:</td>
-                        <td> <?php echo $_SESSION['last_name']; ?></td>
-                    </tr>
-                    <tr>
-                        <td>Birthdate:</td>
-                        <td> <?php echo $_SESSION['birthdate']; ?></td>
-                    </tr>
-                    <tr>
-                        <td>Email:</td>
-                        <td> <?php echo $_SESSION['email']; ?></td>
-                    </tr>
-                    <tr>
-                        <td>Zoom Office:</td>
-                        <td> <?php echo $_SESSION['zoomoffice']; ?></td>
-                    </tr>
-                </table>
+    <!-- Start: 1 Row 1 Column -->
+    <div></div><!-- End: 1 Row 1 Column -->
+    <!-- Start: 1 Row 4 Columns -->
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 offset-sm-0"></div><!-- Start: table for admin -->
+                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                    <table >
+                        <tr>
+                            <td>Name:</td>
+                            <td> <?php echo $_SESSION['user_name']; ?></td>
+                        </tr>
+                        <tr>
+                            <td>Middle name:</td>
+                            <td> <?php echo $_SESSION['middle_name']; ?></td>
+                        </tr>
+                        <tr>
+                            <td>last name:</td>
+                            <td> <?php echo $_SESSION['last_name']; ?></td>
+                        </tr>
+                        <tr>
+                            <td>Birthdate:</td>
+                            <td> <?php echo $_SESSION['birthdate']; ?></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td> <?php echo $_SESSION['email']; ?></td>
+                        </tr>
+                        <tr>
+                            <td>Zoom Office:</td>
+                            <td> <?php echo $_SESSION['zoomoffice']; ?></td>
+                        </tr>
+                    </table>
 
 
 
-            </div><!-- End: Teacher/admin name -->
+                </div><!-- End: table for admin -->
+
+                <!-- Start: table for picture -->
+                <div class="col-md-5 col-lg-5 col-xl-5">
+
+                    <div class="topright">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140"  fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path>
+                        </svg>
+                        <br>
+                        <br>
+                    </div>
+
+                </div><!-- End: table for picture -->
+                <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 offset-xl-0"></div>
+            </div>
         </div>
-        <div class="row">
-            <!-- Start: query data with button edit -->
-            <div class="col-md-6 col-lg-6 col-xl-5"></div><!-- End: query data with button edit -->
-            <!-- Start: empty -->
-            <div class="col-sm-12 col-md-1 col-lg-1 col-xl-2"></div><!-- End: empty -->
-            <!-- Start: image teacher/admin -->
-            <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+    </div><!-- End: 1 Row 4 Columns -->
+    <!-- Start: 1 Row 3 Columns -->
+    <div></div><!-- End: 1 Row 3 Columns -->
+    <!-- Start: 1 Row 3 Columns -->
+    <div></div><!-- End: 1 Row 3 Columns -->
+    <!-- Start: 1 Row 2 Columns -->
+    <div></div><!-- End: 1 Row 2 Columns -->
+</div>
+</div>
 
-
-                <table>
-                    <tr>
-                        <td>Name:</td>
-                        <td>test</td>
-                    </tr>
-                    <tr>
-                        <td>Middle name:</td>
-                        <td>test</td>
-                    </tr>
-                    <tr>
-                        <td>last name:</td>
-                        <td>test</td>
-                    </tr>
-                    <tr>
-                        <td>Birthdate:</td>
-                        <td>test</td>
-                    </tr>
-                    <tr>
-                        <td>Email:</td>
-                        <td>test</td>
-                    </tr>
-                    <tr>
-                        <td>Zoom Office:</td>
-                        <td>test</td>
-                    </tr>
-                </table>
-
-            </div><!-- End: image teacher/admin -->
-        </div>
-    </div>
-</div><!-- End: 2 Rows 1+3 Columns -->
-
-
-
-
-
+</div><!-- End: 1 Row 3 Columns -->
 
 
 
