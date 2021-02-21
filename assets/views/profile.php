@@ -137,7 +137,7 @@ echo '</pre>';
                         </tr>
                         <tr>
                             <td>Zoom Office:</td>
-                            <td> <?php echo $_SESSION['zoomoffice']; ?></td>
+                            <td> <?php echo $_SESSION['zoomoffice']; ?>  </td>
                         </tr>
                     </table>
                     <br>
