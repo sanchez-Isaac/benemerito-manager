@@ -101,7 +101,7 @@ echo '</pre>';
             <div class="row">
                 <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 offset-sm-0"></div><!-- Start: table for admin -->
                 <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
-                    <table >
+                    <table class="table">
                         <tr>
                             <td>Name:</td>
                             <td> <?php echo $_SESSION['user_name']; ?></td>
