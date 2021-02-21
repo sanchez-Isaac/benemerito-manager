@@ -4,13 +4,6 @@ include_once 'DbConnect.php';
 
 
 
-//Admin and teacher differentiation!!!
-if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" )
-{
-    header('location: teacher_Home.php?Login=True');
-}
-
-
 //If no one is logged in, return to login page
 if(!isset($_SESSION['username']))
 {
@@ -29,7 +22,16 @@ echo '</pre>';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Admin - Benemerito</title>
+    <?php
+    if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" )
+    {
+        echo '<title>Teacher - Benemerito</title>';
+    }
+    else if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" )
+    {
+        echo '<title>Admin - Benemerito</title>';
+    }
+    ?>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
@@ -39,7 +41,7 @@ echo '</pre>';
 </head>
 
 <body>
-<title>Home Page</title>
+<title>Profile Page</title>
 
 
 
@@ -58,7 +60,18 @@ echo '</pre>';
             <div class="col-md-4 col-lg-8 col-xl-10 offset-xl-0">
                 <br>
 
-                <h2 class="headtitle"> Profile Admin </h2>
+
+                <?php
+                if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" )
+                {
+                     echo '<h2 class="headtitle"> Teacher Profile  </h2>';
+                }
+                else if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" )
+                {
+                    echo '<h2 class="headtitle"> Admin Profile  </h2>';
+                }
+                ?>
+
 
             </div><!-- End: profesor- admin-name -->
             <!-- Start: nav-bar -->
