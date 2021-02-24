@@ -250,7 +250,7 @@ echo '</pre>';
                         <label for="recipient-middle" class="col-form-label">Middle Name:</label>
                         <input type="text" class="form-control" id="recipient-middle" value="<?php echo $_SESSION['middle_name']; ?>  ">
                         <!-- Checkbox to send to PSQL -->
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckMiddle_name">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckMiddle_name" style="position: absolute; margin-top: .3rem; margin-left: 0.75rem;">
                         <label class="form-check-label" for="flexCheckMiddle_name">
                             Accept Changes
                         </label>
