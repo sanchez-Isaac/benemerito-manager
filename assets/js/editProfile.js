@@ -1,5 +1,5 @@
 //This will modify the modal active or inactive text in the sql changes.
-function disableMyTextName(textit,checkid){
+function disableMyTextName(textid,checkid){
     console.log(textit);
     console.log(checkid);
     if(document.getElementById(checkid).checked === false){
