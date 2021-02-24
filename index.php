@@ -115,7 +115,6 @@ WHERE  email = '$username' and password = '$password';";
         $error = $_SESSION['message'];
         echo "<script type='text/javascript'>alert(\"$error\");</script>";
     }
-
 }
 
 

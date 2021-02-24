@@ -36,7 +36,7 @@ echo '</pre>';
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 
-
+    <script type="text/javascript" src=" assets/views/assets/js/editProfile.js"></script>
 
 </head>
 
