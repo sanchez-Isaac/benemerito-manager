@@ -208,7 +208,7 @@ echo '</pre>';
         <p class="copyright">Senior Project BYU-I © 2021</p><!-- End: Copyright -->
     </footer>
 </div><!-- End: Footer Basic -->
-<script src="assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
