@@ -248,7 +248,7 @@ echo '</pre>';
                         <input type="text" class="form-control" id="recipient-name" disabled="disabled" value="<?php echo $_SESSION['user_name']; ?>">
                         <!-- Checkbox to send to PSQL -->
                         <input class="form-check-input-modal" type="checkbox"  id="flexCheckUser_name" name="recipient-name" onclick="disableMyTextName(this.name,this.id)">
-                        <label class="form-check-label-modal" for="flexCheckUser_name" id="flexCheckUser_name" onclick="disableMyTextName()">Make Changes</label>
+                        <label class="form-check-label-modal" for="flexCheckUser_name" onclick="disableMyTextName()">Make Changes</label>
 
                     </div>
                     <div class="form-group">
