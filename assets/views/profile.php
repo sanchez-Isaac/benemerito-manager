@@ -36,7 +36,7 @@ echo '</pre>';
     ?>
 
     <script  src="/assets/js/jquery.min.js"</script>
-    <script  src="/assets/views/assets/js/editProfile.js"</script>
+    <script  src="/assets/js/editProfile.js"</script>
 
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
