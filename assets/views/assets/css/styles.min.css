@@ -288,5 +288,10 @@
 
 .form-check-input {
     position: center;
+    margin-left: 0.75rem;
+}
 
+.form-check-label {
+    margin-bottom: 9px;
+    margin-left: 1.95rem;
 }
