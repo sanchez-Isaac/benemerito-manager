@@ -19,7 +19,9 @@ if(!isset($_SESSION['username']))
 
 
 $date = $_SESSION['birthdate'];
-$_SESSION['birthdate'] = $date->format('Y-m-d H:i:s');
+$_SESSION['birthdate'] = $date('Y-m-d');
+
+
 //Testing purposes
 echo '<pre>';
 print_r($_SESSION);
