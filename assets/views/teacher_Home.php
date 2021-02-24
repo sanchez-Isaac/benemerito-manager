@@ -18,9 +18,9 @@ if(!isset($_SESSION['username']))
 }
 
 //Formats the birthdate
-$orgDate = $_SESSION['birthdate'];
-$newDate = date("d/m/Y", strtotime($orgDate));
-$_SESSION['birthdate'] = $newDate;
+//$orgDate = $_SESSION['birthdate'];
+//$newDate = date("d/m/Y", strtotime($orgDate));
+//$_SESSION['birthdate'] = $newDate;
 
 
 //Testing purposes
