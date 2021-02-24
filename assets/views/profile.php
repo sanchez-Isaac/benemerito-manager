@@ -242,10 +242,10 @@ echo '</pre>';
                         <label for="recipient-name" class="col-form-label" type="checkbox" >Name:</label>
                         <input type="text" class="form-control" id="recipient-name" value="<?php echo $_SESSION['user_name']; ?>  ">
                         <!-- Checkbox to send to PSQL -->
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckUser_name">
-                        <label class="form-check-label" for="flexCheckUser_name">
-                            Accept Changes
-                        </label>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckUser_name">
+                            <label class="form-check-label" for="flexCheckUser_name">Accept Changes</label>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="recipient-middle" class="col-form-label">Middle Name:</label>
