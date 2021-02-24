@@ -244,11 +244,11 @@ echo '</pre>';
                 <form>
                     <div class="form-group">
 
-                        <label for="recipient-name" class="col-form-label" type="checkbox" >Name:</label>
+                        <label for="recipient-name" class="col-form-label" >Name:</label>
                         <input type="text" class="form-control" id="recipient-name" value="<?php echo $_SESSION['user_name']; ?>">
                         <!-- Checkbox to send to PSQL -->
                         <input class="form-check-input-modal" type="checkbox" value="" id="flexCheckUser_name">
-                        <label class="form-check-label-modal" for="flexCheckUser_name">Make Changes</label>
+                        <label class="form-check-label-modal" for="flexCheckUser_name" onclick="disableMyText()">Make Changes</label>
 
                     </div>
                     <div class="form-group">
