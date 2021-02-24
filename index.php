@@ -100,8 +100,10 @@ WHERE  email = '$username' and password = '$password';";
                     $_SESSION['middle_name'] = $row[2];
                     $_SESSION['last_name'] = $row[3];
                     //format the date
-                    $timestamp = new Date($row[4]);
-                    $_SESSION['birthdate'] = date("d-m-Y", $timestamp);
+                    $timestamp = $row[4];
+                    $_SESSION['birthdate'] = date("dd-mm-YYYY", $timestamp);
+
+
                     $_SESSION['zoomoffice'] = $row[5];
                     $_SESSION['email'] = $row[6];
                     $_SESSION['password'] = $row[7];
