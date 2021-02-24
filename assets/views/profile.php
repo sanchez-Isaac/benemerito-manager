@@ -243,7 +243,7 @@ echo '</pre>';
                         <input type="text" class="form-control" id="recipient-name" value="<?php echo $_SESSION['user_name']; ?>  ">
                         <!-- Checkbox to send to PSQL -->
                         <input class="form-check-input-modal" type="checkbox" value="" id="flexCheckUser_name">
-                        <label class="form-check-label" for="flexCheckUser_name">Accept Changes</label>
+                        <label class="form-check-label-modal" for="flexCheckUser_name">Accept Changes</label>
 
                     </div>
                     <div class="form-group">
@@ -251,7 +251,7 @@ echo '</pre>';
                         <input type="text" class="form-control" id="recipient-middle" value="<?php echo $_SESSION['middle_name']; ?>  ">
                         <!-- Checkbox to send to PSQL -->
                         <input class="form-check-input-modal" type="checkbox" value="" id="flexCheckMiddle_name">
-                        <label class="form-check-label" for="flexCheckMiddle_name">
+                        <label class="form-check-label-modal" for="flexCheckMiddle_name">
                             Accept Changes
                         </label>
                     </div>
@@ -260,7 +260,7 @@ echo '</pre>';
                         <input type="text" class="form-control" id="recipient-last" value="<?php echo $_SESSION['last_name']; ?>  ">
                         <!-- Checkbox to send to PSQL -->
                         <input class="form-check-input-modal" type="checkbox" value="" id="flexChecktlast_name">
-                        <label class="form-check-label" for="flexChecktlast_name">
+                        <label class="form-check-label-modal" for="flexChecktlast_name">
                             Accept Changes
                         </label>
                     </div>
@@ -269,7 +269,7 @@ echo '</pre>';
                         <input type="date" class="form-control" id="recipient-birth" value="<?php echo $_SESSION['birthdate']; ?>  ">
                         <!-- Checkbox to send to PSQL -->
                         <input class="form-check-input-modal" type="checkbox" value="" id="flexCheckBirthdate">
-                        <label class="form-check-label" for="flexCheckBirthdate">
+                        <label class="form-check-label-modal" for="flexCheckBirthdate">
                             Accept Changes
                         </label>
                     </div>
@@ -278,7 +278,7 @@ echo '</pre>';
                         <input type="email" class="form-control" id="recipient-email" value="<?php echo $_SESSION['email']; ?>  ">
                         <!-- Checkbox to send to PSQL -->
                         <input class="form-check-input-modal" type="checkbox" value="" id="flexCheckEmail">
-                        <label class="form-check-label" for="flexCheckEmail">
+                        <label class="form-check-label-modal" for="flexCheckEmail">
                             Accept Changes
                         </label>
                     </div>
@@ -287,7 +287,7 @@ echo '</pre>';
                         <input type="url" class="form-control" id="recipient-zoom" value="<?php echo $_SESSION['zoomoffice']; ?>  ">
                         <!-- Checkbox to send to PSQL -->
                         <input class="form-check-input-modal" type="checkbox" value="" id="flexCheckZoomoffice">
-                        <label class="form-check-label" for="flexCheckZoomoffice">
+                        <label class="form-check-label-modal" for="flexCheckZoomoffice">
                             Accept Changes
                         </label>
                     </div>
