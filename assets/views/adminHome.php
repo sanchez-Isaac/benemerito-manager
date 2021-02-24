@@ -17,10 +17,10 @@ if(!isset($_SESSION['username']))
     header('location: ../../index.php?Login=False');
 }
 
+//Formats the birthdate
 $orgDate = $_SESSION['birthdate'];
 $newDate = date("d/m/Y", strtotime($orgDate));
 $_SESSION['birthdate'] = $newDate;
-
 
 
 
