@@ -1,7 +1,8 @@
-function disableMyText(){
-    if(document.getElementById("flexCheckUser_name").checked === false){
-        document.getElementById("recipient-name").disabled = "disable";
-    }else if(document.getElementById("flexCheckUser_name").checked !== false){
-        document.getElementById("recipient-name").disabled ="";
+//This will modify the modal active or inactive text in profile for th the sql changes.
+function disableMyText(idtext, idcheck){
+    if(document.getElementById(idtext).checked === false){
+        document.getElementById(idcheck).disabled = "disable";
+    }else if(document.getElementById(idtext).checked !== false){
+        document.getElementById(idcheck).disabled ="";
     }
 }
