@@ -249,7 +249,7 @@ echo '</pre>';
                         <!-- Checkbox to send to PSQL -->
                         <?php  $idr_text ="recipient-name";
                                $idr_check ="flexCheckUser_name"?>
-                        <input class="form-check-input-modal" type="checkbox"  id="flexCheckUser_name" onclick="disableMyText( <?php $idr_text?>,<?php $idr_check ?>)>
+                        <input class="form-check-input-modal" type="checkbox"  id="flexCheckUser_name" onclick="disableMyText("recipient-name", "flexCheckUser_name")>
                         <label class="form-check-label-modal" for="flexCheckUser_name" id="flexCheckUser_name" onclick="disableMyText()">Make Changes</label>
 
                     </div>
