@@ -41,7 +41,7 @@ CREATE TABLE "teacher" (
   "adm_name" varchar(50) not null,
   "middle_name" varchar(50),
   "last_name" varchar(50) not null,
-  "birthdate" date not null,
+  "birthdate" date (submit_time, 'DD/MM/YYYY') not null,
   "zoomoffice" varchar(250),
   "email" varchar(50) not null,
   "password" varchar(50) not null,

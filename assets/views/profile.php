@@ -113,6 +113,8 @@ echo '</pre>';
 
         <div class="container">
             <?php
+            //This will display the rigth name and position depending of the user that logged in
+            // middle name will count in this excercise.
             if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" && $_SESSION['middle_name'] != "")
             {
 
@@ -177,7 +179,7 @@ echo '</pre>';
                     </table>
                     <br>
                     <hr style="border-top: 1px solid #000000">
-                    <button type="button" class="btn btn-primary" id="editprofile" style="float: right">
+                    <button type="button" class="btn btn-primary"   data-toggle="modal" data-target="#sqlModal" id="editprofile" style="float: right">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
                             <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"></path>
@@ -186,7 +188,11 @@ echo '</pre>';
                     </button>
 
 
+
                 </div><!-- End: table for admin -->
+
+
+
 
                 <!-- Start: table for picture -->
                 <div class="col-md-5 col-lg-5 col-xl-5">
@@ -215,6 +221,58 @@ echo '</pre>';
 </div>
 
 </div><!-- End: 1 Row 3 Columns -->
+
+
+
+
+
+<div class="modal fade" id="sqlModal" tabindex="-1" role="dialog" aria-labelledby="sqlModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sqlModalLabel">Edit Profile</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Name:</label>
+                        <input type="text" class="form-control" id="recipient-name" value="<?php echo $_SESSION['user_name']; ?>  ">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-middle" class="col-form-label">Middle Name:</label>
+                        <input type="text" class="form-control" id="recipient-middle" value="<?php echo $_SESSION['middle_name']; ?>  ">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-last" class="col-form-label">Last Name:</label>
+                        <input type="text" class="form-control" id="recipient-last" value="<?php echo $_SESSION['last_name']; ?>  ">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-birth" class="col-form-label">Birthdate:</label>
+                        <input type="date" class="form-control" id="recipient-birth" value="<?php echo $_SESSION['birthdate']; ?>  ">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-email" class="col-form-label">Email:</label>
+                        <input type="email" class="form-control" id="recipient-email" value="<?php echo $_SESSION['email']; ?>  ">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-zoom" class="col-form-label">Zoom Office:</label>
+                        <input type="url" class="form-control" id="recipient-zoom" value="<?php echo $_SESSION['zoomoffice']; ?>  ">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 
 
