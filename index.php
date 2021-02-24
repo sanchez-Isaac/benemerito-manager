@@ -99,7 +99,9 @@ WHERE  email = '$username' and password = '$password';";
                     $_SESSION['user_name'] = $row[1];
                     $_SESSION['middle_name'] = $row[2];
                     $_SESSION['last_name'] = $row[3];
-                    $_SESSION['birthdate'] = strtotime($row[4]);
+                    //format the birthdate
+                    $timestamp = strtotime($row[4]);
+                    $_SESSION['birthdate'] = date("d-m-Y", $timestamp);
                     $_SESSION['zoomoffice'] = $row[5];
                     $_SESSION['email'] = $row[6];
                     $_SESSION['password'] = $row[7];
