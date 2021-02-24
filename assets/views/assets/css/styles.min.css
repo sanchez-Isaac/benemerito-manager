@@ -287,11 +287,12 @@
 }
 
 .form-check-input {
-    position: center;
+    position: absolute;
+    margin-top: .3rem;
     margin-left: 0.75rem;
 }
 
 .form-check-label {
-    margin-bottom: 9px;
+    margin-bottom: 1px;
     margin-left: 1.95rem;
 }
