@@ -34,8 +34,8 @@ echo '</pre>';
         echo '<title>Admin - Benemerito</title>';
     }
     ?>
-    <script  src="/assets/js/editProfile.js"></script>
-    <script  src="/assets/js/jquery.min.js"></script>
+
+
 
 
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -331,8 +331,9 @@ echo '</pre>';
         <p class="copyright">Senior Project BYU-I © 2021</p><!-- End: Copyright -->
     </footer>
 </div><!-- End: Footer Basic -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
+
+<script  src="/assets/js/editProfile.js"></script>
 </body>
 
 </html>
