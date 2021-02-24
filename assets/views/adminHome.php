@@ -17,6 +17,9 @@ if(!isset($_SESSION['username']))
     header('location: ../../index.php?Login=False');
 }
 
+
+$date = $_SESSION['birthdate'];
+$_SESSION['birthdate'] = $date->format('Y-m-d H:i:s');
 //Testing purposes
 echo '<pre>';
 print_r($_SESSION);

@@ -115,8 +115,7 @@ WHERE  email = '$username' and password = '$password';";
         $error = $_SESSION['message'];
         echo "<script type='text/javascript'>alert(\"$error\");</script>";
     }
-    $date = $_SESSION['birthdate'];
-    $_SESSION['birthdate'] = $date->format('Y-m-d H:i:s');
+
 }
 
 
