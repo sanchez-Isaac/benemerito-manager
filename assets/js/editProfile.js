@@ -1,8 +1,8 @@
 //This will modify the modal active or inactive text in the sql changes.
-function disableMyTextName(){
-    if(document.getElementById("flexCheckUser_name").checked === false){
-        document.getElementById("recipient-name").disabled = "disable";
-    }else if(document.getElementById("flexCheckUser_name").checked !== false){
-        document.getElementById("recipient-name").disabled ="";
+function disableMyTextName(textit,checkid){
+    if(document.getElementById(checkid).checked === false){
+        document.getElementById(textit).disabled = "disable";
+    }else if(document.getElementById(checkid).checked !== false){
+        document.getElementById(textit).disabled ="";
     }
 }
