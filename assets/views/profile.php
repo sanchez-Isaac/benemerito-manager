@@ -242,7 +242,7 @@ echo '</pre>';
                         <label for="recipient-name" class="col-form-label" type="checkbox" >Name:</label>
                         <input type="text" class="form-control" id="recipient-name" value="<?php echo $_SESSION['user_name']; ?>  ">
                         <!-- Checkbox to send to PSQL -->
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckUser_name">
+                        <input class="form-check-input-modal" type="checkbox" value="" id="flexCheckUser_name">
                         <label class="form-check-label" for="flexCheckUser_name">Accept Changes</label>
 
                     </div>
@@ -250,7 +250,7 @@ echo '</pre>';
                         <label for="recipient-middle" class="col-form-label">Middle Name:</label>
                         <input type="text" class="form-control" id="recipient-middle" value="<?php echo $_SESSION['middle_name']; ?>  ">
                         <!-- Checkbox to send to PSQL -->
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckMiddle_name" style="position: absolute; margin-top: .3rem; margin-left: 0.75rem;">
+                        <input class="form-check-input-modal" type="checkbox" value="" id="flexCheckMiddle_name">
                         <label class="form-check-label" for="flexCheckMiddle_name">
                             Accept Changes
                         </label>
@@ -259,7 +259,7 @@ echo '</pre>';
                         <label for="recipient-last" class="col-form-label">Last Name:</label>
                         <input type="text" class="form-control" id="recipient-last" value="<?php echo $_SESSION['last_name']; ?>  ">
                         <!-- Checkbox to send to PSQL -->
-                        <input class="form-check-input" type="checkbox" value="" id="flexChecktlast_name">
+                        <input class="form-check-input-modal" type="checkbox" value="" id="flexChecktlast_name">
                         <label class="form-check-label" for="flexChecktlast_name">
                             Accept Changes
                         </label>
@@ -268,7 +268,7 @@ echo '</pre>';
                         <label for="recipient-birth" class="col-form-label">Birthdate:</label>
                         <input type="date" class="form-control" id="recipient-birth" value="<?php echo $_SESSION['birthdate']; ?>  ">
                         <!-- Checkbox to send to PSQL -->
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckBirthdate">
+                        <input class="form-check-input-modal" type="checkbox" value="" id="flexCheckBirthdate">
                         <label class="form-check-label" for="flexCheckBirthdate">
                             Accept Changes
                         </label>
@@ -277,7 +277,7 @@ echo '</pre>';
                         <label for="recipient-email" class="col-form-label">Email:</label>
                         <input type="email" class="form-control" id="recipient-email" value="<?php echo $_SESSION['email']; ?>  ">
                         <!-- Checkbox to send to PSQL -->
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckEmail">
+                        <input class="form-check-input-modal" type="checkbox" value="" id="flexCheckEmail">
                         <label class="form-check-label" for="flexCheckEmail">
                             Accept Changes
                         </label>
@@ -286,7 +286,7 @@ echo '</pre>';
                         <label for="recipient-zoom" class="col-form-label">Zoom Office:</label>
                         <input type="url" class="form-control" id="recipient-zoom" value="<?php echo $_SESSION['zoomoffice']; ?>  ">
                         <!-- Checkbox to send to PSQL -->
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckZoomoffice">
+                        <input class="form-check-input-modal" type="checkbox" value="" id="flexCheckZoomoffice">
                         <label class="form-check-label" for="flexCheckZoomoffice">
                             Accept Changes
                         </label>
