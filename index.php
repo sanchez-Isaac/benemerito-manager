@@ -99,9 +99,7 @@ WHERE  email = '$username' and password = '$password';";
                     $_SESSION['user_name'] = $row[1];
                     $_SESSION['middle_name'] = $row[2];
                     $_SESSION['last_name'] = $row[3];
-                    //format the date
-                    $timestamp = new Date($row[4]);
-                    $_SESSION['birthdate'] = date("d-m-Y", $timestamp);
+                    $_SESSION['birthdate'] = $row[4];
                     $_SESSION['zoomoffice'] = $row[5];
                     $_SESSION['email'] = $row[6];
                     $_SESSION['password'] = $row[7];
@@ -117,6 +115,8 @@ WHERE  email = '$username' and password = '$password';";
         $error = $_SESSION['message'];
         echo "<script type='text/javascript'>alert(\"$error\");</script>";
     }
+    $date = $_SESSION['birthdate'];
+    $_SESSION['birthdate'] = $date->format('Y-m-d H:i:s');
 }
 
 
