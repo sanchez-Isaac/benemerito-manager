@@ -18,7 +18,7 @@ if(!isset($_SESSION['username']))
 }
 
 $orgDate = $_SESSION['birthdate'];
-$newDate = date("d-m-Y", strtotime($orgDate));
+$newDate = date("d/m/Y", strtotime($orgDate));
 $_SESSION['birthdate'] = $newDate;
 
 
