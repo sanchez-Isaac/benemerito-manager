@@ -19,7 +19,9 @@ if(!isset($_SESSION['username']))
 
 
 $date = $_SESSION['birthdate'];
-$_SESSION['birthdate'] = $date('Y-m-d');
+$date = new Date($date);
+$_SESSION['birthdate'] = $date->format('d-m-Y');
+
 
 
 //Testing purposes
