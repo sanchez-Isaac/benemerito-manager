@@ -109,3 +109,14 @@ ALTER TABLE "comm_assist"
 ADD FOREIGN KEY ("class_id") REFERENCES "class" ("class_id");
 ALTER TABLE "comm_assist" 
 ADD FOREIGN KEY ("student_id") REFERENCES "student" ("student_id");
+
+
+
+/*this is to create alter users by admin_id, admin id never changes*/
+UPDATE admin
+SET adm_name = 'Isaako'
+    WHERE admin_id = 1;
+
+/*this is to create a new user*/
+INSERT INTO admin (adm_name, middle_name, last_name, birthdate, zoomoffice, email, password) 
+VALUES (''); 
