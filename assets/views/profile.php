@@ -23,13 +23,16 @@ if(isset($_POST['Submitting'])) {
     $dochtml = new DOMDocument();
     $dochtml->loadHTML($strhtml);
 
+    echo $dochtml->getElementById('recipient-name');
 
 
 
-    if($dochtml->getElementById('recipient-name')->hasAttributes('disabled') == "" ){
+
+    //if($dochtml->getElementById('recipient-name')->hasAttributes('disabled') == "" ){
+
 
         $_SESSION['recipient-names'] = pg_escape_string($_POST['recipient-names']);
-    }
+    //}
 
 
     $_SESSION['recipient-middles'] = pg_escape_string($_POST['recipient-middles']);
