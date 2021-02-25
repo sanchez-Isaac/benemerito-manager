@@ -14,6 +14,38 @@ if(!isset($_SESSION['username']))
 echo '<pre>';
 print_r($_SESSION);
 echo '</pre>';
+
+
+
+
+
+
+
+
+
+if(isset($_POST['Submit'])) {
+
+    if(getElementById('recipient-name').disabled === ""){
+
+        $_SESSION['recipient-name'] = pg_escape_string($_POST['recipient-name']);
+    }
+
+
+  //  $_SESSION['recipient-middle'] = pg_escape_string($_POST['recipient-middle']);
+   // $_SESSION['recipient-birth'] = pg_escape_string($_POST['recipient-birth']);
+   // $_SESSION['recipient-email'] =  pg_escape_string($_POST['recipient-email']);
+   // $_SESSION['recipient-zoom'] = pg_escape_string($_POST['recipient-zoom']);
+
+    header("Location: editProfile.php?Approved=");
+
+
+}
+
+
+
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -297,30 +329,6 @@ echo '</pre>';
     </div>
 </div>
 </form>
-
-<?PHP
-if(isset($_POST['Submit'])) {
-
-    if(getElementById('recipient-name').disabled === ""){
-
-        $_SESSION['recipient-name'] = pg_escape_string($_POST['recipient-name']);
-    }
-
-
-
-
-
-    $_SESSION['recipient-name'] = pg_escape_string($_POST['recipient-middle']);
-    $_SESSION['recipient-name'] = pg_escape_string($_POST['recipient-birth']);
-    $_SESSION['recipient-name'] =  pg_escape_string($_POST['recipient-email']);
-    $_SESSION['recipient-name'] = pg_escape_string($_POST['recipient-zoom']);
-
-    header("Location: editProfile.php?Approved=");
-
-
-}
-
-?>
 
 
 
