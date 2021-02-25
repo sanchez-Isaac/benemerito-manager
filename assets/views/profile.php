@@ -26,7 +26,7 @@ if(isset($_POST['Submitting'])) {
 
 
 
-    if($dochtml->getElementById('recipient-name')->hasAttribute('disabled') === "" ){
+    if($dochtml->getElementById('recipient-name')->hasAttributes('disabled') == "" ){
 
         $_SESSION['recipient-names'] = pg_escape_string($_POST['recipient-names']);
     }
