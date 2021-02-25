@@ -229,7 +229,7 @@ echo '</pre>';
 
 
 
-<form  method="post" action="editProfile.php">
+<form  method="post" action="profile.php?">
 <div class="modal fade" id="sqlModal" tabindex="-1" role="dialog" aria-labelledby="sqlModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -298,7 +298,29 @@ echo '</pre>';
 </div>
 </form>
 
+<?PHP
+if(isset($_POST['Submit'])) {
 
+    if(getElementById('recipient-name').disabled === ""){
+
+        $_SESSION['recipient-name'] = pg_escape_string($_POST['recipient-name']);
+    }
+
+
+
+
+
+    $_SESSION['recipient-name'] = pg_escape_string($_POST['recipient-middle']);
+    $_SESSION['recipient-name'] = pg_escape_string($_POST['recipient-birth']);
+    $_SESSION['recipient-name'] =  pg_escape_string($_POST['recipient-email']);
+    $_SESSION['recipient-name'] = pg_escape_string($_POST['recipient-zoom']);
+
+    header("Location: editProfile.php?Approved=");
+
+
+}
+
+?>
 
 
 
