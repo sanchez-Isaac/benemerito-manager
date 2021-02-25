@@ -16,6 +16,8 @@ function pre_r($array)
 }
 
 if($_SESSION['recipient-names'] != ""){
+    echo "DO SQL PUSH";
+    /*
     if($_SESSION['message'] == "You are logged in Admin"){
         $user_id = $_SESSION['user_id'];
         $user_name = $_SESSION['recipient-names'];
@@ -28,8 +30,21 @@ if($_SESSION['recipient-names'] != ""){
         console_log($user_name);
         console_log($query);
     }
+    else if($_SESSION['message'] == "You are logged in Teacher"){
 
+        $user_id = $_SESSION['user_id'];
+        $user_name = $_SESSION['recipient-names'];
+        $query = "UPDATE teacher SET adm_name = '$user_id' WHERE teacher_id = '$user_id';";
+        //pg_query($con ,$query);
+        //pg_close($con);
 
+        console_log($user_id);
+        console_log($user_name);
+        console_log($query);
+
+    }
+
+*/
 
 }
 if($_SESSION['recipient-middles'] !== ""){
