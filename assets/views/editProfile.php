@@ -173,12 +173,12 @@ function console_log( $data ){
 
 
 
-/*
-unset ($_SESSION['first_namead']);
-unset ( $_SESSION['last_namead']);
-unset ($_SESSION['emailad']);
-unset ($_SESSION['usernamead']);
-unset ( $_SESSION['passwordad']);
-*/
+
+unset ($_SESSION['recipient-names']);
+unset ( $_SESSION['recipient-middles']);
+unset ($_SESSION['recipient-lasts']);
+unset ($_SESSION['recipient-births']);
+unset ( $_SESSION['recipient-emails']);
+unset ( $_SESSION['recipient-zooms']);
 
 header("Location: profile.php?edition=Success");
