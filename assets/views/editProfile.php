@@ -44,7 +44,7 @@ if($_SESSION['recipient-names'] !== ""){
 
     }
 
-*/
+
 
 }
 if($_SESSION['recipient-middles'] !== ""){
@@ -69,6 +69,7 @@ function console_log( $data ){
     echo 'console.log('. json_encode( $data ) .')';
     echo '</script>';
 
+*/
 }
 
 
