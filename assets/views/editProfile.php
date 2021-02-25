@@ -13,9 +13,16 @@ function pre_r($array)
     echo '</pre>';
 }
 
+if($_SESSION['recipient-names'] !== ""){
+    echo "Perfect";
 
+}
 
-
+//$_SESSION['recipient-names'];
+//$_SESSION['recipient-middles'];
+//$_SESSION['recipient-births'];
+//$_SESSION['recipient-emails'];
+//$_SESSION['recipient-zooms'];
 
 
 
