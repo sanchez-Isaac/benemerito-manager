@@ -23,13 +23,13 @@ if($_SESSION['recipient-names'] !== ""){
 
         $query = "UPDATE admin SET adm_name = '$user_name' WHERE admin_id = '$user_id';";
         pg_query($con ,$query);
-        pg_close($con);
+       // pg_close($con);
     }
     else if($_SESSION['message'] == "You are logged in Teacher"){
 
         $query = "UPDATE teacher SET adm_name = '$user_name' WHERE teacher_id = '$user_id';";
-        pg_query($con ,$query);
-        pg_close($con);
+        //pg_query($con ,$query);
+
    }
 
     $_SESSION['user_name'] = $user_name;
@@ -46,7 +46,7 @@ if($_SESSION['recipient-middles'] !== ""){
     if($_SESSION['message'] == "You are logged in Admin"){
         $query = "UPDATE admin SET middle_name = '$user_middle' WHERE admin_id = '$user_id';";
         pg_query($con ,$query);
-        pg_close($con);
+        //pg_close($con);
 
 
     }
@@ -54,7 +54,7 @@ if($_SESSION['recipient-middles'] !== ""){
 
         $query = "UPDATE teacher SET middle_name = '$user_middle' WHERE teacher_id = '$user_id';";
         pg_query($con ,$query);
-        pg_close($con);
+      //  pg_close($con);
 
     }
 
@@ -70,7 +70,7 @@ if($_SESSION['recipient-lasts'] !== ""){
     if($_SESSION['message'] == "You are logged in Admin"){
         $query = "UPDATE admin SET last_name = '$user_last' WHERE admin_id = '$user_id';";
         pg_query($con ,$query);
-        pg_close($con);
+       // pg_close($con);
 
 
     }
@@ -78,7 +78,7 @@ if($_SESSION['recipient-lasts'] !== ""){
 
         $query = "UPDATE teacher SET last_name = '$user_last' WHERE teacher_id = '$user_id';";
         pg_query($con ,$query);
-        pg_close($con);
+        //pg_close($con);
 
     }
 
@@ -96,14 +96,14 @@ if($_SESSION['recipient-emails'] !== "") {
     if ($_SESSION['message'] == "You are logged in Admin") {
         $query = "UPDATE admin SET email = '$user_email' WHERE admin_id = '$user_id';";
         pg_query($con, $query);
-        pg_close($con);
+      //  pg_close($con);
 
 
     } else if ($_SESSION['message'] == "You are logged in Teacher") {
 
         $query = "UPDATE teacher SET email = '$user_email' WHERE teacher_id = '$user_id';";
         pg_query($con, $query);
-        pg_close($con);
+       // pg_close($con);
 
 
     }
@@ -121,7 +121,7 @@ if($_SESSION['recipient-zooms'] !== ""){
     if($_SESSION['message'] == "You are logged in Admin"){
         $query = "UPDATE admin SET zoomoffice = '$user_zoom' WHERE admin_id = '$user_id';";
         pg_query($con ,$query);
-        pg_close($con);
+       // pg_close($con);
 
 
     }
@@ -129,7 +129,7 @@ if($_SESSION['recipient-zooms'] !== ""){
 
         $query = "UPDATE teacher SET zoomoffice = '$user_zoom' WHERE teacher_id = '$user_id';";
         pg_query($con ,$query);
-        pg_close($con);
+        //pg_close($con);
 
 
     }
@@ -144,7 +144,7 @@ if($_SESSION['recipient-births'] !== ""){
     if($_SESSION['message'] == "You are logged in Admin"){
         $query = "UPDATE admin SET birthdate = '$user_birth' WHERE admin_id = '$user_id';";
         pg_query($con ,$query);
-        pg_close($con);
+        //pg_close($con);
 
 
     }
@@ -152,7 +152,7 @@ if($_SESSION['recipient-births'] !== ""){
 
         $query = "UPDATE teacher SET birthdate = '$user_birth' WHERE teacher_id = '$user_id';";
         pg_query($con ,$query);
-        pg_close($con);
+       // pg_close($con);
 
     }
 
@@ -161,6 +161,7 @@ if($_SESSION['recipient-births'] !== ""){
 
 }
 
+pg_close($con);
 
 function console_log( $data ){
     echo '<script>';
