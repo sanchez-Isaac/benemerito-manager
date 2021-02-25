@@ -23,7 +23,7 @@ echo '</pre>';
 
 
 
-if(isset($_POST['Submit'])) {
+if(isset($_POST['Submitting'])) {
 
     $strhtml = '<!doctype html>';
     $dochtml = new DOMDocument();
@@ -330,7 +330,7 @@ if(isset($_POST['Submit'])) {
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" value="submit" name="Submit" class="btn btn-primary" id="Save_edition">Save Changes</button>
+                <button type="submit" value="Submitting" name="Submitting" class="btn btn-primary" id="Save_edit">Save Changes</button>
             </div>
         </div>
     </div>
