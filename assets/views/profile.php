@@ -43,7 +43,7 @@ if(isset($_POST['Submitting'])) {
    // $_SESSION['recipient-email'] =  pg_escape_string($_POST['recipient-email']);
    // $_SESSION['recipient-zoom'] = pg_escape_string($_POST['recipient-zoom']);
 
-    header("Location: editProfile.php?Approved=");
+    //header("Location: editProfile.php?Approved=");
 
 
 }
