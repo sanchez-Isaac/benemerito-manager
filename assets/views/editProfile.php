@@ -3,6 +3,13 @@ session_start();
 include_once 'DbConnect.php';
 $con = get_db();
 
+function console_log( $data ){
+    echo '<script>';
+    echo 'console.log('. json_encode( $data ) .')';
+    echo '</script>';
+
+}
+
 
 
 
