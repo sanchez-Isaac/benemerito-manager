@@ -293,12 +293,9 @@ echo '</pre>';
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="submit" value="submit" name="Submit" class="btn btn-primary" id="Save_edition">Save Changes</button>
             </div>
-
         </div>
     </div>
 </div>
-
-
 </form>
 
 
