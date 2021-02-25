@@ -15,3 +15,8 @@ function pre_r($array)
 
 
 
+
+
+
+
+header("Location: profile.php?edition=Success");

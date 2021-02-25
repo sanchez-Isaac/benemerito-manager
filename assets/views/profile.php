@@ -29,13 +29,7 @@ if(isset($_POST['Submitting'])) {
 
     header("Location: editProfile.php?Approved=");
 
-
 }
-
-
-
-
-
 
 ?>
 
