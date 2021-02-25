@@ -7,5 +7,6 @@ if(getElementById('recipient-name')->disabled === "" ){
 echo "This is working";
 
 }
+?>
 
-
+Test
