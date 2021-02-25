@@ -17,13 +17,13 @@ function pre_r($array)
 
 if($_SESSION['recipient-names'] !== ""){
     echo "DO SQL PUSH";
-    /*
+
     if($_SESSION['message'] == "You are logged in Admin"){
         $user_id = $_SESSION['user_id'];
         $user_name = $_SESSION['recipient-names'];
         $query = "UPDATE admin SET adm_name = '$user_id' WHERE admin_id = '$user_id';";
-        //pg_query($con ,$query);
-       // pg_close($con);
+        pg_query($con ,$query);
+        pg_close($con);
 
 
         console_log($user_id);
@@ -35,8 +35,8 @@ if($_SESSION['recipient-names'] !== ""){
         $user_id = $_SESSION['user_id'];
         $user_name = $_SESSION['recipient-names'];
         $query = "UPDATE teacher SET adm_name = '$user_id' WHERE teacher_id = '$user_id';";
-        //pg_query($con ,$query);
-        //pg_close($con);
+        pg_query($con ,$query);
+        pg_close($con);
 
         console_log($user_id);
         console_log($user_name);
@@ -69,7 +69,7 @@ function console_log( $data ){
     echo 'console.log('. json_encode( $data ) .')';
     echo '</script>';
 
-*/
+
 }
 
 
