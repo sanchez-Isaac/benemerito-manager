@@ -38,7 +38,7 @@ if(isset($_POST['Submit'])) {
     }
 
 
-  //  $_SESSION['recipient-middle'] = pg_escape_string($_POST['recipient-middle']);
+    $_SESSION['recipient-middle'] = pg_escape_string($_POST['recipient-middle']);
    // $_SESSION['recipient-birth'] = pg_escape_string($_POST['recipient-birth']);
    // $_SESSION['recipient-email'] =  pg_escape_string($_POST['recipient-email']);
    // $_SESSION['recipient-zoom'] = pg_escape_string($_POST['recipient-zoom']);
