@@ -16,7 +16,6 @@ function pre_r($array)
 }
 
 if($_SESSION['recipient-names'] !== ""){
-    echo "DO SQL PUSH";
     $user_id = $_SESSION['user_id'];
     $user_name = $_SESSION['recipient-names'];
 
@@ -59,11 +58,8 @@ if($_SESSION['recipient-middles'] !== ""){
 
     }
 
-    $_SESSION['middle_name']= $user_middle;;
-    $_SESSION['last_name'];
-    $_SESSION['birthdate'];
-    $_SESSION['zoomoffice'];
-    $_SESSION['email'];
+    $_SESSION['middle_name']= $user_middle;
+
 }
 
 
