@@ -53,7 +53,7 @@ if($_SESSION['recipient-middles'] !== ""){
     }
     else if($_SESSION['message'] == "You are logged in Teacher"){
 
-        $query = "UPDATE teacher SET adm_name = '$user_middle' WHERE teacher_id = '$user_id';";
+        $query = "UPDATE teacher SET middle_name = '$user_middle' WHERE teacher_id = '$user_id';";
         pg_query($con ,$query);
         pg_close($con);
 
