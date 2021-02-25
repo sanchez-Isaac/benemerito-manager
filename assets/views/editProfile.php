@@ -15,7 +15,7 @@ function pre_r($array)
     echo '</pre>';
 }
 
-if($_SESSION['recipient-names'] != ""){
+if($_SESSION['recipient-names'] !== ""){
     echo "DO SQL PUSH";
     /*
     if($_SESSION['message'] == "You are logged in Admin"){
