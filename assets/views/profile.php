@@ -229,8 +229,7 @@ echo '</pre>';
 
 
 
-
-
+<form  method="post" action="editProfile.php?">
 <div class="modal fade" id="sqlModal" tabindex="-1" role="dialog" aria-labelledby="sqlModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -240,7 +239,7 @@ echo '</pre>';
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form  method="post" action="editProfile.php?">
+
             <div class="modal-body">
                 <form>
                     <div class="form-group">
@@ -294,13 +293,13 @@ echo '</pre>';
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="submit" value="submit" name="Submit" class="btn btn-primary" id="Save_edition">Save Changes</button>
             </div>
-            </form>
+
         </div>
     </div>
 </div>
 
 
-
+</form>
 
 
 
