@@ -55,4 +55,4 @@ if($_SESSION['recipient-zooms'] !== ""){
 
 
 
-header("Location: profile.php?edition=Success");
+//header("Location: profile.php?edition=Success");
