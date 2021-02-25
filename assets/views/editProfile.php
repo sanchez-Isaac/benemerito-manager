@@ -26,4 +26,4 @@ if($_SESSION['recipient-names'] !== ""){
 
 
 
-header("Location: profile.php?edition=Success");
+//header("Location: profile.php?edition=Success");
