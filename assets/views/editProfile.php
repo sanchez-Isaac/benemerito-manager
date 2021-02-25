@@ -17,51 +17,132 @@ function pre_r($array)
 
 if($_SESSION['recipient-names'] !== ""){
     echo "DO SQL PUSH";
+    $user_id = $_SESSION['user_id'];
+    $user_name = $_SESSION['recipient-names'];
 
     if($_SESSION['message'] == "You are logged in Admin"){
-        $user_id = $_SESSION['user_id'];
-        $user_name = $_SESSION['recipient-names'];
+
         $query = "UPDATE admin SET adm_name = '$user_name' WHERE admin_id = '$user_id';";
         pg_query($con ,$query);
         pg_close($con);
-
-
-        console_log($user_id);
-        console_log($user_name);
-        console_log($query);
     }
     else if($_SESSION['message'] == "You are logged in Teacher"){
 
-        $user_id = $_SESSION['user_id'];
-        $user_name = $_SESSION['recipient-names'];
         $query = "UPDATE teacher SET adm_name = '$user_name' WHERE teacher_id = '$user_id';";
         pg_query($con ,$query);
         pg_close($con);
-
-        console_log($user_id);
-        console_log($user_name);
-        console_log($query);
    }
 
-
+    $_SESSION['user_name'] = $user_name;
 
 }
+
+
+
 if($_SESSION['recipient-middles'] !== ""){
-    echo "DO SQL PUSH";
 
+    $user_id = $_SESSION['user_id'];
+    $user_middle = $_SESSION['recipient-middles'];
+
+    if($_SESSION['message'] == "You are logged in Admin"){
+        $query = "UPDATE admin SET middle_name = '$user_middle' WHERE admin_id = '$user_id';";
+        pg_query($con ,$query);
+        pg_close($con);
+
+
+    }
+    else if($_SESSION['message'] == "You are logged in Teacher"){
+
+        $query = "UPDATE teacher SET adm_name = '$user_middle' WHERE teacher_id = '$user_id';";
+        pg_query($con ,$query);
+        pg_close($con);
+
+    }
+
+    $_SESSION['middle_name']= $user_middle;;
+    $_SESSION['last_name'];
+    $_SESSION['birthdate'];
+    $_SESSION['zoomoffice'];
+    $_SESSION['email'];
 }
+
+
+
 if($_SESSION['recipient-births'] !== ""){
-    echo "DO SQL PUSH";
+
+    $user_id = $_SESSION['user_id'];
+    $user_birth = $_SESSION['recipient-births'];
+
+    if($_SESSION['message'] == "You are logged in Admin"){
+        $query = "UPDATE admin SET birthdate = '$user_birth' WHERE admin_id = '$user_id';";
+        pg_query($con ,$query);
+        pg_close($con);
+
+
+    }
+    else if($_SESSION['message'] == "You are logged in Teacher"){
+
+        $query = "UPDATE teacher SET birthdate = '$user_birth' WHERE teacher_id = '$user_id';";
+        pg_query($con ,$query);
+        pg_close($con);
+
+    }
+
+
+    $_SESSION['birthdate']= $user_birth;
 
 }
-if($_SESSION['recipient-emails'] !== ""){
-    echo "DO SQL PUSH";
+
+
+
+if($_SESSION['recipient-emails'] !== "") {
+    $user_id = $_SESSION['user_id'];
+    $user_email = $_SESSION['recipient-emails'];
+
+    if ($_SESSION['message'] == "You are logged in Admin") {
+        $query = "UPDATE admin SET email = '$user_email' WHERE admin_id = '$user_id';";
+        pg_query($con, $query);
+        pg_close($con);
+
+
+    } else if ($_SESSION['message'] == "You are logged in Teacher") {
+
+        $query = "UPDATE teacher SET email = '$user_email' WHERE teacher_id = '$user_id';";
+        pg_query($con, $query);
+        pg_close($con);
+
+
+    }
+
+    $_SESSION['email'] = $user_email;
 
 }
+
+
+
 if($_SESSION['recipient-zooms'] !== ""){
-    echo "DO SQL PUSH";
+    $user_id = $_SESSION['user_id'];
+    $user_zoom = $_SESSION['recipient-zooms'];
 
+    if($_SESSION['message'] == "You are logged in Admin"){
+        $query = "UPDATE admin SET zoomoffice = '$user_zoom' WHERE admin_id = '$user_id';";
+        pg_query($con ,$query);
+        pg_close($con);
+
+
+    }
+    else if($_SESSION['message'] == "You are logged in Teacher"){
+
+        $query = "UPDATE teacher SET zoomoffice = '$user_zoom' WHERE teacher_id = '$user_id';";
+        pg_query($con ,$query);
+        pg_close($con);
+
+
+    }
+    $_SESSION['zoomoffice'] = $user_zoom;
 }
+
+
 
 function console_log( $data ){
     echo '<script>';
@@ -73,5 +154,12 @@ function console_log( $data ){
 
 
 
+/*
+unset ($_SESSION['first_namead']);
+unset ( $_SESSION['last_namead']);
+unset ($_SESSION['emailad']);
+unset ($_SESSION['usernamead']);
+unset ( $_SESSION['passwordad']);
+*/
 
-//header("Location: profile.php?edition=Success");
+header("Location: profile.php?edition=Success");
