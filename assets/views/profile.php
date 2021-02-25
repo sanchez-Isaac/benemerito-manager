@@ -19,28 +19,15 @@ echo '</pre>';
 
 
 if(isset($_POST['Submitting'])) {
-    $strhtml = '<!doctype html>';
-    $dochtml = new DOMDocument();
-    $dochtml->loadHTML($strhtml);
-
-    echo $dochtml->getElementById('recipient-name');
 
 
-
-
-    //if($dochtml->getElementById('recipient-name')->hasAttributes('disabled') == "" ){
-
-
-        $_SESSION['recipient-names'] = pg_escape_string($_POST['recipient-names']);
-    //}
-
-
+    $_SESSION['recipient-names'] = pg_escape_string($_POST['recipient-names']);
     $_SESSION['recipient-middles'] = pg_escape_string($_POST['recipient-middles']);
-   // $_SESSION['recipient-births'] = pg_escape_string($_POST['recipient-births']);
-   // $_SESSION['recipient-emails'] =  pg_escape_string($_POST['recipient-emails']);
-   // $_SESSION['recipient-zooms'] = pg_escape_string($_POST['recipient-zooms']);
+    $_SESSION['recipient-births'] = pg_escape_string($_POST['recipient-births']);
+    $_SESSION['recipient-emails'] =  pg_escape_string($_POST['recipient-emails']);
+    $_SESSION['recipient-zooms'] = pg_escape_string($_POST['recipient-zooms']);
 
-    //header("Location: editProfile.php?Approved=");
+    header("Location: editProfile.php?Approved=");
 
 
 }

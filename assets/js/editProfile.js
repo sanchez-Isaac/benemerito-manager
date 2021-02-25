@@ -18,5 +18,3 @@ function disableMyTextName(textid,checkid)
 
 
 
-
-
