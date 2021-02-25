@@ -14,7 +14,7 @@ function pre_r($array)
     echo '</pre>';
 }
 
-if($_SESSION['recipient-names'] !== ""){
+if($_SESSION['recipient-names'] != ""){
     if($_SESSION['message'] == "You are logged in Admin"){
         $user_id = $_SESSION['user_id'];
         $user_name = $_SESSION['recipient-names'];
