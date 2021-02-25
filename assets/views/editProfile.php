@@ -21,6 +21,11 @@ if($_SESSION['recipient-names'] !== ""){
         $query = "UPDATE admin SET adm_name = '$user_id' WHERE admin_id = '$user_id';";
         pg_query($con ,$query);
         pg_close($con);
+
+
+        console_log($user_id);
+        console_log($user_name);
+        console_log($query);
     }
     else if($_SESSION['message'] === "You are logged in Teacher"){
 
