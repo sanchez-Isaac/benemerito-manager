@@ -17,7 +17,7 @@ echo '</pre>';
 
 
 
-
+$_SESSION['recipient-zoom'] = "this is a test";
 
 
 
@@ -25,17 +25,17 @@ echo '</pre>';
 
 if(isset($_POST['Submitting'])) {
 
-    $strhtml = '<!doctype html>';
-    $dochtml = new DOMDocument();
-    $dochtml->loadHTML($strhtml);
+    //$strhtml = '<!doctype html>';
+    //$dochtml = new DOMDocument();
+   // $dochtml->loadHTML($strhtml);
 
 
 
 
-    if($dochtml->getElementById('recipient-name')->hasAttribute('disabled') === "" ){
+   // if($dochtml->getElementById('recipient-name')->hasAttribute('disabled') === "" ){
 
         $_SESSION['recipient-name'] = pg_escape_string($_POST['recipient-name']);
-    }
+    //}
 
 
     $_SESSION['recipient-middle'] = pg_escape_string($_POST['recipient-middle']);
