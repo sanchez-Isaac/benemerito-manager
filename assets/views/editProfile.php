@@ -41,8 +41,7 @@ if($_SESSION['recipient-names'] !== ""){
         console_log($user_id);
         console_log($user_name);
         console_log($query);
-
-    }
+   }
 
 
 
