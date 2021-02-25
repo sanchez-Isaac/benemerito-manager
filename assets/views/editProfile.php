@@ -18,7 +18,7 @@ if($_SESSION['recipient-names'] !== ""){
     if($_SESSION['message'] === "You are logged in Admin"){
         $user_id = $_SESSION['user_id'];
         $user_name = $_SESSION['recipient-names'];
-        $query = "UPDATE admin SET adm_name = '$user_id' WHERE admin_id = '$user_id'";
+        $query = "UPDATE admin SET adm_name = '$user_id' WHERE admin_id = '$user_id';";
         pg_query($con ,$query);
         pg_close($con);
     }
@@ -26,7 +26,7 @@ if($_SESSION['recipient-names'] !== ""){
 
         $user_id = $_SESSION['user_id'];
         $user_name = $_SESSION['recipient-names'];
-        $query = "UPDATE teacher SET adm_name = '$user_id' WHERE teacher_id = '$user_id'";
+        $query = "UPDATE teacher SET adm_name = '$user_id' WHERE teacher_id = '$user_id';";
         pg_query($con ,$query);
         pg_close($con);
     }
