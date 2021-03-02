@@ -107,7 +107,7 @@ if (!isset($_SESSION['username'])) {
                 </thead>
                 <tbody>
 <?php
-                $query = $query = 'SELECT DISTINCT student_id, stu_name, middle_name, last_name, email, tutor_email FROM student';
+                $query = $query = 'SELECT DISTINCT student_id, stu_name, middle_name, last_name, email, tutor_email FROM student order by student_id';
                 $con = get_db();
                 $result = pg_query( $con, $query);
                 if (pg_num_rows($result) > 0) {
