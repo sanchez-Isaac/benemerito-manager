@@ -17,7 +17,7 @@ if (!isset($_SESSION['username'])) {
     header('location: ../../index.php?Login=False');
 }
 
-//$query = $query = 'SELECT DISTINCT student_id, stu_name, middle_name,last_name, email, tutor_email FROM student';
+$query = $query = 'SELECT DISTINCT student_id, stu_name, middle_name,last_name, email, tutor_email FROM student';
 
 
 ?>
@@ -111,22 +111,22 @@ if (!isset($_SESSION['username'])) {
                 </thead>
                 <tbody>
 <?php
-               // $result = pg_query( $con, $query);
-                //if (pg_num_rows($result) > 0) {
-                //while ($row = pg_fetch_array($result)) {
+                $result = pg_query( $con, $query);
+                if (pg_num_rows($result) > 0) {
+                while ($row = pg_fetch_array($result)) {
 
 
-               // echo "<tr>";
-                //    echo "<th>". $row[0]."</th>";
-                 //   echo "<th>". $row[1]."</th>";
-                  //  echo "<th>". $row[2]."</th>";
-                   // echo "<th>". $row[3]."</th>";
-                    //echo "<th>". $row[4]."</th>";
-                    //echo "<th>". $row[6]."</th>";
-                    //echo "</tr>";
+                echo "<tr>";
+                    echo "<th>". $row[0]."</th>";
+                    echo "<th>". $row[1]."</th>";
+                    echo "<th>". $row[2]."</th>";
+                    echo "<th>". $row[3]."</th>";
+                    echo "<th>". $row[4]."</th>";
+                    echo "<th>". $row[5]."</th>";
+                    echo "</tr>";
 
-              //  }
-               // }
+                }
+                }
 ?>
                 </tbody>
             </table>
