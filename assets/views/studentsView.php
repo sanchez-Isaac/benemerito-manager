@@ -1,7 +1,7 @@
 <?php
 require ('DbConnect.php');
 session_start();
-//$con = get_db();
+
 
 
 
@@ -17,7 +17,7 @@ if (!isset($_SESSION['username'])) {
     header('location: ../../index.php?Login=False');
 }
 
-$query = $query = 'SELECT DISTINCT student_id, stu_name, middle_name,last_name, email, tutor_email FROM student';
+
 
 
 ?>
@@ -111,6 +111,8 @@ $query = $query = 'SELECT DISTINCT student_id, stu_name, middle_name,last_name, 
                 </thead>
                 <tbody>
 <?php
+$query = $query = 'SELECT DISTINCT student_id, stu_name, middle_name,last_name, email, tutor_email FROM student';
+$con = get_db();
                 $result = pg_query( $con, $query);
                 if (pg_num_rows($result) > 0) {
                 while ($row = pg_fetch_array($result)) {
