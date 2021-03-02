@@ -94,7 +94,7 @@ if (!isset($_SESSION['username'])) {
 
 
         <div class="col-md-12">
-            <table class="table table-hover" style="overflow-x:auto;">
+            <table class="table table-hover" >
                 <thead>
                 <tr>
                     <th scope="col">Student ID</th>
