@@ -20,6 +20,9 @@ git push heroku master
 git push origin master
 
 
+heroku logs -t /*live changes*/
+
+
 
 
 

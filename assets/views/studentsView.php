@@ -1,5 +1,5 @@
 <?php
-include_once 'DbConnect.php';
+require ('assets/dbConnect/DbConnect.php');
 session_start();
 
 //Admin and teacher differentiation!!!
@@ -112,10 +112,6 @@ if (!isset($_SESSION['username'])) {
                 $result = pg_query( $con, $query);
                 if (pg_num_rows($result) > 0) {
                 while ($row = pg_fetch_array($result)) {
-
-
-
-
 
                     echo "<tr>";
                     echo "<th>". $row[0]."</th>";
