@@ -114,7 +114,7 @@ if (!isset($_SESSION['username'])) {
                 while ($row = pg_fetch_array($result)) {
 
                     echo "<tr>";
-                    echo "<th>". $row[0]."</th>";
+                    echo "<th scope='row'>". $row[0]."</th>";
                     echo "<th>". $row[1]."</th>";
                     echo "<th>". $row[2]."</th>";
                     echo "<th>". $row[3]."</th>";
