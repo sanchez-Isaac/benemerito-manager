@@ -1,7 +1,7 @@
 <?php
 require ('DbConnect.php');
 session_start();
-$con = get_db();
+//$con = get_db();
 
 
 
