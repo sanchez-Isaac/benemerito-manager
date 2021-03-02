@@ -115,11 +115,11 @@ if (!isset($_SESSION['username'])) {
 
                     echo "<tr>";
                     echo "<th scope='row'>". $row[0]."</th>";
-                    echo "<th>". $row[1]."</th>";
-                    echo "<th>". $row[2]."</th>";
-                    echo "<th>". $row[3]."</th>";
-                    echo "<th>". $row[4]."</th>";
-                    echo "<th>". $row[5]."</th>";
+                    echo "<th id='studentRow'>". $row[1]."</th>";
+                    echo "<th id='studentRow'>". $row[2]."</th>";
+                    echo "<th id='studentRow'>". $row[3]."</th>";
+                    echo "<th id='studentRow'>". $row[4]."</th>";
+                    echo "<th id='studentRow'>". $row[5]."</th>";
                     echo "</tr>";
 
                 }
