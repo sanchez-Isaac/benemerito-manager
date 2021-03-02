@@ -113,12 +113,13 @@ if (!isset($_SESSION['username'])) {
                // if (pg_num_rows($result) > 0) {
                // while ($row = pg_fetch_array($result)) {
 
-echo "<tr>"; "test". "</tr>";
-echo "<tr>"; "test". "</tr>";
-echo "<tr>"; "test". "</tr>";
-echo "<tr>"; "test". "</tr>";
-echo "<tr>"; "test". "</tr>";
-echo "<tr>"; "test". "</tr>";
+echo "<tr>"; echo $_SESSION['zoomoffice'];  echo "</td>";
+echo "<tr>"; echo $_SESSION['zoomoffice'];  echo "</td>";
+echo "<tr>"; echo $_SESSION['zoomoffice'];  echo "</td>";
+echo "<tr>"; echo $_SESSION['zoomoffice'];  echo "</td>";
+echo "<tr>"; echo $_SESSION['zoomoffice'];  echo "</td>";
+echo "<tr>"; echo $_SESSION['zoomoffice'];  echo "</td>";
+
 
 
 //                    echo "<tr>";
