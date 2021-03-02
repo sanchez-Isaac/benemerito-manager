@@ -4,7 +4,7 @@ include_once 'DbConnect.php';
 $con = get_db();
 
 
-$query = $query = 'SELECT DISTINCT student_id, name, middle_name,last_name, email, tutor_email FROM student';
+$query = $query = 'SELECT DISTINCT student_id, stu_name, middle_name,last_name, email, tutor_email FROM student';
 
 
 //Admin and teacher differentiation!!!
