@@ -1,35 +1,26 @@
 <?php
 session_start();
 include_once 'DbConnect.php';
+$con = get_db();
 
+
+$query = $query = 'SELECT DISTINCT student_id, name, middle_name,last_name, email, tutor_email FROM student';
 
 
 //Admin and teacher differentiation!!!
- if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" )
-{
-    header('location: adminHome.php?Login=True');
+if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher") {
+    header('location: teacher_Home.php?Login=True');
 }
 
 
 //If no one is logged in, return to login page
-if(!isset($_SESSION['username']))
-{
+if (!isset($_SESSION['username'])) {
     header('location: ../../index.php?Login=False');
 }
 
-//Formats the birthdate
-//$orgDate = $_SESSION['birthdate'];
-//$newDate = date("d/m/Y", strtotime($orgDate));
-//$_SESSION['birthdate'] = $newDate;
 
 
-//Testing purposes
-echo '<pre>';
-print_r($_SESSION);
-echo '</pre>';
 ?>
-
-
 <!DOCTYPE html>
 <html>
 
@@ -42,10 +33,11 @@ echo '</pre>';
     <link rel="stylesheet" href="assets/css/styles.min.css">
 
 
+
 </head>
 
 <body>
-<title>Home Page</title>
+<title>Students View</title>
 
 
 
@@ -64,8 +56,7 @@ echo '</pre>';
             <div class="col-md-4 col-lg-8 col-xl-10 offset-xl-0">
                 <br>
 
-                <h2 class="headtitle"> Welcome Teacher <br />
-                </h2>
+                <h2 class="headtitle"> Welcome Admin </h2>
 
             </div><!-- End: profesor- admin-name -->
             <!-- Start: nav-bar -->
@@ -75,9 +66,11 @@ echo '</pre>';
                     <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#"></a>
                         <div class="collapse navbar-collapse" id="navcol-1">
                             <ul class="nav navbar-nav mr-auto" >
-                                <li class="nav-item"><a class="nav-link active" id="active" href="teacher_Home.php">Home</a></li><p class="desapair"> -- </p>
+                                <li id="nactive" class="nav-item"><a class="nav-link"  href="adminHome.php">Home</a></li><p class="desapair"> -- </p>
                                 <li  id="nactive" class="nav-item"><a class="nav-link"  href="profile.php">Profile</a></li><p class="desapair"> -- </p>
-
+                                <li  class="nav-item"><a class="nav-link active" id="active" href="studentsView.php">Students</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Teachers</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Register</a></li><p class="desapair"> -- </p>
 
                                 </li>
                             </ul>
@@ -95,35 +88,62 @@ echo '</pre>';
     </div>
 </div><!-- End: 1 Row 3 Columns -->
 <!-- Start: 1 Row 3 Columns -->
-<div>
-    <div class="container">
-        <div class="row">
-            <!-- Start: part-of-grid1 -->
-            <div class="col-1 col-sm-1 col-md-1 col-lg-2 col-xl-2"></div><!-- End: part-of-grid1 -->
-            <!-- Start: table-of-classes-given -->
-            <div class="col-md-10 col-lg-8 col-xl-8"></div><!-- End: table-of-classes-given -->
-            <!-- Start: part-of-grid2 -->
-            <div class="col-1 col-sm-1 col-md-1 col-lg-2 col-xl-2"></div><!-- End: part-of-grid2 -->
+
+<br><br><br><br><br>
+
+
+
+<div class="container">
+    <div class="row">
+
+
+        <div class="col-md-12">
+            <table class="table table-hover" style="overflow-x:auto;">
+                <thead>
+                <tr>
+                    <th scope="col">Student ID</th>
+                    <th scope="col">First name</th>
+                    <th scope="col">Middle name</th>
+                    <th scope="col">Last name</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Tutor Email</th>
+                </tr>
+                </thead>
+                <tbody>
+<?php
+                $result = pg_query( $con, $query);
+                if (pg_num_rows($result) > 0) {
+                while ($row = pg_fetch_array($result)) {
+
+
+                echo "<tr>";
+                    echo "<th>". $row[0]."</th>";
+                    echo "<th>". $row[1]."</th>";
+                    echo "<th>". $row[2]."</th>";
+                    echo "<th>". $row[3]."</th>";
+                    echo "<th>". $row[4]."</th>";
+                    echo "<th>". $row[6]."</th>";
+                    echo "</tr>";
+
+                }
+                }
+?>
+                </tbody>
+            </table>
         </div>
     </div>
-
-</div><!-- End: 1 Row 3 Columns -->
-<!-- Start: Footer Basic -->
+</div>
 
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p><h2>test space</h2></p>
-<br>
-<br>
 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 
 <div class="footer-basic">

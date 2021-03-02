@@ -120,3 +120,23 @@ SET adm_name = 'Isaako'
 /*this is to create a new user*/
 INSERT INTO admin (adm_name, middle_name, last_name, birthdate, zoomoffice, email, password) 
 VALUES (''); 
+
+
+/*To create new students*/
+INSERT INTO student (student_id, stu_name, middle_name, last_name, birthdate, email, tutor_email)
+VALUES (1, 'Fabian', 'Antonio', 'Hernandez Juarez', '1991,05,12','Test@gmail.com', 'Tutortest@gamil.com');
+
+INSERT INTO student ( student_id, stu_name, middle_name, last_name, birthdate, email, tutor_email)
+VALUES (2, 'Arturo', '', 'Escobar Fernandez', '1991,05,12','Test@gmail.com', 'Tutortest@gamil.com');
+
+INSERT INTO student (student_id, stu_name, middle_name, last_name, birthdate, email, tutor_email)
+VALUES (3, 'Jose', 'Pablo', 'Madero Sanchez', '1991,05,12','Test@gmail.com', 'Tutortest@gamil.com');
+
+INSERT INTO student ( student_id, stu_name, middle_name, last_name, birthdate, email, tutor_email)
+VALUES (4, 'Jessica', 'Isabel', 'Martinez Elix', '1991,05,12','Test@gmail.com', 'Tutortest@gamil.com');
+
+INSERT INTO student (student_id, stu_name, middle_name, last_name, birthdate, email, tutor_email)
+VALUES (5, 'Fernanda', '', 'Campos Collado', '1991,05,12','Test@gmail.com', 'Tutortest@gamil.com');
+
+INSERT INTO student ( student_id, stu_name, middle_name, last_name, birthdate, email, tutor_email)
+VALUES (6, 'Joseph', '', 'Blackburn', '1991,05,12','Test@gmail.com', 'Tutortest@gamil.com');
