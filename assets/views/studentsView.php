@@ -1,5 +1,5 @@
 <?php
-require ('assets/dbConnect/DbConnect.php');
+require ('DbConnect.php');
 session_start();
 
 //Admin and teacher differentiation!!!
