@@ -110,24 +110,24 @@ if (!isset($_SESSION['username'])) {
                 $query = $query = 'SELECT DISTINCT student_id, stu_name, middle_name, last_name, email, tutor_email FROM student';
                 $con = get_db();
                 $result = pg_query( $con, $query);
-               // if (pg_num_rows($result) > 0) {
-               // while ($row = pg_fetch_array($result)) {
+                if (pg_num_rows($result) > 0) {
+                while ($row = pg_fetch_array($result)) {
 
 
 
 
 
-//                    echo "<tr>";
-  //                  echo "<th>". $row[0]."</th>";
-    //                echo "<th>". $row[1]."</th>";
-      //              echo "<th>". $row[2]."</th>";
-        //            echo "<th>". $row[3]."</th>";
-          //          echo "<th>". $row[4]."</th>";
-            //        echo "<th>". $row[5]."</th>";
-              //      echo "</tr>";
+                    echo "<tr>";
+                    echo "<th>". $row[0]."</th>";
+                    echo "<th>". $row[1]."</th>";
+                    echo "<th>". $row[2]."</th>";
+                    echo "<th>". $row[3]."</th>";
+                    echo "<th>". $row[4]."</th>";
+                    echo "<th>". $row[5]."</th>";
+                    echo "</tr>";
 
-                //}
-                //}
+                }
+                }
 ?>
                 </tbody>
             </table>
