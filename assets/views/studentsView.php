@@ -103,6 +103,7 @@ if (!isset($_SESSION['username'])) {
                     <th scope="col">Last name</th>
                     <th scope="col">E-mail</th>
                     <th scope="col">Tutor Email</th>
+                    <th scope="col"> </th>
                 </tr>
                 </thead>
                 <tbody>
@@ -112,7 +113,7 @@ if (!isset($_SESSION['username'])) {
                 $result = pg_query( $con, $query);
                 if (pg_num_rows($result) > 0) {
                 while ($row = pg_fetch_array($result)) {
-                echo "<form method='post' >" ;
+                echo "<form method='post'>" ;
                     echo "<tr id='stuRowid".$row[0]."'>";
                     echo "<th scope='row'>". $row[0]."</th>";
                     echo "<th style='font-weight: normal'>". $row[1]."</th>";
@@ -120,6 +121,7 @@ if (!isset($_SESSION['username'])) {
                     echo "<th style='font-weight: normal'>". $row[3]."</th>";
                     echo "<th style='font-weight: normal'>". $row[4]."</th>";
                     echo "<th style='font-weight: normal'>". $row[5]."</th>";
+                    echo "<th>"."<button type='submit' class='btn btn-outline-primary'>View/Edit</button>"."</th>";
                     echo "</tr>";
                 echo "</form>";
                 }
