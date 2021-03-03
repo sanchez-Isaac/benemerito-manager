@@ -22,6 +22,20 @@ function pre_r($array)
     echo '</pre>';
 }
 
+
+$query2 = $query = 'SELECT DISTINCT student_id FROM student order by student_id';
+$con2 = get_db();
+$result = pg_query($con2, $query2);
+if (pg_num_rows($result) > 0) {
+    while ($row = pg_fetch_array($result)) {
+        if (isset($_POST['submit#' . $row[0]])) {
+            $_SESSION['studentID'] = $_POST['submit#' . $row[0]];
+        }
+
+    }
+}
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -133,18 +147,6 @@ function pre_r($array)
                 }
                 }
 
-
-$query2 = $query = 'SELECT DISTINCT student_id FROM student order by student_id';
-$con2 = get_db();
-$result = pg_query($con2, $query2);
-if (pg_num_rows($result) > 0) {
-while ($row = pg_fetch_array($result)) {
-    if (isset($_POST['submit#' . $row[0]])) {
-        $_SESSION['studentID'] = $_POST['submit#' . $row[0]];
-    }
-
-}
-}
 
 
 
