@@ -133,7 +133,7 @@ if (pg_num_rows($result) > 0) {
                 $result = pg_query( $con, $query);
                 if (pg_num_rows($result) > 0) {
                 while ($row = pg_fetch_array($result)) {
-                echo "<form method='POST' >" ;
+                echo "<form method='POST' action='student_view_profile.php?'>" ;
                     echo "<tr id='stuRowid".$row[0]."'>";
                     echo "<th scope='row'>". $row[0]."</th>";
                     echo "<th style='font-weight: normal'>". $row[1]."</th>";
