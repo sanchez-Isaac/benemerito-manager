@@ -119,7 +119,7 @@ function pre_r($array)
                 $result = pg_query( $con, $query);
                 if (pg_num_rows($result) > 0) {
                 while ($row = pg_fetch_array($result)) {
-                echo "<form method='get' action='studid".$row[0]. "'>" ;
+                echo "<form method='POST'>" ;
                     echo "<tr id='stuRowid".$row[0]."'>";
                     echo "<th scope='row'>". $row[0]."</th>";
                     echo "<th style='font-weight: normal'>". $row[1]."</th>";
@@ -127,33 +127,21 @@ function pre_r($array)
                     echo "<th style='font-weight: normal'>". $row[3]."</th>";
                     echo "<th style='font-weight: normal'>". $row[4]."</th>";
                     echo "<th style='font-weight: normal'>". $row[5]."</th>";
-                    echo "<th> <button name='submit#" .$row[0]."' type='submit' class='btn btn-outline-primary btn-sm'>View/Edit</button>"."</th>";
+                    echo "<th> <button value='".$row[0]." name='submit#" .$row[0]."' type='submit' class='btn btn-outline-primary btn-sm'>View/Edit</button>"."</th>";
                     echo "</tr>";
                 echo "</form>";
                 }
                 }
 
-/*
+
 $result = pg_query( $con, $query);
 if (pg_num_rows($result) > 0) {
 while ($row = pg_fetch_array($result)) {
     if (isset($_POST['submit#' + $row[0]])) {
-        $_SESSION['studentID'] = $_POST['action' + $row[0]];
+        $_SESSION['studentID'] = $_POST['submit#' + $row[0]];
         header('location: student_view_profile.php');
     }
 }
-}
-*/
-
-
-$result = pg_query( $con, $query);
-if (pg_num_rows($result) > 0) {
-    while ($row = pg_fetch_array($result)) {
-        if (isset($_GET['action'])) {
-            $_SESSION['studentID'] = $_GET['action'];
-            header('location: student_view_profile.php');
-        }
-    }
 }
 
 
