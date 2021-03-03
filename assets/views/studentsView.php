@@ -133,7 +133,7 @@ function pre_r($array)
 
                     if (isset($_POST['submit#' + $row[0]])) {
                         $_SESSION['studentID'] = $_POST['submit#' + $row[0]];
-                        header('location: student_view_profile.php');
+                       // header('location: student_view_profile.php');
                     }
 
                 }
