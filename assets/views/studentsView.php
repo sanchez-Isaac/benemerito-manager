@@ -120,10 +120,7 @@ function pre_r($array)
                 if (pg_num_rows($result) > 0) {
                 while ($row = pg_fetch_array($result)) {
 
-                    if (isset($_POST['submit#' + $row[0]])) {
-                        $_SESSION['studentID'] = $_POST['submit#' + $row[0]];
-                        // header('location: student_view_profile.php');
-                    }
+
 
 
                 echo "<form method='POST'>" ;
@@ -141,6 +138,10 @@ function pre_r($array)
 
 
                 }
+                    if (isset($_POST['submit#' + $row[0]])) {
+                        $_SESSION['studentID'] = $_POST['submit#' + $row[0]];
+                        // header('location: student_view_profile.php');
+                    }
                 }
 
 
