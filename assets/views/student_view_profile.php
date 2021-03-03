@@ -13,3 +13,11 @@ if (!isset($_SESSION['username'])) {
     header('location: ../../index.php?Login=False');
 }
 
+pre_r($_SESSION);
+function pre_r($array)
+{
+    echo '<pre>';
+    print_r($array);
+    echo '</pre>';
+}
+
