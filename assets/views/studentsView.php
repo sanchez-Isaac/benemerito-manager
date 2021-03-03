@@ -119,6 +119,13 @@ function pre_r($array)
                 $result = pg_query( $con, $query);
                 if (pg_num_rows($result) > 0) {
                 while ($row = pg_fetch_array($result)) {
+
+                    if (isset($_POST['submit#' + $row[0]])) {
+                        $_SESSION['studentID'] = $_POST['submit#' + $row[0]];
+                        // header('location: student_view_profile.php');
+                    }
+
+
                 echo "<form method='POST'>" ;
                     echo "<tr id='stuRowid".$row[0]."'>";
                     echo "<th scope='row'>". $row[0]."</th>";
@@ -131,10 +138,7 @@ function pre_r($array)
                     echo "</tr>";
                 echo "</form>";
 
-                    if (isset($_POST['submit#' + $row[0]])) {
-                        $_SESSION['studentID'] = $_POST['submit#' + $row[0]];
-                       // header('location: student_view_profile.php');
-                    }
+
 
                 }
                 }
