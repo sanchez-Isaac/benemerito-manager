@@ -36,6 +36,8 @@ CREATE TABLE "admin" (
   "zoomoffice" varchar(250),
   "email" varchar(50) not null,
   "password" varchar(50) not null,
+  "home_phone" varchar(500) ,
+  "mobile_phone" varchar(500) ,
   PRIMARY KEY ("admin_id")
 );
 
@@ -44,10 +46,12 @@ CREATE TABLE "teacher" (
   "adm_name" varchar(50) not null,
   "middle_name" varchar(50),
   "last_name" varchar(50) not null,
-  "birthdate" date (submit_time, 'DD/MM/YYYY') not null,
+  "birthdate" date not null,
   "zoomoffice" varchar(250),
   "email" varchar(50) not null,
   "password" varchar(50) not null,
+  "home_phone" varchar(500) ,
+  "mobile_phone" varchar(500) ,
   PRIMARY KEY ("teacher_id")
 );
 
@@ -59,6 +63,8 @@ CREATE TABLE "student" (
   "birthdate" date not null,
   "email" varchar(50) not null,
   "tutor_email" varchar(50) not null,
+  "student_phone" varchar(500) not null,
+  "tutor_phone" varchar(500) not null,
   PRIMARY KEY ("student_id")
 );
 
@@ -114,6 +120,14 @@ ALTER TABLE "comm_assist"
 ADD FOREIGN KEY ("student_id") REFERENCES "student" ("student_id");
 
 
+
+
+ALTER TABLE "student"
+ADD "student_phone" varchar(500) not null;
+
+ALTER TABLE "student"
+ADD "tutor_phone" varchar(500) not null;
+  
 
 /*this is to create alter users by admin_id, admin id never changes*/
 UPDATE admin

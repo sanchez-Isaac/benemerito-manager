@@ -121,11 +121,18 @@ if (!isset($_SESSION['username'])) {
                     echo "<th style='font-weight: normal'>". $row[3]."</th>";
                     echo "<th style='font-weight: normal'>". $row[4]."</th>";
                     echo "<th style='font-weight: normal'>". $row[5]."</th>";
-                    echo "<th>"."<button type='submit' class='btn btn-outline-primary btn-sm'>View/Edit</button>"."</th>";
+                    echo "<th> <button name='submit#" .$row[0]."' type='submit' class='btn btn-outline-primary btn-sm'>View/Edit</button>"."</th>";
                     echo "</tr>";
                 echo "</form>";
                 }
                 }
+
+
+
+
+
+
+
 ?>
                 </tbody>
             </table>
