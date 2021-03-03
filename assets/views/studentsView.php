@@ -137,12 +137,12 @@ if (pg_num_rows($result) > 0) {
                 echo "<form method='POST' action='studentsView.php?'>" ;
                     echo "<tr id='stuRowid".$row[0]."'>";
                     echo "<th scope='row'>". $row[0]."</th>";
-                    echo "<th style='font-weight: normal'>". $row[1]."</th>";
-                    echo "<th style='font-weight: normal'>". $row[2]."</th>";
-                    echo "<th style='font-weight: normal'>". $row[3]."</th>";
-                    echo "<th style='font-weight: normal' <a href=\'mailto:".$row[4]."'>". $row[4]."</a></th>";
-                    echo "<th style='font-weight: normal' href=\'mailto:".$row[5]."'>". $row[5]."</th>";
-                    echo "<th> <button value='".$row[0]."'name='submit#".$row[0]."' type='submit' class='btn btn-outline-primary btn-sm'>View/Edit</button>"."</th>";
+                    echo "<td>". $row[1]."</td>";
+                    echo "<td>". $row[2]."</td>";
+                    echo "<td>". $row[3]."</td>";
+                    echo "<td> <a href='mailto:".$row[4]."'>". $row[4]."</a></td>";
+                    echo "<td>  <a href='mailto:".$row[5]."'>". $row[5]."</a></td>";
+                    echo "<td> <button value='".$row[0]."'name='submit#".$row[0]."' type='submit' class='btn btn-outline-primary btn-sm'>View/Edit</button>"."</td>";
                     echo "</tr>";
                 echo "</form>";
                 }
