@@ -119,10 +119,6 @@ function pre_r($array)
                 $result = pg_query( $con, $query);
                 if (pg_num_rows($result) > 0) {
                 while ($row = pg_fetch_array($result)) {
-
-
-
-
                 echo "<form method='POST'>" ;
                     echo "<tr id='stuRowid".$row[0]."'>";
                     echo "<th scope='row'>". $row[0]."</th>";
@@ -134,18 +130,22 @@ function pre_r($array)
                     echo "<th> <button value='".$row[0]."'name='submit#".$row[0]."' type='submit' class='btn btn-outline-primary btn-sm'>View/Edit</button>"."</th>";
                     echo "</tr>";
                 echo "</form>";
-
-
-
                 }
-                    if (isset($_POST['submit#' + $row[0]])) {
-                        $_SESSION['studentID'] = $_POST['submit#' + $row[0]];
-                        // header('location: student_view_profile.php');
-                    }
                 }
 
 
+$query2 = $query = 'SELECT DISTINCT student_id, stu_name, middle_name, last_name, email, tutor_email FROM student order by student_id';
+$con2 = get_db();
+$result = pg_query($con2, $query2);
+if (pg_num_rows($result) > 0) {
+while ($row = pg_fetch_array($result)) {
+    if (isset($_POST['submit#' + $row[0]])) {
+        $_SESSION['studentID'] = $_POST['submit#' + $row[0]];
+        header('location: student_view_profile.php');
+    }
 
+}
+}
 
 
 
