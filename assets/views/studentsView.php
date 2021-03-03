@@ -135,7 +135,6 @@ function pre_r($array)
                         $_SESSION['studentID'] = $_POST['submit#' + $row[0]];
                         header('location: student_view_profile.php');
                     }
-
                 }
                 }
 
