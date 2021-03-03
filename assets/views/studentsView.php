@@ -139,7 +139,7 @@ while ($row = pg_fetch_array($result)) {
         $_SESSION['studentID'] = $_POST['submit#' + $row[0]];
         header('location: student_view_profile.php');
     }
-}
+
 }
 
 
