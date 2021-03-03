@@ -112,16 +112,16 @@ if (!isset($_SESSION['username'])) {
                 $result = pg_query( $con, $query);
                 if (pg_num_rows($result) > 0) {
                 while ($row = pg_fetch_array($result)) {
-
-                    echo "<tr id='stuRowid".$row[1]."'>";
+                echo "<form method='post' >" ;
+                    echo "<tr id='stuRowid".$row[0]."'>";
                     echo "<th scope='row'>". $row[0]."</th>";
-                    echo "<th style='font-weight: normal' onclick=''>". $row[1]."</th>";
+                    echo "<th style='font-weight: normal'>". $row[1]."</th>";
                     echo "<th style='font-weight: normal'>". $row[2]."</th>";
                     echo "<th style='font-weight: normal'>". $row[3]."</th>";
                     echo "<th style='font-weight: normal'>". $row[4]."</th>";
                     echo "<th style='font-weight: normal'>". $row[5]."</th>";
                     echo "</tr>";
-
+                echo "</form>";
                 }
                 }
 ?>
