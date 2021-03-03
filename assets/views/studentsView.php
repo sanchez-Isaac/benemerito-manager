@@ -134,10 +134,14 @@ function pre_r($array)
                 }
 
 
-
-if (isset($_POST['submit#'+$row[0]])) {
-    $_SESSION['studentID'] = $_POST['action'+$row[0]];
-    header('location: student_view_profile.php');
+$result = pg_query( $con, $query);
+if (pg_num_rows($result) > 0) {
+while ($row = pg_fetch_array($result)) {
+    if (isset($_POST['submit#' + $row[0]])) {
+        $_SESSION['studentID'] = $_POST['action' + $row[0]];
+        header('location: student_view_profile.php');
+    }
+}
 }
 
 
