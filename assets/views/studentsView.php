@@ -119,7 +119,7 @@ function pre_r($array)
                 $result = pg_query( $con, $query);
                 if (pg_num_rows($result) > 0) {
                 while ($row = pg_fetch_array($result)) {
-                echo "<form method='post' action='studid".$row[0]. "'>" ;
+                echo "<form method='get' action='studid".$row[0]. "'>" ;
                     echo "<tr id='stuRowid".$row[0]."'>";
                     echo "<th scope='row'>". $row[0]."</th>";
                     echo "<th style='font-weight: normal'>". $row[1]."</th>";
@@ -133,7 +133,7 @@ function pre_r($array)
                 }
                 }
 
-
+/*
 $result = pg_query( $con, $query);
 if (pg_num_rows($result) > 0) {
 while ($row = pg_fetch_array($result)) {
@@ -143,6 +143,21 @@ while ($row = pg_fetch_array($result)) {
     }
 }
 }
+*/
+
+
+$result = pg_query( $con, $query);
+if (pg_num_rows($result) > 0) {
+    while ($row = pg_fetch_array($result)) {
+        if (isset($_GET['action'])) {
+            $_SESSION['studentID'] = $_GET['action'];
+            header('location: student_view_profile.php');
+        }
+    }
+}
+
+
+
 
 
 
