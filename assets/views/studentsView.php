@@ -130,17 +130,17 @@ function pre_r($array)
                     echo "<th> <button value='".$row[0]."'name='submit#".$row[0]."' type='submit' class='btn btn-outline-primary btn-sm'>View/Edit</button>"."</th>";
                     echo "</tr>";
                 echo "</form>";
+
+                    if (isset($_POST['submit#' + $row[0]])) {
+                        $_SESSION['studentID'] = $_POST['submit#' + $row[0]];
+                        header('location: student_view_profile.php');
+                    }
+
                 }
                 }
 
 
-while ($row = pg_fetch_array($result)) {
-    if (isset($_POST['submit#' + $row[0]])) {
-        $_SESSION['studentID'] = $_POST['submit#' + $row[0]];
-        header('location: student_view_profile.php');
-    }
 
-}
 
 
 
