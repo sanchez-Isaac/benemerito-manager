@@ -140,7 +140,7 @@ if (pg_num_rows($result) > 0) {
                     echo "<th style='font-weight: normal'>". $row[1]."</th>";
                     echo "<th style='font-weight: normal'>". $row[2]."</th>";
                     echo "<th style='font-weight: normal'>". $row[3]."</th>";
-                    echo "<th style='font-weight: normal' href='mailto:".$row[4]."?subject=Greetings'>". $row[4]."</th>";
+                    echo "<th style='font-weight: normal' <a href='mailto:".$row[4]."?subject=Greetings'>". $row[4]."</a></th>";
                     echo "<th style='font-weight: normal' href='mailto:".$row[5]."?subject=Greetings'>". $row[5]."</th>";
                     echo "<th> <button value='".$row[0]."'name='submit#".$row[0]."' type='submit' class='btn btn-outline-primary btn-sm'>View/Edit</button>"."</th>";
                     echo "</tr>";
