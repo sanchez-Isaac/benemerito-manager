@@ -120,8 +120,6 @@ function pre_r($array)
                 if (pg_num_rows($result) > 0) {
                 while ($row = pg_fetch_array($result)) {
 
-
-
                 echo "<form method='POST'>" ;
                     echo "<tr id='stuRowid".$row[0]."'>";
                     echo "<th scope='row'>". $row[0]."</th>";
