@@ -124,9 +124,9 @@ if(isset($_SESSION['studentID'])) {
                     <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#"></a>
                         <div class="collapse navbar-collapse" id="navcol-1">
                             <ul class="nav navbar-nav mr-auto" >
-                                <li  id="nactive" class="nav-item"><a class="nav-link" href="adminHome.php">Home</a></li><p class="desapair"> -- </p>
-                                <li  id="nactive" class="nav-item"><a class="nav-link active"  id="active" href="profile.php">Profile</a></li><p class="desapair"> -- </p>
-                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="studentsView.php">Students</a></li><p class="desapair"> -- </p>
+                                <li id="nactive" class="nav-item"><a class="nav-link"  href="adminHome.php">Home</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="profile.php">Profile</a></li><p class="desapair"> -- </p>
+                                <li  class="nav-item"><a class="nav-link active" id="active" href="studentsView.php">Students</a></li><p class="desapair"> -- </p>
                                 <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Teachers</a></li><p class="desapair"> -- </p>
                                 <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Register</a></li><p class="desapair"> -- </p>
 
@@ -158,31 +158,31 @@ if(isset($_SESSION['studentID'])) {
             <?php
             //This will display the rigth name and position depending of the user that logged in
             // middle name will count in this excercise.
-            if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" && $_SESSION['middle_name'] != "")
+            if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" && $_SESSION['stu_middle_name'] != "")
             {
 
-                echo '<h3>'.$_SESSION['user_name']." ". $_SESSION['middle_name']. " ". $_SESSION['last_name']. '</h3>';
-                echo '<h7>Teacher Profile</h7>';
+                echo '<h3>'.$_SESSION['student_name']." ". $_SESSION['stu_middle_name']. " ". $_SESSION['stud_last_name']. '</h3>';
+                echo '<h7>Student Profile</h7>';
             }
             else
-                if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" && $_SESSION['middle_name'] != "")
+                if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" && $_SESSION['stu_middle_name'] != "")
                 {
-                    echo '<h3>'.$_SESSION['user_name']." ". $_SESSION['middle_name']. " ". $_SESSION['last_name']. '</h3>';
-                    echo '<h7>Admin Profile</h7>';
+                    echo '<h3>'.$_SESSION['student_name']." ". $_SESSION['stu_middle_name']. " ". $_SESSION['stud_last_name']. '</h3>';
+                    echo '<h7>Student Profile</h7>';
 
                 }
                 else
-                    if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" && $_SESSION['middle_name'] == "")
+                    if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" && $_SESSION['stu_middle_name'] == "")
                     {
-                        echo '<h3>'.$_SESSION['user_name']." ". $_SESSION['last_name']. '</h3>';
-                        echo '<h7>Admin Profile</h7>';
+                        echo '<h3>'.$_SESSION['student_name']." ". $_SESSION['stud_last_name']. '</h3>';
+                        echo '<h7>Student Profile</h7>';
 
                     }
                     else
-                        if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" && $_SESSION['middle_name'] == "")
+                        if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" && $_SESSION['stu_middle_name'] == "")
                         {
-                            echo '<h3>'.$_SESSION['user_name']." ". $_SESSION['last_name']. '</h3>';
-                            echo '<h7>Teacher Profile</h7>';
+                            echo '<h3>'.$_SESSION['student_name']." ". $_SESSION['stu_middle_name']. " ". $_SESSION['stud_last_name']. '</h3>';
+                            echo '<h7>Student Profile</h7>';
 
                         }
 
