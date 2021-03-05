@@ -11,10 +11,10 @@ function disableMyTextName(textid,checkid)
     }
 }
 
+function goBack() {
+    window.history.back();
 
-
-
-
+}
 
 
 
