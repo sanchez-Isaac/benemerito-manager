@@ -298,3 +298,39 @@
     font-size: smaller;
 }
 
+@media (max-width:1200px)/*Smaller than the px specified*/
+{
+    .goback{
+        margin-left: 100px;
+    }
+
+
+}
+
+@media (max-width:991px)/*Smaller than the px specified*/
+{
+    .goback{
+        margin-left: -11px;
+    }
+
+
+}
+
+
+@media (max-width:766px)/*Smaller than the px specified*/
+{
+    .goback{
+        margin-left: 237px;
+    }
+
+
+}
+
+@media (max-width:535px)/*Smaller than the px specified*/
+{
+    .goback{
+        margin-left: 221px;
+    }
+
+
+}
