@@ -352,7 +352,7 @@ if(isset($_POST['Submitting'])) {
                         </div>
                         <div class="form-group">
                             <label for="recipient-tutoremail" class="col-form-label">Tutor Email:</label>
-                            <input type="url" class="form-control" id="recipient-tutoremail" disabled="disabled" name="recipient-tutoremails" value="<?php echo $_SESSION['stud_tutoremail']; ?>">
+                            <input type="email" class="form-control" id="recipient-tutoremail" disabled="disabled" name="recipient-tutoremails" value="<?php echo $_SESSION['stud_tutoremail']; ?>">
                             <!-- Checkbox to send to PSQL -->
                             <input class="form-check-input-modal" type="checkbox"  id="flexChecktutoremail" name="recipient-tutoremail" onclick="disableMyTextName(this.name,this.id)">
                             <label class="form-check-label-modal" for="flexChecktutoremail" onclick="disableMyTextName()">Make Changes</label>
