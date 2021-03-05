@@ -245,7 +245,7 @@ if(isset($_POST['Submitting'])) {
                     </table>
                     <br>
                     <hr style="border-top: 1px solid #000000">
-                    &nbsp;&nbsp;
+
                     <button type="button" class="btn btn-primary"   data-toggle="modal" data-target="#sqlModal" id="editprofile" style="float: right">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
@@ -253,7 +253,7 @@ if(isset($_POST['Submitting'])) {
                         </svg>
                         Edit Profile
                     </button>
-                    &nbsp;&nbsp;
+
 
                     <button type="button" class="btn btn-success" onclick="goBack()" id="goback" >
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
@@ -262,7 +262,7 @@ if(isset($_POST['Submitting'])) {
                         </svg>
                         Go back
                     </button>
-                    &nbsp;&nbsp;
+
 
                 </div><!-- End: table for admin -->
 
