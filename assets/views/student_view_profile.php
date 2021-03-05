@@ -45,6 +45,21 @@ if(isset($_SESSION['studentID'])) {
 
 
 
+if(isset($_POST['Submitting'])) {
+
+
+    $_SESSION['recipient-names'] = pg_escape_string($_POST['recipient-names']);
+    $_SESSION['recipient-middles'] = pg_escape_string($_POST['recipient-middles']);
+    $_SESSION['recipient-lasts'] = pg_escape_string($_POST['recipient-lasts']);
+    $_SESSION['recipient-births'] = pg_escape_string($_POST['recipient-births']);
+    $_SESSION['recipient-emails'] =  pg_escape_string($_POST['recipient-emails']);
+    $_SESSION['recipient-tutoremail'] =  pg_escape_string($_POST['recipient-tutoremails']);
+    $_SESSION['recipient-stud-phone'] =  pg_escape_string($_POST['recipient-stud-phones']);
+    $_SESSION['recipient-tutorphone'] =  pg_escape_string($_POST['recipient-tutorphones']);
+
+    header("Location: editProfileStudent.php?Approved=");
+
+}
 
 
 
@@ -275,7 +290,7 @@ if(isset($_SESSION['studentID'])) {
 
 
 
-<form  method="post" action="profile.php?">
+<form  method="post" action="student_view_profile.php?">
     <div class="modal fade" id="sqlModal" tabindex="-1" role="dialog" aria-labelledby="sqlModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -327,22 +342,22 @@ if(isset($_SESSION['studentID'])) {
                             <label class="form-check-label-modal" for="flexCheckEmail" onclick="disableMyTextName()">Make Changes</label>
                         </div>
                         <div class="form-group">
-                            <label for="recipient-tutoremail" class="col-form-label">Zoom Office:</label>
-                            <input type="url" class="form-control" id="recipient-tutoremail" disabled="disabled" name="recipient-tutoremail" value="<?php echo $_SESSION['stud_tutoremail']; ?>">
+                            <label for="recipient-tutoremail" class="col-form-label">Tutor Email:</label>
+                            <input type="url" class="form-control" id="recipient-tutoremail" disabled="disabled" name="recipient-tutoremails" value="<?php echo $_SESSION['stud_tutoremail']; ?>">
                             <!-- Checkbox to send to PSQL -->
                             <input class="form-check-input-modal" type="checkbox"  id="flexChecktutoremail" name="recipient-tutoremail" onclick="disableMyTextName(this.name,this.id)">
                             <label class="form-check-label-modal" for="flexChecktutoremail" onclick="disableMyTextName()">Make Changes</label>
                         </div>
                         <div class="form-group">
                             <label for="recipient-stud-phone" class="col-form-label">Student Phone:</label>
-                            <input type="url" class="form-control" id="recipient-stud-phone" disabled="disabled" name="recipient-stud-phone" value="<?php echo $_SESSION['stud_phone']; ?>">
+                            <input type="url" class="form-control" id="recipient-stud-phone" disabled="disabled" name="recipient-stud-phones" value="<?php echo $_SESSION['stud_phone']; ?>">
                             <!-- Checkbox to send to PSQL -->
                             <input class="form-check-input-modal" type="checkbox"  id="flexCheckstud-phone" name="recipient-stud-phone" onclick="disableMyTextName(this.name,this.id)">
                             <label class="form-check-label-modal" for="flexCheckstud-phone" onclick="disableMyTextName()">Make Changes</label>
                         </div>
                         <div class="form-group">
                             <label for="recipient-tutorphone" class="col-form-label">Tutor Phone:</label>
-                            <input type="url" class="form-control" id="recipient-tutorphone" disabled="disabled" name="recipient-tutorphone" value="<?php echo $_SESSION['stud_tutor_phone']; ?>">
+                            <input type="url" class="form-control" id="recipient-tutorphone" disabled="disabled" name="recipient-tutorphones" value="<?php echo $_SESSION['stud_tutor_phone']; ?>">
                             <!-- Checkbox to send to PSQL -->
                             <input class="form-check-input-modal" type="checkbox"  id="flexChecktutorphone" name="recipient-tutorphone" onclick="disableMyTextName(this.name,this.id)">
                             <label class="form-check-label-modal" for="flexChecktutorphone" onclick="disableMyTextName()">Make Changes</label>
