@@ -350,14 +350,14 @@ if(isset($_POST['Submitting'])) {
                         </div>
                         <div class="form-group">
                             <label for="recipient-stud-phone" class="col-form-label">Student Phone:</label>
-                            <input type="url" class="form-control" id="recipient-stud-phone" disabled="disabled" name="recipient-stud-phones" value="<?php echo $_SESSION['stud_phone']; ?>">
+                            <input type="tel" class="form-control" id="recipient-stud-phone" disabled="disabled" name="recipient-stud-phones" value="<?php echo $_SESSION['stud_phone']; ?>">
                             <!-- Checkbox to send to PSQL -->
                             <input class="form-check-input-modal" type="checkbox"  id="flexCheckstud-phone" name="recipient-stud-phone" onclick="disableMyTextName(this.name,this.id)">
                             <label class="form-check-label-modal" for="flexCheckstud-phone" onclick="disableMyTextName()">Make Changes</label>
                         </div>
                         <div class="form-group">
                             <label for="recipient-tutorphone" class="col-form-label">Tutor Phone:</label>
-                            <input type="url" class="form-control" id="recipient-tutorphone" disabled="disabled" name="recipient-tutorphones" value="<?php echo $_SESSION['stud_tutor_phone']; ?>">
+                            <input type="tel" class="form-control" id="recipient-tutorphone" disabled="disabled" name="recipient-tutorphones" value="<?php echo $_SESSION['stud_tutor_phone']; ?>">
                             <!-- Checkbox to send to PSQL -->
                             <input class="form-check-input-modal" type="checkbox"  id="flexChecktutorphone" name="recipient-tutorphone" onclick="disableMyTextName(this.name,this.id)">
                             <label class="form-check-label-modal" for="flexChecktutorphone" onclick="disableMyTextName()">Make Changes</label>
