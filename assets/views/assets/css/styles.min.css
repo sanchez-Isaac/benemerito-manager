@@ -297,7 +297,14 @@
     margin-left: 1.95rem;
     font-size: smaller;
 }
+@media (max-width:1679px)/*Smaller than the px specified*/
+{
+    .goback{
+        margin-left: 173px;
+    }
 
+
+}
 @media (max-width:1200px)/*Smaller than the px specified*/
 {
     .goback{
