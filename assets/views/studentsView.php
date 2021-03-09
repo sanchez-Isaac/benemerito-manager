@@ -37,6 +37,49 @@ if (pg_num_rows($result) > 0) {
 }
 
 
+
+if ($_SESSION['studentID']){
+    unset ($_SESSION['studentID']);
+}
+
+if (isset($_SESSION['student_name'])){
+    unset ($_SESSION['student_name']);
+}
+
+
+if ($_SESSION['stu_middle_name']){
+    unset ($_SESSION['stu_middle_name']);
+}
+
+if (isset($_SESSION['stud_last_name'])){
+    unset ($_SESSION['stud_last_name']);
+}
+
+if (isset($_SESSION['stud_birthdate'])){
+    unset ($_SESSION['stud_birthdate']);
+}
+
+if (isset($_SESSION['stud_email'])){
+    unset ($_SESSION['stud_email']);
+}
+
+if (isset($_SESSION['stud_tutoremail'])){
+    unset ($_SESSION['stud_tutoremail']);
+}
+
+if (isset($_SESSION['stud_phone'])){
+    unset ($_SESSION['stud_phone']);
+}
+
+if ($_SESSION['stud_tutor_phone']){
+    unset ($_SESSION['stud_tutor_phone']);
+}
+
+
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html>
