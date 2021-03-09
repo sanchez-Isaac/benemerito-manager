@@ -163,7 +163,7 @@ if (isset($_SESSION['stud_tutor_phone'])){
                 </thead>
                 <tbody>
 <?php
-                $query = $query = 'SELECT DISTINCT teacher_id, adm_name, middle_name, last_name, email, birthdate FROM teacher order by student_id';
+                $query = $query = 'SELECT DISTINCT teacher_id, adm_name, middle_name, last_name, email, birthdate FROM teacher order by teacher_id';
                 $con = get_db();
                 $result = pg_query( $con, $query);
                 if (pg_num_rows($result) > 0) {
