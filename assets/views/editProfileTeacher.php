@@ -29,7 +29,7 @@ if($_SESSION['recipient-names'] !== ""){
 if($_SESSION['recipient-middles'] !== ""){
 
     $user_middle = $_SESSION['recipient-middles'];
-    $query = "UPDATE student SET middle_name = '$user_middle' WHERE student_id = '$user_id';";
+    $query = "UPDATE teacher SET middle_name = '$user_middle' WHERE teacher_id = '$user_id';";
     pg_query($con ,$query);
     // pg_close($con);
     $_SESSION['teach_middle_name'] = $user_middle;
@@ -39,7 +39,7 @@ if($_SESSION['recipient-middles'] !== ""){
 
 if($_SESSION['recipient-lasts'] !== "") {
     $user_last = $_SESSION['recipient-lasts'];
-    $query = "UPDATE student SET last_name = '$user_last' WHERE student_id = '$user_id';";
+    $query = "UPDATE teacher SET last_name = '$user_last' WHERE teacher_id = '$user_id';";
     pg_query($con ,$query);
     // pg_close($con);
     $_SESSION['teach_last_name'] = $user_last;
@@ -49,7 +49,7 @@ if($_SESSION['recipient-lasts'] !== "") {
 if($_SESSION['recipient-births'] !== ""){
 
     $user_birth = $_SESSION['recipient-births'];
-    $query = "UPDATE student SET birthdate = '$user_birth' WHERE student_id = '$user_id';";
+    $query = "UPDATE teacher SET birthdate = '$user_birth' WHERE teacher_id = '$user_id';";
     pg_query($con ,$query);
     // pg_close($con);
     $_SESSION['teach_birthdate'] = $user_birth;
@@ -57,29 +57,29 @@ if($_SESSION['recipient-births'] !== ""){
 
 if($_SESSION['recipient-emails'] !== ""){
     $user_email = $_SESSION['recipient-emails'];
-    $query = "UPDATE student SET email = '$user_email' WHERE student_id = '$user_id';";
+    $query = "UPDATE teacher SET email = '$user_email' WHERE teacher_id = '$user_id';";
     pg_query($con ,$query);
     // pg_close($con);
     $_SESSION['teach_email'] = $user_email;
 }
 
-if($_SESSION['recipient-stud-phone'] !== ""){
-    $studephone = $_SESSION['recipient-stud-phone'];
-    $query = "UPDATE student SET student_phone = '$studephone' WHERE student_id = '$user_id';";
+if($_SESSION['recipient-teachm-phone'] !== ""){
+    $studephone = $_SESSION['recipient-teachm-phone'];
+    $query = "UPDATE teacher SET mobile_phone = '$studephone' WHERE teacher_id = '$user_id';";
     pg_query($con ,$query);
     // pg_close($con);
     $_SESSION['teach_m_phone'] = $studephone;
 }
 
-if($_SESSION['recipient-tutorphone'] !== ""){
-    $tutorphone = $_SESSION['recipient-tutorphone'];
-    $query = "UPDATE student SET tutor_phone = '$tutorphone' WHERE student_id = '$user_id';";
+if($_SESSION['recipient-teach-phone'] !== ""){
+    $tutorphone = $_SESSION['recipient-teach-phone'];
+    $query = "UPDATE teacher SET home_phone = '$tutorphone' WHERE teacher_id = '$user_id';";
     pg_query($con ,$query);
     // pg_close($con);
     $_SESSION['teach_phone'] = $tutorphone;
 }
 
-if($_SESSION['recipient-tutorphone'] !== ""){
+if($_SESSION['recipient-zoom'] !== ""){
     $user_zoom = $_SESSION['recipient-zoom'];
     $query = "UPDATE teacher SET zoomoffice = '$user_zoom' WHERE teacher_id = '$user_id';";
     pg_query($con ,$query);
