@@ -295,7 +295,7 @@ if(isset($_POST['Submitting'])) {
 
 
 
-<form  method="post" action="student_view_profile.php?">
+<form  method="post" action="teacher_view_profile.php?">
     <div class="modal fade" id="sqlModal" tabindex="-1" role="dialog" aria-labelledby="sqlModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
