@@ -231,6 +231,10 @@ if(isset($_POST['Submitting'])) {
                             <td> <?php echo $_SESSION['teach_email']; ?></td>
                         </tr>
                         <tr>
+                            <td>Teacher Zoom:</td>
+                            <td> <?php echo $_SESSION['teach_zoom']; ?></td>
+                        </tr>
+                        <tr>
                             <td>Teacher Mobile Phone:</td>
                             <td> <?php echo $_SESSION['teach_m_phone']; ?></td>
                         </tr>

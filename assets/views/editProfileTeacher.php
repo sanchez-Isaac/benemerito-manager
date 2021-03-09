@@ -79,7 +79,7 @@ if($_SESSION['recipient-teach-phone'] !== ""){
     $_SESSION['teach_phone'] = $tutorphone;
 }
 
-if($_SESSION['recipient-zoom'] !== ""){
+if($_SESSION['recipient-zooms'] !== ""){
     $user_zoom = $_SESSION['recipient-zoom'];
     $query = "UPDATE teacher SET zoomoffice = '$user_zoom' WHERE teacher_id = '$user_id';";
     pg_query($con ,$query);
@@ -110,7 +110,9 @@ unset ($_SESSION['recipient-lasts'] );
 unset ($_SESSION['recipient-births']);
 unset ($_SESSION['recipient-emails'] );
 unset ($_SESSION['recipient-tutoremail']);
-unset ($_SESSION['recipient-stud-phone'] );
-unset ($_SESSION['recipient-tutorphone'] );
+unset ($_SESSION['recipient-teachm-phone'] );
+unset ($_SESSION['recipient-teach-phone'] );
+unset ($_SESSION['recipient-zooms'] );
+
 
 header("Location: teacher_view_profile.php?edition=Success");
