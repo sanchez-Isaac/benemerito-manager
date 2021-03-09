@@ -1,5 +1,4 @@
 <?php
-<?php
 require ('../dbConnect/DbConnect.php');
 session_start();
 
