@@ -157,13 +157,13 @@ if (isset($_SESSION['stud_tutor_phone'])){
                     <th scope="col">Middle name</th>
                     <th scope="col">Last name</th>
                     <th scope="col">E-mail</th>
-                    <th scope="col">Tutor Email</th>
+                    <th scope="col">birthdate</th>
                     <th scope="col"> </th>
                 </tr>
                 </thead>
                 <tbody>
 <?php
-                $query = $query = 'SELECT DISTINCT student_id, stu_name, middle_name, last_name, email, tutor_email FROM student order by student_id';
+                $query = $query = 'SELECT DISTINCT teacher_id, adm_name, middle_name, last_name, email, birthdate FROM teacher order by student_id';
                 $con = get_db();
                 $result = pg_query( $con, $query);
                 if (pg_num_rows($result) > 0) {
@@ -175,7 +175,7 @@ if (isset($_SESSION['stud_tutor_phone'])){
                     echo "<td>".$row[2]."</td>";
                     echo "<td>".$row[3]."</td>";
                     echo "<td> <a href='mailto:".$row[4]."'>".$row[4]."</a></td>";
-                    echo "<td> <a href='mailto:".$row[5]."'>".$row[5]."</a></td>";
+                    echo "<td>".$row[5]."</td>";
                     echo "<td> <button value='".$row[0]."'name='submit#".$row[0]."' type='submit' class='btn btn-outline-primary btn-sm'>View/Edit</button>"."</td>";
                     echo "</tr>";
                 echo "</form>";
