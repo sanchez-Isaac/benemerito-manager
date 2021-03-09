@@ -23,14 +23,14 @@ function pre_r($array)
 }
 
 
-$query2 = $query = 'SELECT DISTINCT student_id FROM student order by student_id';
+$query2 = $query = 'SELECT DISTINCT teacher_id FROM teacher order by teacher_id';
 $con2 = get_db();
 $result = pg_query($con2, $query2);
 if (pg_num_rows($result) > 0) {
     while ($row = pg_fetch_array($result)) {
         if (isset($_POST['submit#' . $row[0]])) {
-            $_SESSION['studentID'] = $_POST['submit#' . $row[0]];
-            header('location: student_view_profile.php?');
+            $_SESSION['teacherID'] = $_POST['submit#' . $row[0]];
+            header('location: teacher_view_profile.php?');
         }
 
     }
@@ -152,7 +152,7 @@ if (isset($_SESSION['stud_tutor_phone'])){
             <table class="table table-hover" >
                 <thead>
                 <tr>
-                    <th scope="col">Student ID</th>
+                    <th scope="col">Teacher ID</th>
                     <th scope="col">First name</th>
                     <th scope="col">Middle name</th>
                     <th scope="col">Last name</th>
@@ -168,8 +168,8 @@ if (isset($_SESSION['stud_tutor_phone'])){
                 $result = pg_query( $con, $query);
                 if (pg_num_rows($result) > 0) {
                 while ($row = pg_fetch_array($result)) {
-                echo "<form method='POST' action='studentsView.php?'>" ;
-                    echo "<tr id='stuRowid".$row[0]."'>";
+                echo "<form method='POST' action='teachersView.php?'>" ;
+                    echo "<tr id='teachRowid".$row[0]."'>";
                     echo "<th scope='row'>".$row[0]."</th>";
                     echo "<td>".$row[1]."</td>";
                     echo "<td>".$row[2]."</td>";
