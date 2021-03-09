@@ -80,7 +80,7 @@ if($_SESSION['recipient-teach-phone'] !== ""){
 }
 
 if($_SESSION['recipient-zooms'] !== ""){
-    $user_zoom = $_SESSION['recipient-zoom'];
+    $user_zoom = $_SESSION['recipient-zooms'];
     $query = "UPDATE teacher SET zoomoffice = '$user_zoom' WHERE teacher_id = '$user_id';";
     pg_query($con ,$query);
     // pg_close($con);
