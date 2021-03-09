@@ -38,9 +38,9 @@ if (pg_num_rows($result) > 0) {
 
 
 
-if ($_SESSION['studentID']){
-    unset ($_SESSION['studentID']);
-}
+//if ($_SESSION['studentID']){
+ //   unset ($_SESSION['studentID']);
+//}
 
 if (isset($_SESSION['student_name'])){
     unset ($_SESSION['student_name']);
