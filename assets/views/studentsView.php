@@ -71,7 +71,7 @@ if (isset($_SESSION['stud_phone'])){
     unset ($_SESSION['stud_phone']);
 }
 
-if ($_SESSION['stud_tutor_phone']){
+if (isset($_SESSION['stud_tutor_phone'])){
     unset ($_SESSION['stud_tutor_phone']);
 }
 
