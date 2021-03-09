@@ -66,6 +66,35 @@ if (isset($_SESSION['stud_tutor_phone'])){
     unset ($_SESSION['stud_tutor_phone']);
 }
 
+/*Delete Session rows not in use for each of the
+spaces in teacher profile view.
+*/
+if (isset($_SESSION['teach_name'])){
+    unset ($_SESSION['teach_name']);
+}
+if ($_SESSION['teach_middle_name']){
+    unset ($_SESSION['teach_middle_name']);
+}
+if (isset($_SESSION['teach_last_name'])){
+    unset ($_SESSION['teach_last_name']);
+}
+if (isset($_SESSION['teach_birthdate'])){
+    unset ($_SESSION['teach_birthdate']);
+}
+if (isset($_SESSION['teach_zoom'])){
+    unset ($_SESSION['teach_zoom']);
+}
+if (isset($_SESSION['teach_email'])){
+    unset ($_SESSION['teach_email']);
+}
+if (isset($_SESSION['teach_m_phone'])){
+    unset ($_SESSION['teach_m_phone']);
+}
+if (isset($_SESSION['teach_phone'])){
+    unset ($_SESSION['teach_phone']);
+}
+
+
 
 
 
