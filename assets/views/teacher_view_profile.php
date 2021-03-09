@@ -176,13 +176,13 @@ if(isset($_POST['Submitting'])) {
             if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" && $_SESSION['teach_middle_name'] != "")
             {
 
-                echo '<h3>'.$_SESSION['teach_name']." ". $_SESSION['teach_middle_namee']. " ". $_SESSION['teach_last_name']. '</h3>';
+                echo '<h3>'.$_SESSION['teach_name']." ". $_SESSION['teach_middle_name']. " ". $_SESSION['teach_last_name']. '</h3>';
                 echo '<h7>Teacher Profile</h7>';
             }
             else
                 if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" && $_SESSION['teach_middle_name'] != "")
                 {
-                    echo '<h3>'.$_SESSION['teach_name']." ". $_SESSION['teach_middle_namee']. " ". $_SESSION['teach_last_name']. '</h3>';
+                    echo '<h3>'.$_SESSION['teach_name']." ". $_SESSION['teach_middle_name']. " ". $_SESSION['teach_last_name']. '</h3>';
                     echo '<h7>Teacher Profile</h7>';
 
                 }
@@ -196,7 +196,7 @@ if(isset($_POST['Submitting'])) {
                     else
                         if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" && $_SESSION['teach_middle_name'] == "")
                         {
-                            echo '<h3>'.$_SESSION['teach_name']." ". $_SESSION['teach_middle_namee']. " ". $_SESSION['teach_last_name']. '</h3>';
+                            echo '<h3>'.$_SESSION['teach_name']." ". $_SESSION['teach_middle_name']. " ". $_SESSION['teach_last_name']. '</h3>';
                             echo '<h7>Teacher Profile</h7>';
 
                         }
