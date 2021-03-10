@@ -126,7 +126,7 @@
     /*  gives format to the active link in nav bar, it requires
     the id active to work, please dont delete id active on html*/
     color: #ffffff;
-    background-color:#0062cc;
+    background-color: #007bff;
     border-radius: 20px;
     box-shadow:none;
     background:0 0;
