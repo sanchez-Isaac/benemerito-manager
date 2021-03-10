@@ -156,7 +156,7 @@
     /*Gives color to the nav options not active on hover*/
     transition: background-color .35s;
     color:#fff!important;
-    background-color:#0062cc;
+    background-color: #007bff;
     border-radius: 20px;
 
 
