@@ -110,34 +110,15 @@ echo '</pre>';
             <div class="row">
                 <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 offset-sm-0"></div><!-- Start: table for admin -->
                 <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
-                    <table class="table">
-                        <tbody>
-                        <tr>
-                            <td>
-                                <div class="d-grid gap-2">
-                                    <button class="btn btn-primary btn-lg" id="teacherbtn" type="button">Teachers</button></td>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary btn-lg" id="teacherbtn" type="button">Teachers</button>
                             </div>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="d-grid gap-2">
-                                    <button class="btn btn-primary btn-lg" id="studentbtn" type="button">Students</button>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="d-grid gap-2">
-                                    <button class="btn btn-primary btn-lg" id="classbtn" type="button">Classes</button>
-                                </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-
-
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary btn-lg" id="studentbtn" type="button">Students</button>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary btn-lg" id="classbtn" type="button">Classes</button>
+                    </div>
                 </div><!-- End: table for admin -->
 
                 <!-- Start: table for picture -->
