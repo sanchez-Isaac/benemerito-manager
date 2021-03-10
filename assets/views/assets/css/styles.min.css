@@ -298,7 +298,6 @@
     font-size: smaller;
 }
 
-.btn {
-    text-align: left;
-    padding: 0.375rem 2.75rem;
+#teacherbtn #studentbtn #classbtn {
+    text-align: left;padding: 0.375rem 2.75rem; width: 79%;
 }
