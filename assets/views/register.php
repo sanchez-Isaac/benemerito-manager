@@ -113,23 +113,17 @@ echo '</pre>';
 
                     <div class="d-grid gap-2">
                         <button class="btn btn-primary" id="teacherbtn" type="button">Teachers</button>
-                        <br>
+                        <br><br>
                         <button class="btn btn-primary" id="studentbtn" type="button">Students</button>
-                        <br>
+                        <br><br>
                         <button class="btn btn-primary" id="classbtn" type="button">Classes</button>
-                        <br>
+                        <br><br>
                     </div>
                 </div><!-- End: table for admin -->
 
                 <!-- Start: table for picture -->
                 <div class="col-md-5 col-lg-5 col-xl-5">
 
-
-
-                    <div class="d-grid gap-2">
-                        <button class="btn btn-primary" type="button">Button</button>
-                        <button class="btn btn-primary" type="button">Button</button>
-                    </div>
 
 
 
