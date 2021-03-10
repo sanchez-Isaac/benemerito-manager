@@ -115,14 +115,14 @@ echo '</pre>';
                         <tr>
                             <td>
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary" id="teacherbtn" type="button">Teachers</button></td>
+                                    <button class="btn btn-primary btn-lg" id="teacherbtn" type="button">Teachers</button></td>
                             </div>
 
                         </tr>
                         <tr>
                             <td>
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary" id="studentbtn" type="button">Students</button>
+                                    <button class="btn btn-primary btn-lg" id="studentbtn" type="button">Students</button>
                                 </div>
                             </td>
 
@@ -130,7 +130,7 @@ echo '</pre>';
                         <tr>
                             <td>
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-primary" id="classbtn" type="button">Classes</button>
+                                    <button class="btn btn-primary btn-lg" id="classbtn" type="button">Classes</button>
                                 </div>
                             </td>
                         </tr>
