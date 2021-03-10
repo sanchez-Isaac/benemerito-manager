@@ -150,7 +150,7 @@ if (isset($_SESSION['teach_phone'])){
                                 <li  id="nactive" class="nav-item"><a class="nav-link"  href="profile.php">Profile</a></li><p class="desapair"> -- </p>
                                 <li  id="nactive" class="nav-item"><a class="nav-link"  href="studentsView.php">Students</a></li><p class="desapair"> -- </p>
                                 <li  class="nav-item"><a class="nav-link active" id="active" href="teachersView.php">Teachers</a></li><p class="desapair"> -- </p>
-                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="#">Register</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="register.php">Register</a></li><p class="desapair"> -- </p>
 
                                 </li>
                             </ul>
