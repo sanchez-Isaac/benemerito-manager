@@ -112,7 +112,7 @@ echo '</pre>';
                 <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
 
 
-                        <button class="teacherbtn btn btn-primary btn-block " id="teacherbtn" type="button">Teachers</button>
+                        <button class="btn btn-primary btn-block " id="teacherbtn" type="button">Teachers</button>
 
                         <button class="btn btn-primary btn-block" id="studentbtn" type="button">Students</button>
 
