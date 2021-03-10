@@ -298,13 +298,8 @@
     font-size: smaller;
 }
 
-#teacherbtn{
+.teacherbtn{
     padding: 0.375rem 1.75rem;
     text-align: left;
     background-color: #0b2e13;
-}
-
-.btn-primary {
-    padding: 0.375rem 1.75rem;
-    text-align: left;
 }
