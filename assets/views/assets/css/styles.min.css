@@ -298,8 +298,15 @@
     font-size: smaller;
 }
 
-.btn{
-    padding: 0.375rem 1.75rem;
-    text-align: left;
-    background-color: #0b2e13;
+.btn-primaryn{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primaryn:hover{
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+
 }
