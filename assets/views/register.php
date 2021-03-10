@@ -112,11 +112,11 @@ echo '</pre>';
                 <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
 
 
-                        <button style="text-align: left;padding: 0.375rem 2.75rem; width: 79%;" class="btn btn-secondary btn-block" id="teacherbtn" type="button">Teachers</button>
+                        <button style="text-align: left;padding: 0.375rem 2.75rem; width: 79%;"    class="btn btn-secondary btn-block" type="button">Teachers</button>
+                        <a href="#" style="text-align: left;padding: 0.375rem 2.75rem; width: 79%;"class="btn btn-secondary btn-block" role="button" data-bs-toggle="button">Teachers</a>
+                        <button style="text-align: left;padding: 0.375rem 2.75rem; width: 79%;" class="btn btn-secondary btn-block" type="button">Students</button>
 
-                        <button style="text-align: left;padding: 0.375rem 2.75rem; width: 79%;" class="btn btn-secondary btn-block" id="studentbtn" type="button">Students</button>
-
-                        <button style="text-align: left;padding: 0.375rem 2.75rem; width: 79%;" class="btn btn-secondary btn-block" id="classbtn" type="button">Classes</button>
+                        <button style="text-align: left;padding: 0.375rem 2.75rem; width: 79%;" class="btn btn-secondary btn-block" type="button">Classes</button>
 
                 </div><!-- End: table for admin -->
 
