@@ -112,11 +112,11 @@ echo '</pre>';
                 <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
 
 
-                        <button class="btn btn-primary btn-block" id="teacherbtn" type="button">Teachers</button>
+                        <button class="btn btn-secondary btn-block" id="teacherbtn" type="button">Teachers</button>
 
-                        <button class="btn btn-primary btn-block" id="studentbtn" type="button">Students</button>
+                        <button class="btn btn-secondary btn-block" id="studentbtn" type="button">Students</button>
 
-                        <button class="btn btn-primary btn-block" id="classbtn" type="button">Classes</button>
+                        <button class="btn btn-secondary btn-block" id="classbtn" type="button">Classes</button>
 
                 </div><!-- End: table for admin -->
 
