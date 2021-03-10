@@ -114,9 +114,9 @@ echo '</pre>';
 
                         <button style="text-align: left;padding: 0.375rem 2.75rem;" class="btn btn-secondary btn-block" id="teacherbtn" type="button">Teachers</button>
 
-                        <button class="btn btn-secondary btn-block" id="studentbtn" type="button">Students</button>
+                    <button style="text-align: left;padding: 0.375rem 2.75rem;" class="btn btn-secondary btn-block" id="studentbtn" type="button">Students</button>
 
-                        <button class="btn btn-secondary btn-block" id="classbtn" type="button">Classes</button>
+                    <button style="text-align: left;padding: 0.375rem 2.75rem;" class="btn btn-secondary btn-block" id="classbtn" type="button">Classes</button>
 
                 </div><!-- End: table for admin -->
 
