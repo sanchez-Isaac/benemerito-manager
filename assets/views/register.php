@@ -111,14 +111,14 @@ echo '</pre>';
                 <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 offset-sm-0"></div><!-- Start: table for admin -->
                 <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
 
-                    <div class="d-grid gap-2">
-                        <button class="btn btn-primary" id="teacherbtn" type="button">Teachers</button>
+
+                        <button class="btn btn-primary btn-block" id="teacherbtn" type="button">Teachers</button>
                         <br><br>
-                        <button class="btn btn-primary" id="studentbtn" type="button">Students</button>
+                        <button class="btn btn-primary btn-block" id="studentbtn" type="button">Students</button>
                         <br><br>
-                        <button class="btn btn-primary" id="classbtn" type="button">Classes</button>
+                        <button class="btn btn-primary btn-block" id="classbtn" type="button">Classes</button>
                         <br><br>
-                    </div>
+
                 </div><!-- End: table for admin -->
 
                 <!-- Start: table for picture -->
