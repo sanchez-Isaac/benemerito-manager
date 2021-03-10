@@ -110,9 +110,9 @@ echo '</pre>';
             <div class="row">
                 <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 offset-sm-0"></div><!-- Start: table for admin -->
                 <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
-                    <a href="#" style="text-align: left;padding: 0.375rem 2.75rem; width: 79%;"class="btn btn-secondary btn-block" role="button" data-bs-toggle="button">Teachers</a>
-                    <a href="#" style="text-align: left;padding: 0.375rem 2.75rem; width: 79%;"class="btn btn-secondary btn-block" role="button" data-bs-toggle="button">Student</a>
-                    <a href="#" style="text-align: left;padding: 0.375rem 2.75rem; width: 79%;"class="btn btn-secondary btn-block" role="button" data-bs-toggle="button">Classes</a>
+                    <a href="#" style="text-align: left;padding: 0.375rem 2.75rem; width: 62%;"class="btn btn-primary btn-block" role="button" data-bs-toggle="button">Teachers</a>
+                    <a href="#" style="text-align: left;padding: 0.375rem 2.75rem; width: 62%;"class="btn btn-primary btn-block" role="button" data-bs-toggle="button">Student</a>
+                    <a href="#" style="text-align: left;padding: 0.375rem 2.75rem; width: 62%;"class="btn btn-primary btn-block" role="button" data-bs-toggle="button">Classes</a>
                 </div><!-- End: table for admin -->
 
                 <!-- Start: table for picture -->
