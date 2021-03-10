@@ -113,11 +113,11 @@ echo '</pre>';
 
 
                         <button class="btn btn-primary btn-block" id="teacherbtn" type="button">Teachers</button>
-                        <br><br>
+
                         <button class="btn btn-primary btn-block" id="studentbtn" type="button">Students</button>
-                        <br><br>
+
                         <button class="btn btn-primary btn-block" id="classbtn" type="button">Classes</button>
-                        <br><br>
+
 
                 </div><!-- End: table for admin -->
 
