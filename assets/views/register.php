@@ -113,13 +113,14 @@ echo '</pre>';
                     <table class="table">
                         <tbody>
                         <tr>
-                            <button class="btn btn-primary" id="teacherbtn" type="button">Teachers</button>
+                            <td><button class="btn btn-primary" id="teacherbtn" type="button">Teachers</button></td>
+
                         </tr>
                         <tr>
-                            <button class="btn btn-primary" id="studentbtn" type="button">Students</button>
+                            <td><button class="btn btn-primary" id="studentbtn" type="button">Students</button></td>
                         </tr>
                         <tr>
-                            <button class="btn btn-primary" id="classbtn" type="button">Classes</button>
+                            <td><button class="btn btn-primary" id="classbtn" type="button">Classes</button></td>
                         </tr>
                         </tbody>
                     </table>
