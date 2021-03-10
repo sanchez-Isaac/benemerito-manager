@@ -110,18 +110,29 @@ echo '</pre>';
             <div class="row">
                 <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 offset-sm-0"></div><!-- Start: table for admin -->
                 <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+
                     <div class="d-grid gap-2">
-                        <button class="btn btn-primary btn-lg" id="teacherbtn" type="button">Teachers</button>
+                        <button class="btn btn-primary" id="teacherbtn" type="button">Teachers</button>
                         <br>
-                        <button class="btn btn-primary btn-lg" id="studentbtn" type="button">Students</button>
+                        <button class="btn btn-primary" id="studentbtn" type="button">Students</button>
                         <br>
-                        <button class="btn btn-primary btn-lg" id="classbtn" type="button">Classes</button>
+                        <button class="btn btn-primary" id="classbtn" type="button">Classes</button>
                         <br>
                     </div>
                 </div><!-- End: table for admin -->
 
                 <!-- Start: table for picture -->
                 <div class="col-md-5 col-lg-5 col-xl-5">
+
+
+
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">Button</button>
+                        <button class="btn btn-primary" type="button">Button</button>
+                    </div>
+
+
+
 
                     <div class="topright">
                         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140"  fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
