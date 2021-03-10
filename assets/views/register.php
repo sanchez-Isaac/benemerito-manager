@@ -124,10 +124,6 @@ echo '</pre>';
                 <!-- Start: table for picture -->
                 <div class="col-md-5 col-lg-5 col-xl-5">
 
-
-
-
-
                     <div class="topright">
                         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140"  fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
