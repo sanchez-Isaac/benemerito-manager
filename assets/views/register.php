@@ -118,7 +118,6 @@ echo '</pre>';
 
                         <button class="btn btn-primary btn-block" id="classbtn" type="button">Classes</button>
 
-
                 </div><!-- End: table for admin -->
 
                 <!-- Start: table for picture -->
