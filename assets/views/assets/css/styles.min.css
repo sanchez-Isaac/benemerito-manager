@@ -325,3 +325,6 @@
 #inputPass{
     width: 31%;
 }
+.form-labels {
+    text-align: right;
+}

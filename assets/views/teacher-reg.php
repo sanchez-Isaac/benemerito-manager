@@ -154,40 +154,40 @@ if(isset($_POST['Submitting'])) {
 
                 <table style="width:100%">
                     <tr>
-                        <td><label for="inputName" class="form-label">First Name:</label></td>
+                        <td><label for="inputName" class="form-labels">First Name:</label></td>
                         <td><input type="text" class="form-control" id="inputName" required></td>
                     </tr>
                     <tr>
-                        <td><label for="inputMiddle" class="form-label">Middle Name:</label></td>
+                        <td><label for="inputMiddle" class="form-labels">Middle Name:</label></td>
                         <td><input type="text" class="form-control" id="inputMiddle"></td>
 
                     </tr>
                     <tr>
-                        <td><label for="inputLast" class="form-label">Last Name:</label></td>
+                        <td><label for="inputLast" class="form-labels">Last Name:</label></td>
                         <td><input type="text" class="form-control" id="inputLast" required></td>
                     </tr>
                     <tr>
-                        <td><label for="inputBirth" class="form-label">Birthdate:</label></td>
+                        <td><label for="inputBirth" class="form-labels">Birthdate:</label></td>
                         <td> <input type="date" class="form-control" id="inputBirth" required></td>
                     </tr>
                     <tr>
-                        <td> <label for="inputEmail" class="form-label">Email:</label></td>
+                        <td> <label for="inputEmail" class="form-labels">Email:</label></td>
                         <td> <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required></td>
                     </tr>
                     <tr>
-                        <td><label for="inputZoom" class="form-label">Zoom:</label></td>
+                        <td><label for="inputZoom" class="form-labels">Zoom:</label></td>
                         <td><input type="url" class="form-control" id="inputZoom"></td>
                     </tr>
                     <tr>
-                        <td><label for="inputMPhone" class="form-label">Mobile:</label></td>
+                        <td><label for="inputMPhone" class="form-labels">Mobile:</label></td>
                         <td><input type="tel" class="form-control" id="inputMPhone" required></td>
                     </tr>
                     <tr>
-                        <td><label for="inputPhone" class="form-label">Telephone:</label></td>
+                        <td><label for="inputPhone" class="form-labels">Telephone:</label></td>
                         <td><input type="tel" class="form-control" id="inputPhone"></td>
                     </tr>
                     <tr>
-                        <td><label for="inputPass" class="form-label">Password:</label></td>
+                        <td><label for="inputPass" class="form-labels">Password:</label></td>
                         <td><input size="16" type="password" name="inputPass" class="form-control" id="inputPass" placeholder="*******" pattern=".{5,10}" required title="5 to 10 characters" ></td>
                     </tr>
                 </table>
