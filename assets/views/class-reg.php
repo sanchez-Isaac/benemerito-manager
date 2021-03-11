@@ -104,10 +104,10 @@ if(isset($_POST['Submitting'])) {
                         <div class="collapse navbar-collapse" id="navcol-1">
                             <ul class="nav navbar-nav mr-auto" >
                                 <li  id="nactive" class="nav-item"><a class="nav-link" href="adminHome.php">Home</a></li><p class="desapair"> -- </p>
-                                <li  id="nactive" class="nav-item"><a class="nav-link active"  id="active" href="profile.php">Profile</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link"   id="active" href="profile.php">Profile</a></li><p class="desapair"> -- </p>
                                 <li  id="nactive" class="nav-item"><a class="nav-link"  href="studentsView.php">Students</a></li><p class="desapair"> -- </p>
                                 <li  id="nactive" class="nav-item"><a class="nav-link"  href="teachersView.php">Teachers</a></li><p class="desapair"> -- </p>
-                                <li  id="nactive" class="nav-item"><a class="nav-link"  href="register.php">Register</a></li><p class="desapair"> -- </p>
+                                <li  id="nactive" class="nav-item"><a class="nav-link active"  href="register.php">Register</a></li><p class="desapair"> -- </p>
 
                                 </li>
                             </ul>
@@ -137,7 +137,7 @@ if(isset($_POST['Submitting'])) {
         <div class="col-md-12">
             <h3>Registration</h3>
 
-            <a style="text-align: left;padding: 0.375rem 2.75rem; width: 25%;"class="btn btn-primary btn-block" role="button" data-bs-toggle="button">Teachers</a>
+            <a style="text-align: left;padding: 0.375rem 2.75rem; width: 25%;"class="btn btn-primary btn-block" role="button" data-bs-toggle="button">Classes</a>
 
 
         </div>
