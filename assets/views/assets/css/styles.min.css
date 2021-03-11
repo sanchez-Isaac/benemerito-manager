@@ -298,3 +298,27 @@
     font-size: smaller;
 }
 
+#inputName {
+    width: 44%;
+}
+#inputMiddle {
+    width: 44%;
+}
+#inputLast {
+    width: 44%;
+}
+#inputBirth {
+    width: 32%;
+}
+#inputEmail {
+    width: 45%;
+}
+#inputZoom {
+    width: 60%;
+}
+#inputMPhone {
+    width: 31%;
+}
+#inputPhone{
+    width: 31%;
+}
