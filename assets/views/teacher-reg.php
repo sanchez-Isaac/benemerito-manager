@@ -139,7 +139,7 @@ if(isset($_POST['Submitting'])) {
 
             <a style="text-align: left;padding: 0.375rem 2.75rem; width: 25%;"class="btn btn-primary btn-block" role="button" data-bs-toggle="button">Teachers</a>
 
-
+            <br><br>
         </div>
         <!-- End: registration Title-->
     </div>
@@ -152,8 +152,7 @@ if(isset($_POST['Submitting'])) {
             <!-- Start: registration Form-->
             <div class="col-11 col-sm-11 col-md-6">
                 <div>
-                    <label for="inputName" class="form-label">First Name:</label>
-                    <input type="text" class="form-control" id="inputName" required>
+                    <label for="inputName" class="form-label">First Name:</label><input type="text" class="form-control" id="inputName" required>
                 </div>
                 <div>
                     <label for="inputMiddle" class="form-label">Middle Name:</label>
