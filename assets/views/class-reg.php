@@ -95,7 +95,6 @@ if(isset($_POST['Submitting'])) {
                 }
                 ?>
 
-
             </div><!-- End: profesor- admin-name -->
             <!-- Start: nav-bar -->
             <div class="col-md-12 col-xl-12">
@@ -128,55 +127,52 @@ if(isset($_POST['Submitting'])) {
 <!-- Start: 1 Row 3 Columns -->
 
 <br><br><br>
-<div>
-    <!-- Start: 1 Row 1 Column -->
-    <div></div><!-- End: 1 Row 1 Column -->
-    <!-- Start: 1 Row 4 Columns -->
-    <div>
-
-        <div class="container">
-           <h3>Registration</h3>
-
-            <br><br><br>
-
-            <div class="row">
-
-                <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 offset-sm-0"></div><!-- Start: table for admin -->
-                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
-
-
-                </div><!-- End: table for admin -->
 
 
 
 
-                <!-- Start: table for picture -->
-                <div class="col-md-5 col-lg-5 col-xl-5">
+<div class="container">
+    <div class="row">
+        <!-- Start: registration Title-->
+        <div class="col-md-12">
+            <h3>Registration</h3>
 
-                    <div class="topright">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
-                        </svg>
-                        <br>
-                        <br>
-                    </div>
+            <a style="text-align: left;padding: 0.375rem 2.75rem; width: 62%;"class="btn btn-primary btn-block" role="button" data-bs-toggle="button">Teachers</a>
+            test
 
-                </div><!-- End: table for picture -->
-                <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 offset-xl-0"></div>
-            </div>
         </div>
-    </div><!-- End: 1 Row 4 Columns -->
-    <!-- Start: 1 Row 3 Columns -->
-    <div></div><!-- End: 1 Row 3 Columns -->
-    <!-- Start: 1 Row 3 Columns -->
-    <div></div><!-- End: 1 Row 3 Columns -->
-    <!-- Start: 1 Row 2 Columns -->
-    <div></div><!-- End: 1 Row 2 Columns -->
-</div>
+        <!-- End: registration Title-->
+    </div>
 </div>
 
-</div><!-- End: 1 Row 3 Columns -->
+
+<form>
+    <div class="container">
+        <div class="row">
+            <!-- Start: registration Form-->
+            <div class="col-11 col-sm-11 col-md-6">
+
+            </div><!-- End: registration Form-->
+
+            <!-- Start: Icon Image-->
+            <div class="col-1 col-sm-1 col-md-6">
+
+            </div><!-- End: Icon Image-->
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Start: cancel and Save btn-->
+            <div class="col-md-12">
+
+            </div><!-- end: cancel and Save btn-->
+</form>
+
+
+
+    </div>
+</div>
+
 
 
 
