@@ -158,15 +158,15 @@ if(isset($_POST['Submitting'])) {
                         <option value=" * ">*</option>
                         <option value=" * ">*</option>
                     </select>
-                    <label for="inputNewClass" class="form-label">or New</label>
+                    <label for="inputNewClass" class="form-label">or New:</label>
                     <input type="text" class="form-control" id="inputNewClass">
                 </div>
                 <div>
-                    <label for="inputYearGiven" class="form-label">Year given</label>
+                    <label for="inputYearGiven" class="form-label">Year Given:</label>
                     <input type="date" class="form-control" id="inputYearGiven">
                 </div>
                 <div>
-                    <label for="inputYearGiven" class="form-label">Year given</label>
+                    <label for="inputYearGiven" class="form-label">Year Given:</label>
                     <select name="semester" id="semester">
                     <option value="1">1st Semester</option>
                     <option value="2">2nd Semester</option>
@@ -177,6 +177,7 @@ if(isset($_POST['Submitting'])) {
                     </select>
                 </div>
                 <div>
+                    <label for="inputTeacher" class="form-label">Teacher:</label>
                 <select name="teacherSelect" id="teacherSelect">
                     <option value="1">1st Semester</option>
                     <option value="2">2nd Semester</option>

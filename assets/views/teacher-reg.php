@@ -152,43 +152,43 @@ if(isset($_POST['Submitting'])) {
             <!-- Start: registration Form-->
             <div class="col-11 col-sm-11 col-md-6">
                 <div>
-                    <label for="inputName" class="form-label">First Name</label>
+                    <label for="inputName" class="form-label">First Name:</label>
                     <input type="text" class="form-control" id="inputName">
                 </div>
                 <div>
-                    <label for="inputMiddle" class="form-label">Middle Name</label>
+                    <label for="inputMiddle" class="form-label">Middle Name:</label>
                     <input type="text" class="form-control" id="inputMiddle">
                 </div>
                 <div>
-                    <label for="inputLast" class="form-label">Last Name</label>
+                    <label for="inputLast" class="form-label">Last Name:</label>
                     <input type="text" class="form-control" id="inputLast">
                 </div>
                 <div>
-                    <label for="inputBirth" class="form-label">Birthdate</label>
+                    <label for="inputBirth" class="form-label">Birthdate:</label>
                     <input type="date" class="form-control" id="inputBirth">
                 </div>
                 <div>
-                    <label for="inputEmail" class="form-label">Email</label>
+                    <label for="inputEmail" class="form-label">Email:</label>
                     <input type="email" class="form-control" id="inputEmail">
                 </div>
                 <div>
-                    <label for="inputZoom" class="form-label">Zoom</label>
+                    <label for="inputZoom" class="form-label">Zoom:</label>
                     <input type="url" class="form-control" id="inputZoom">
                 </div>
                 <div>
-                    <label for="inputMPhone" class="form-label">Mobile</label>
+                    <label for="inputMPhone" class="form-label">Mobile:</label>
                     <input type="tel" class="form-control" id="inputMPhone">
                 </div>
                 <div>
-                    <label for="inputPhone" class="form-label">Telephone</label>
+                    <label for="inputPhone" class="form-label">Telephone:</label>
                     <input type="tel" class="form-control" id="inputPhone">
                 </div>
                 <div>
-                    <label for="inputPass" class="form-label">Password</label>
+                    <label for="inputPass" class="form-label">Password:</label>
                     <input type="password" class="form-control" id="inputPass">
                 </div>
                 <div>
-                    <label for="inputClass" class="form-label">Classes</label>
+                    <label for="inputClass" class="form-label">Classes:</label>
                     <input type="text" class="form-control" id="inputClass">
                 </div>
 

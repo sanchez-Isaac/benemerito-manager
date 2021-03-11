@@ -152,31 +152,31 @@ if(isset($_POST['Submitting'])) {
             <!-- Start: registration Form-->
             <div class="col-11 col-sm-11 col-md-6">
                 <div>
-                    <label for="inputName" class="form-label">First Name</label>
+                    <label for="inputName" class="form-label">First Name:</label>
                     <input type="text" class="form-control" id="inputName">
                 </div>
                 <div>
-                    <label for="inputMiddle" class="form-label">Middle Name</label>
+                    <label for="inputMiddle" class="form-label">Middle Name:</label>
                     <input type="text" class="form-control" id="inputMiddle">
                 </div>
                 <div>
-                    <label for="inputLast" class="form-label">Last Name</label>
+                    <label for="inputLast" class="form-label">Last Name:</label>
                     <input type="text" class="form-control" id="inputLast">
                 </div>
                 <div>
-                    <label for="inputBirth" class="form-label">Birthdate</label>
+                    <label for="inputBirth" class="form-label">Birthdate:</label>
                     <input type="date" class="form-control" id="inputBirth">
                 </div>
                 <div>
-                    <label for="inputEmail" class="form-label">Email</label>
+                    <label for="inputEmail" class="form-label">Email:</label>
                     <input type="email" class="form-control" id="inputEmail">
                 </div>
                 <div>
-                    <label for="inputTutorE" class="form-label">Tutor Email</label>
+                    <label for="inputTutorE" class="form-label">Tutor Email:</label>
                     <input type="email" class="form-control" id="inputTutorE">
                 </div>
                 <div>
-                    <label for="inputClass" class="form-label">Classes</label>
+                    <label for="inputClass" class="form-label">Classes:</label>
                     <input type="text" class="form-control" id="inputClass">
                 </div>
 
