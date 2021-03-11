@@ -153,7 +153,7 @@ if(isset($_POST['Submitting'])) {
             <div class="col-11 col-sm-11 col-md-6">
                 <div>
                     <label for="inputName" class="form-label">First Name:</label>
-                    <input type="text" class="form-control" id="inputName">
+                    <input type="text" class="form-control" id="inputName" required>
                 </div>
                 <div>
                     <label for="inputMiddle" class="form-label">Middle Name:</label>
@@ -161,15 +161,15 @@ if(isset($_POST['Submitting'])) {
                 </div>
                 <div>
                     <label for="inputLast" class="form-label">Last Name:</label>
-                    <input type="text" class="form-control" id="inputLast">
+                    <input type="text" class="form-control" id="inputLast" required>
                 </div>
                 <div>
                     <label for="inputBirth" class="form-label">Birthdate:</label>
-                    <input type="date" class="form-control" id="inputBirth">
+                    <input type="date" class="form-control" id="inputBirth" required>
                 </div>
                 <div>
                     <label for="inputEmail" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="inputEmail">
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required>
                 </div>
                 <div>
                     <label for="inputZoom" class="form-label">Zoom:</label>
@@ -177,7 +177,7 @@ if(isset($_POST['Submitting'])) {
                 </div>
                 <div>
                     <label for="inputMPhone" class="form-label">Mobile:</label>
-                    <input type="tel" class="form-control" id="inputMPhone">
+                    <input type="tel" class="form-control" id="inputMPhone" required>
                 </div>
                 <div>
                     <label for="inputPhone" class="form-label">Telephone:</label>
@@ -188,7 +188,7 @@ if(isset($_POST['Submitting'])) {
                     <input size="16" type="password" name="inputPass" class="form-control" id="inputPass" placeholder="*******" pattern=".{5,10}" required title="5 to 10 characters" >
                 </div>
 
-            <</div><!-- End: registration Form-->
+            </div><!-- End: registration Form-->
 
             <!-- Start: Icon Image-->
             <div class="col-1 col-sm-1 col-md-6">
@@ -200,6 +200,7 @@ if(isset($_POST['Submitting'])) {
         <div class="row">
             <!-- Start: cancel and Save btn-->
             <div class="col-md-12">
+
 
             </div><!-- end: cancel and Save btn-->
 </form>
