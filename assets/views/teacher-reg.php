@@ -152,7 +152,7 @@ if(isset($_POST['Submitting'])) {
             <!-- Start: registration Form-->
             <div class="col-11 col-sm-11 col-md-6">
 
-                <table>
+                <table style="width:100%">
                     <tr>
                         <td><label for="inputName" class="form-label">First Name:</label></td>
                         <td><input type="text" class="form-control" id="inputName" required></td>
