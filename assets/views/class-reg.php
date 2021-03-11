@@ -137,8 +137,8 @@ if(isset($_POST['Submitting'])) {
         <div class="col-md-12">
             <h3>Registration</h3>
 
-            <a style="text-align: left;padding: 0.375rem 2.75rem; width: 62%;"class="btn btn-primary btn-block" role="button" data-bs-toggle="button">Teachers</a>
-            test
+            <a style="text-align: left;padding: 0.375rem 2.75rem; width: 25%;"class="btn btn-primary btn-block" role="button" data-bs-toggle="button">Teachers</a>
+
 
         </div>
         <!-- End: registration Title-->
