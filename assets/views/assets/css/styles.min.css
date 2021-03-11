@@ -339,3 +339,6 @@
     float: right;
 
 }
+#addbtn #cancelbtn{
+    float: center;
+}
