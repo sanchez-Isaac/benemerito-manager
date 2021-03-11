@@ -185,7 +185,7 @@ if(isset($_POST['Submitting'])) {
                 </div>
                 <div>
                     <label for="inputPass" class="form-label">Password:</label>
-                    <input type="password" class="form-control" id="inputPass">
+                    <input size="16" type="password" name="passwordad" class="form-control" id="inputPass" placeholder="Password" pattern=".{5,10}" required title="5 to 10 characters" >
                 </div>
                 <div>
                     <label for="inputClass" class="form-label">Classes:</label>
