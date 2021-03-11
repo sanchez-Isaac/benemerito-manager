@@ -126,7 +126,7 @@ if(isset($_POST['Submitting'])) {
 </div><!-- End: 1 Row 3 Columns -->
 <!-- Start: 1 Row 3 Columns -->
 
-<br><br><br>
+<br><br>
 
 
 
@@ -159,18 +159,12 @@ if(isset($_POST['Submitting'])) {
 
                     </tr>
                     <tr>
-                        &nbsp;
-                    </tr>
-                    <tr>
-                        &nbsp;
+                        <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td><label for="inputMiddle" class="form-labels">Middle Name:</label></td>
                         <td><input type="text" class="form-control" id="inputMiddle"></td>
 
-                    </tr>
-                    <tr>
-                        &nbsp;
                     </tr>
                     <tr>
                         &nbsp;
@@ -183,14 +177,8 @@ if(isset($_POST['Submitting'])) {
                         &nbsp;
                     </tr>
                     <tr>
-                        &nbsp;
-                    </tr>
-                    <tr>
                         <td><label for="inputBirth" class="form-labels">Birthdate:</label></td>
                         <td> <input type="date" class="form-control" id="inputBirth" required></td>
-                    </tr>
-                    <tr>
-                        &nbsp;
                     </tr>
                     <tr>
                         &nbsp;
@@ -203,14 +191,8 @@ if(isset($_POST['Submitting'])) {
                         &nbsp;
                     </tr>
                     <tr>
-                        &nbsp;
-                    </tr>
-                    <tr>
                         <td><label for="inputZoom" class="form-labels">Zoom:</label></td>
                         <td><input type="url" class="form-control" id="inputZoom"></td>
-                    </tr>
-                    <tr>
-                        &nbsp;
                     </tr>
                     <tr>
                         &nbsp;
@@ -223,14 +205,8 @@ if(isset($_POST['Submitting'])) {
                         &nbsp;
                     </tr>
                     <tr>
-                        &nbsp;
-                    </tr>
-                    <tr>
                         <td><label for="inputPhone" class="form-labels">Telephone:</label></td>
                         <td><input type="tel" class="form-control" id="inputPhone"></td>
-                    </tr>
-                    <tr>
-                        &nbsp;
                     </tr>
                     <tr>
                         &nbsp;
