@@ -308,25 +308,26 @@
     width: 44%;
 }
 #inputBirth {
-    width: 32%;
+    width: 50%;
 }
 #inputEmail {
-    width: 45%;
+    width: 63%;
 }
 #inputZoom {
-    width: 60%;
+    width: 90%;
 }
 #inputMPhone {
-    width: 31%;
+    width: 60%;
 }
 #inputPhone{
-    width: 31%;
+    width: 60%;
 }
 #inputPass{
-    width: 31%;
+    width: 51%;
 }
 .form-labels {
-    align: right;
+    float: right;
+    text-align: center !important;
 }
 table, th, td {
     border: 1px solid black;
