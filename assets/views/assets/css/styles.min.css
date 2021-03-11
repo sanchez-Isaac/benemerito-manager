@@ -326,7 +326,7 @@
     width: 31%;
 }
 .form-labels {
-    text-align: right;
+    align: right;
 }
 table, th, td {
     border: 1px solid black;
