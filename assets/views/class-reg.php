@@ -152,17 +152,43 @@ if(isset($_POST['Submitting'])) {
             <!-- Start: registration Form-->
             <div class="col-11 col-sm-11 col-md-6">
                 <div>
-                    <label for="inputName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="inputName">
+                    <select name="classes" id="classes">
+                        <option value=" * ">*</option>
+                        <option value=" * ">*</option>
+                        <option value=" * ">*</option>
+                        <option value=" * ">*</option>
+                    </select>
+                    <label for="inputNewClass" class="form-label">or New</label>
+                    <input type="text" class="form-control" id="inputNewClass">
                 </div>
                 <div>
-                    <label for="inputMiddle" class="form-label">Middle Name</label>
-                    <input type="text" class="form-control" id="inputMiddle">
+                    <label for="inputYearGiven" class="form-label">Year given</label>
+                    <input type="date" class="form-control" id="inputYearGiven">
                 </div>
                 <div>
-                    <label for="inputLast" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="inputLast">
+                    <label for="inputYearGiven" class="form-label">Year given</label>
+                    <select name="semester" id="semester">
+                    <option value="1">1st Semester</option>
+                    <option value="2">2nd Semester</option>
+                    <option value="3">3rd Semester</option>
+                    <option value="4">4th Semester</option>
+                    <option value="5">5th Semester</option>
+                    <option value="6">6th Semester</option>
+                    </select>
                 </div>
+                <div>
+                <select name="teacherSelect" id="teacherSelect">
+                    <option value="1">1st Semester</option>
+                    <option value="2">2nd Semester</option>
+                    <option value="3">3rd Semester</option>
+                    <option value="4">4th Semester</option>
+                    <option value="5">5th Semester</option>
+                    <option value="6">6th Semester</option>
+                </select>
+                </div>
+
+
+
             </div><!-- End: registration Form-->
 
             <!-- Start: Icon Image-->
