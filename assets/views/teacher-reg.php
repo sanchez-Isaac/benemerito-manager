@@ -185,22 +185,10 @@ if(isset($_POST['Submitting'])) {
                 </div>
                 <div>
                     <label for="inputPass" class="form-label">Password:</label>
-                    <input size="16" type="password" name="passwordad" class="form-control" id="inputPass" placeholder="Password" pattern=".{5,10}" required title="5 to 10 characters" >
-                </div>
-                <div>
-                    <label for="inputClass" class="form-label">Classes:</label>
-                    <input type="text" class="form-control" id="inputClass">
+                    <input size="16" type="password" name="inputPass" class="form-control" id="inputPass" placeholder="*******" pattern=".{5,10}" required title="5 to 10 characters" >
                 </div>
 
-                <div>
-                    <select name="classes" id="classes">
-                        <option value=" * ">*</option>
-                        <option value=" * ">*</option>
-                        <option value=" * ">*</option>
-                        <option value=" * ">*</option>
-                    </select>
-                </div>
-            </div><!-- End: registration Form-->
+            <</div><!-- End: registration Form-->
 
             <!-- Start: Icon Image-->
             <div class="col-1 col-sm-1 col-md-6">
