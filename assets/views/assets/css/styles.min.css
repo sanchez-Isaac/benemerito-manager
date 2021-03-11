@@ -327,7 +327,7 @@
 }
 .form-labels {
     float: right;
-    text-align: center !important;
+    vertical-align: middle
 }
 table, th, td {
     border: 1px solid black;
