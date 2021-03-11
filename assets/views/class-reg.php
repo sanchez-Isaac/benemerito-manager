@@ -151,7 +151,18 @@ if(isset($_POST['Submitting'])) {
         <div class="row">
             <!-- Start: registration Form-->
             <div class="col-11 col-sm-11 col-md-6">
-
+                <div>
+                    <label for="inputName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="inputName">
+                </div>
+                <div>
+                    <label for="inputMiddle" class="form-label">Middle Name</label>
+                    <input type="text" class="form-control" id="inputMiddle">
+                </div>
+                <div>
+                    <label for="inputLast" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="inputLast">
+                </div>
             </div><!-- End: registration Form-->
 
             <!-- Start: Icon Image-->
