@@ -151,42 +151,46 @@ if(isset($_POST['Submitting'])) {
         <div class="row">
             <!-- Start: registration Form-->
             <div class="col-11 col-sm-11 col-md-6">
-                <div>
-                    <label for="inputName" class="form-label">First Name:</label><input type="text" class="form-control" id="inputName" required>
-                </div>
-                <div>
-                    <label for="inputMiddle" class="form-label">Middle Name:</label>
-                    <input type="text" class="form-control" id="inputMiddle">
-                </div>
-                <div>
-                    <label for="inputLast" class="form-label">Last Name:</label>
-                    <input type="text" class="form-control" id="inputLast" required>
-                </div>
-                <div>
-                    <label for="inputBirth" class="form-label">Birthdate:</label>
-                    <input type="date" class="form-control" id="inputBirth" required>
-                </div>
-                <div>
-                    <label for="inputEmail" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required>
-                </div>
-                <div>
-                    <label for="inputZoom" class="form-label">Zoom:</label>
-                    <input type="url" class="form-control" id="inputZoom">
-                </div>
-                <div>
-                    <label for="inputMPhone" class="form-label">Mobile:</label>
-                    <input type="tel" class="form-control" id="inputMPhone" required>
-                </div>
-                <div>
-                    <label for="inputPhone" class="form-label">Telephone:</label>
-                    <input type="tel" class="form-control" id="inputPhone">
-                </div>
-                <div>
-                    <label for="inputPass" class="form-label">Password:</label>
-                    <input size="16" type="password" name="inputPass" class="form-control" id="inputPass" placeholder="*******" pattern=".{5,10}" required title="5 to 10 characters" >
-                </div>
 
+                <table>
+                    <tr>
+                        <td><label for="inputName" class="form-label">First Name:</label></td>
+                        <td><input type="text" class="form-control" id="inputName" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="inputMiddle" class="form-label">Middle Name:</label></td>
+                        <td><input type="text" class="form-control" id="inputMiddle"></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="inputLast" class="form-label">Last Name:</label></td>
+                        <td><input type="text" class="form-control" id="inputLast" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="inputBirth" class="form-label">Birthdate:</label></td>
+                        <td> <input type="date" class="form-control" id="inputBirth" required></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="inputEmail" class="form-label">Email:</label></td>
+                        <td> <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="inputZoom" class="form-label">Zoom:</label></td>
+                        <td><input type="url" class="form-control" id="inputZoom"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="inputMPhone" class="form-label">Mobile:</label></td>
+                        <td><input type="tel" class="form-control" id="inputMPhone" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="inputPhone" class="form-label">Telephone:</label></td>
+                        <td><input type="tel" class="form-control" id="inputPhone"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="inputPass" class="form-label">Password:</label></td>
+                        <td><input size="16" type="password" name="inputPass" class="form-control" id="inputPass" placeholder="*******" pattern=".{5,10}" required title="5 to 10 characters" ></td>
+                    </tr>
+                </table>
             </div><!-- End: registration Form-->
 
             <!-- Start: Icon Image-->
