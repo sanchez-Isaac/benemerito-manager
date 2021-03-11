@@ -159,7 +159,7 @@ if(isset($_POST['Submitting'])) {
 
                     </tr>
                     <tr>
-
+                        &nbsp;
                     </tr>
                     <tr>
                         <td><label for="inputMiddle" class="form-labels">Middle Name:</label></td>
@@ -167,49 +167,49 @@ if(isset($_POST['Submitting'])) {
 
                     </tr>
                     <tr>
-
+                        &nbsp;
                     </tr>
                     <tr>
                         <td><label for="inputLast" class="form-labels">Last Name:</label></td>
                         <td><input type="text" class="form-control" id="inputLast" required></td>
                     </tr>
                     <tr>
-
+                        &nbsp;
                     </tr>
                     <tr>
                         <td><label for="inputBirth" class="form-labels">Birthdate:</label></td>
                         <td> <input type="date" class="form-control" id="inputBirth" required></td>
                     </tr>
                     <tr>
-
+                        &nbsp;
                     </tr>
                     <tr>
                         <td> <label for="inputEmail" class="form-labels">Email:</label></td>
                         <td> <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required></td>
                     </tr>
                     <tr>
-
+                        &nbsp;
                     </tr>
                     <tr>
                         <td><label for="inputZoom" class="form-labels">Zoom:</label></td>
                         <td><input type="url" class="form-control" id="inputZoom"></td>
                     </tr>
                     <tr>
-
+                        &nbsp;
                     </tr>
                     <tr>
                         <td><label for="inputMPhone" class="form-labels">Mobile:</label></td>
                         <td><input type="tel" class="form-control" id="inputMPhone" required></td>
                     </tr>
                     <tr>
-
+                        &nbsp;
                     </tr>
                     <tr>
                         <td><label for="inputPhone" class="form-labels">Telephone:</label></td>
                         <td><input type="tel" class="form-control" id="inputPhone"></td>
                     </tr>
                     <tr>
-
+                        &nbsp;
                     </tr>
                     <tr>
                         <td><label for="inputPass" class="form-labels">Password:</label></td>
