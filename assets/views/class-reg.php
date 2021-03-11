@@ -135,38 +135,7 @@ if(isset($_POST['Submitting'])) {
     <div>
 
         <div class="container">
-            <?php
-            //This will display the rigth name and position depending of the user that logged in
-            // middle name will count in this excercise.
-            if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" && $_SESSION['middle_name'] != "")
-            {
-
-                echo '<h3>'.$_SESSION['user_name']." ". $_SESSION['middle_name']. " ". $_SESSION['last_name']. '</h3>';
-                echo '<h7>Teacher Profile</h7>';
-            }
-            else
-                if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" && $_SESSION['middle_name'] != "")
-                {
-                    echo '<h3>'.$_SESSION['user_name']." ". $_SESSION['middle_name']. " ". $_SESSION['last_name']. '</h3>';
-                    echo '<h7>Admin Profile</h7>';
-
-                }
-                else
-                    if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" && $_SESSION['middle_name'] == "")
-                    {
-                        echo '<h3>'.$_SESSION['user_name']." ". $_SESSION['last_name']. '</h3>';
-                        echo '<h7>Admin Profile</h7>';
-
-                    }
-                    else
-                        if (isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Teacher" && $_SESSION['middle_name'] == "")
-                        {
-                            echo '<h3>'.$_SESSION['user_name']." ". $_SESSION['last_name']. '</h3>';
-                            echo '<h7>Teacher Profile</h7>';
-
-                        }
-
-            ?>
+           <h3>Registration</h3>
 
             <br><br><br>
 
@@ -174,42 +143,6 @@ if(isset($_POST['Submitting'])) {
 
                 <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 offset-sm-0"></div><!-- Start: table for admin -->
                 <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
-                    <table class="table">
-                        <tr>
-                            <td>Name:</td>
-                            <td> <?php echo $_SESSION['user_name']; ?></td>
-                        </tr>
-                        <tr>
-                            <td>Middle name:</td>
-                            <td> <?php echo $_SESSION['middle_name']; ?></td>
-                        </tr>
-                        <tr>
-                            <td>last name:</td>
-                            <td> <?php echo $_SESSION['last_name']; ?></td>
-                        </tr>
-                        <tr>
-                            <td>Birthdate:</td>
-                            <td> <?php echo $_SESSION['birthdate']; ?></td>
-                        </tr>
-                        <tr>
-                            <td>Email:</td>
-                            <td> <?php echo $_SESSION['email']; ?></td>
-                        </tr>
-                        <tr>
-                            <td>Zoom Office:</td>
-                            <td> <?php echo $_SESSION['zoomoffice']; ?>  </td>
-                        </tr>
-                    </table>
-                    <br>
-                    <hr style="border-top: 1px solid #000000">
-                    <button type="button" class="btn btn-primary"   data-toggle="modal" data-target="#sqlModal" id="editprofile" style="float: right">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
-                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"></path>
-                        </svg>
-                        Edit Profile
-                    </button>
-
 
 
                 </div><!-- End: table for admin -->
@@ -247,74 +180,11 @@ if(isset($_POST['Submitting'])) {
 
 
 
-<form  method="post" action="profile.php?">
-    <div class="modal fade" id="sqlModal" tabindex="-1" role="dialog" aria-labelledby="sqlModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="sqlModalLabel">Edit Profile</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
 
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
 
-                            <label for="recipient-name" class="col-form-label" >Name:</label>
-                            <input type="text" class="form-control" id="recipient-name" disabled="disabled" name="recipient-names"value="<?php echo $_SESSION['user_name']; ?>">
-                            <!-- Checkbox to send to PSQL -->
-                            <input class="form-check-input-modal" type="checkbox"  id="flexCheckUser_name" name="recipient-name" onclick="disableMyTextName(this.name,this.id)">
-                            <label class="form-check-label-modal" for="flexCheckUser_name" onclick="disableMyTextName()">Make Changes</label>
 
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-middle" class="col-form-label">Middle Name:</label>
-                            <input type="text" class="form-control" id="recipient-middle" disabled="disabled" name="recipient-middles"value="<?php echo $_SESSION['middle_name']; ?>">
-                            <!-- Checkbox to send to PSQL -->
-                            <input class="form-check-input-modal" type="checkbox"  id="flexCheckMiddle_name" name="recipient-middle" onclick="disableMyTextName(this.name,this.id)">
-                            <label class="form-check-label-modal" for="flexCheckMiddle_name" onclick="disableMyTextName()">Make Changes</label>
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-last" class="col-form-label">Last Name:</label>
-                            <input type="text" class="form-control" id="recipient-last" disabled="disabled" name="recipient-lasts"value="<?php echo $_SESSION['last_name']; ?>">
-                            <!-- Checkbox to send to PSQL -->
-                            <input class="form-check-input-modal" type="checkbox"  id="flexChecktlast_name" name="recipient-last" onclick="disableMyTextName(this.name,this.id)">
-                            <label class="form-check-label-modal" for="flexChecktlast_name" onclick="disableMyTextName()">Make Changes</label>
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-birth" class="col-form-label">Birthdate:</label>
-                            <input type="date" class="form-control" id="recipient-birth" disabled="disabled" name="recipient-births" value="<?php echo $_SESSION['birthdate']; ?>">
-                            <!-- Checkbox to send to PSQL -->
-                            <input class="form-check-input-modal" type="checkbox"  id="flexCheckBirthdate" name="recipient-birth" onclick="disableMyTextName(this.name,this.id)">
-                            <label class="form-check-label-modal" for="flexCheckBirthdate" onclick="disableMyTextName()">Make Changes</label>
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-email" class="col-form-label">Email:</label>
-                            <input type="email" class="form-control" id="recipient-email" disabled="disabled" name="recipient-emails" value="<?php echo $_SESSION['email']; ?>">
-                            <!-- Checkbox to send to PSQL -->
-                            <input class="form-check-input-modal" type="checkbox"  id="flexCheckEmail" name="recipient-email" onclick="disableMyTextName(this.name,this.id)">
-                            <label class="form-check-label-modal" for="flexCheckEmail" onclick="disableMyTextName()">Make Changes</label>
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-zoom" class="col-form-label">Zoom Office:</label>
-                            <input type="url" class="form-control" id="recipient-zoom" disabled="disabled" name="recipient-zooms" value="<?php echo $_SESSION['zoomoffice']; ?>">
-                            <!-- Checkbox to send to PSQL -->
-                            <input class="form-check-input-modal" type="checkbox"  id="flexCheckZoomoffice" name="recipient-zoom" onclick="disableMyTextName(this.name,this.id)">
-                            <label class="form-check-label-modal" for="flexCheckZoomoffice" onclick="disableMyTextName()">Make Changes</label>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" value="Submitting" name="Submitting" class="btn btn-primary" id="Save_edit">Save Changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</form>
+
+
 
 
 
