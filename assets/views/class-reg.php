@@ -152,6 +152,7 @@ if(isset($_POST['Submitting'])) {
             <!-- Start: registration Form-->
             <div class="col-11 col-sm-11 col-md-6">
                 <div>
+                    <label for="inputClassName" class="form-label">Class Name:</label>
                     <select name="classes" id="classes">
                         <option value=" * ">*</option>
                         <option value=" * ">*</option>
