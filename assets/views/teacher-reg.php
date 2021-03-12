@@ -225,9 +225,9 @@ if(isset($_POST['Submitting'])) {
     <div class="container">
         <div class="row">
             <!-- Start: cancel and Save btn-->
-            <div class="col-md-12">
-                <button type="button" class="addbtn" id="addbtn">Add</button>
-                <button type="button" class="cancelbtn"id="cancelbtn">Cancel</button>
+            <div class="col-md-12 btndiv">
+                <button type="button" class="btn btn-success" id="addbtn">Add</button>
+                <button type="button" class="btn btn-danger"id="cancelbtn">Cancel</button>
 
 
             </div><!-- end: cancel and Save btn-->
@@ -280,6 +280,7 @@ if(isset($_POST['Submitting'])) {
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="/assets/js/editProfile.js"></script>
+
 </body>
 
 </html>

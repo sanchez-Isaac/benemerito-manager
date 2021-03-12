@@ -339,7 +339,97 @@
     float: right;
 
 }
-.addbtn .cancelbtn{
-    left: 0px;
-    padding: 0.375rem 1.75rem
+
+
+#addbtn {
+    position: absolute;
+    bottom: -54px;
+    left: 536px;
+    width: 93px;
+    height: 32px;
+    line-height: 30px;
+    padding: 1px 4px;
+}
+
+#cancelbtn {
+    position: absolute;
+    bottom: -54px;
+    left: 645px;
+    width: 93px;
+    height: 32px;
+    line-height: 30px;
+    padding: 1px 4px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #addbtn {
+        position: absolute;
+        bottom: -54px;
+        left: 400px;
+        width: 93px;
+        height: 32px;
+        line-height: 30px;
+        padding: 1px 4px;
+    }
+
+    #cancelbtn {
+        position: absolute;
+        bottom: -54px;
+        left: 519px;
+        width: 93px;
+        height: 32px;
+        line-height: 30px;
+        padding: 1px 4px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 805px) {
+    #addbtn {
+        position: absolute;
+        bottom: -54px;
+        left: 151px;
+        width: 93px;
+        height: 32px;
+        line-height: 30px;
+        padding: 1px 4px;
+    }
+
+    #cancelbtn {
+        position: absolute;
+        bottom: -54px;
+        left: 264px;
+        width: 93px;
+        height: 32px;
+        line-height: 30px;
+        padding: 1px 4px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    #addbtn {
+        position: absolute;
+        bottom: -54px;
+        left: 40px;
+        width: 93px;
+        height: 32px;
+        line-height: 30px;
+        padding: 1px 4px;
+    }
+
+    #cancelbtn {
+        position: absolute;
+        bottom: -54px;
+        left: 149px;
+        width: 93px;
+        height: 32px;
+        line-height: 30px;
+        padding: 1px 4px;
+    }
+
 }
