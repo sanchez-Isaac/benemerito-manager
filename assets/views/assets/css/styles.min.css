@@ -340,5 +340,5 @@
 
 }
 #addbtn #cancelbtn{
-    float: center;
+    position: relative;
 }
