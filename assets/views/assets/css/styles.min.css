@@ -437,9 +437,10 @@
 
 @media only screen and (max-width: 767px) {
     .bi-person-plus {
-
-
-
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+        color: #visibility: hidden;
         opacity: 0.0;
     }
 
