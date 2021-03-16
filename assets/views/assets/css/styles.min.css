@@ -433,7 +433,7 @@
     }
 
     .bi-person-plus {
-        visibility: hidden;
+        display: none;
     }
 
 
