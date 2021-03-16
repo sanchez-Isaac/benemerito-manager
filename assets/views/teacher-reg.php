@@ -59,7 +59,7 @@ if(isset($_POST['Submitting'])) {
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
-
+    <link rel="stylesheet" href="assets/css/register-style.css">
 
 </head>
 
