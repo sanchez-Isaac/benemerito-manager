@@ -432,6 +432,10 @@
         padding: 1px 4px;
     }
 
+
+}
+
+@media only screen and (max-width: 767px) {
     .bi-person-plus {
         width: 0;
         height: 0;
