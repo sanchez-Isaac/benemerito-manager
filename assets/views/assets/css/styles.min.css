@@ -442,6 +442,10 @@
         visibility: hidden;
         opacity: 0.0;
     }
-
+    .topright {
+        height: 0px;
+        visibility: hidden;
+        opacity: 0.0;
+    }
 
 }
