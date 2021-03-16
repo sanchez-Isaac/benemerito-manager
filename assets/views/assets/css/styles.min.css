@@ -437,8 +437,8 @@
 
 @media only screen and (max-width: 767px) {
     .bi-person-plus {
-        width: 0;
-        height: 0;
+        width: 0px;
+        height: 0px;
     }
 
 
