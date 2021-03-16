@@ -275,7 +275,12 @@
 .desapair {
     color:#ffffff;
 }
-
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 1px;
+    font-size: 20px;
+}
 .movepos{
     top: 8px;
     right: 1px;
@@ -443,10 +448,4 @@
         opacity: 0.0;
     }
 
-}
-.topright {
-    position: absolute;
-    top: 8px;
-    right: 1px;
-    font-size: 20px;
 }
