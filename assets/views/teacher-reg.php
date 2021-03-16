@@ -238,7 +238,6 @@ if(isset($_POST['Submitting'])) {
                 <button type="button" class="btn btn-success" id="addbtn">Add</button>
                 <button type="button" class="btn btn-danger"id="cancelbtn">Cancel</button>
 
-
             </div><!-- end: cancel and Save btn-->
 </form>
 
