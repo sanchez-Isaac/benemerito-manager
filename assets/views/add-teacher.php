@@ -33,10 +33,10 @@ $query2 = 'SELECT teacher_id FROM teacher';
 
 $result = pg_query($con, $query2);
 while ($row = pg_fetch_array($result)){
-    $id = $row['teacher_id'];
+    $id ++;
 
 }
-$login_id = ($id+2);
+$login_id = ($id+1);
 
 
 
@@ -55,7 +55,7 @@ if($_SESSION['add-teach-lasts'] !== "") {
 }
 
 if($_SESSION['add-teach-births'] !== ""){
-    $last = $_SESSION['add-teach-births'];
+    $birth = $_SESSION['add-teach-births'];
 }
 
 if($_SESSION['add-teach-emails'] !== ""){
