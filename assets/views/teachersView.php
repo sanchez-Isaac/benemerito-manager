@@ -23,6 +23,9 @@ function pre_r($array)
 }
 
 
+
+
+
 $query2 = $query = 'SELECT DISTINCT teacher_id FROM teacher order by teacher_id';
 $con2 = get_db();
 $result = pg_query($con2, $query2);
@@ -95,8 +98,15 @@ if (isset($_SESSION['teach_phone'])){
 }
 
 
+if ($_SESSION['taken?'] = 'not Taken') {
+    echo '<script language="javascript">';
+    echo 'alert("Teacher Submitted to the Database")';
+    echo '</script>';
+}
 
-
+if (isset($_SESSION['taken?'])){
+    unset ($_SESSION['taken?']);
+}
 
 
 

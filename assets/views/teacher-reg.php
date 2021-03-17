@@ -21,11 +21,10 @@ if($_SESSION['taken?'] = 'Taken') {
     echo 'alert("Email Already taken")';
     echo '</script>';
 }
-elseif ($_SESSION['taken?'] = 'not Taken') {
-    echo '<script language="javascript">';
-    echo 'alert("Teacher Submitted to the Database")';
-    echo '</script>';
+if (isset($_SESSION['taken?'])){
+    unset ($_SESSION['taken?']);
 }
+
 
 
 
