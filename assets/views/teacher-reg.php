@@ -16,6 +16,17 @@ print_r($_SESSION);
 echo '</pre>';
 
 
+if($_SESSION['taken?'] = 'Taken') {
+    echo '<script language="javascript">';
+    echo 'alert("Email Already taken")';
+    echo '</script>';
+}
+elseif ($_SESSION['taken?'] = 'not Taken') {
+    echo '<script language="javascript">';
+    echo 'alert("Teacher Submitted to the Database")';
+    echo '</script>';
+}
+
 
 
 
