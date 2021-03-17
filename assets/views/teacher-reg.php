@@ -44,7 +44,7 @@ if(isset($_POST['Submitting'])) {
     $_SESSION['add-teach-tel'] = pg_escape_string($_POST['add-recipient-tels']);
     $_SESSION['add-teach-pass'] = pg_escape_string($_POST['add-recipient-passs']);
 
-    header("Location: uniqueEmailCheck.php");
+    header("Location: uniqueEmailCheck.php?Approved=");
 
 }
 
