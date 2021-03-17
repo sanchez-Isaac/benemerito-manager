@@ -5,10 +5,10 @@ include_once '../dbConnect/DbConnect.php';
 
 
 //If no one is logged in, return to login page
-//if(!isset($_SESSION['username']))
-//{
-//    header('location: ../../index.php?Login=False');
-//}
+if(!isset($_SESSION['username']))
+{
+    header('location: ../../index.php?Login=False');
+}
 
 //Testing purposes
 echo '<pre>';
