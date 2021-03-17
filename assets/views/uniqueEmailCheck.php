@@ -3,34 +3,33 @@ session_start();
 include_once '../dbConnect/DbConnect.php';
 
 
+
     $email = $_SESSION['add-teach-emails'];
 
     $queryEmail = ("SELECT email FROM teacher WHERE email = '$email'");
     $con3 = get_db();
-
+$_SESSION['query'] = $queryEmail;
 
 
     $result = pg_query($con3, $queryEmail);
     if (pg_num_rows($result) > 0) {
         while ($row = pg_fetch_array($result)) {
             if ($row[0] = $email) {
-                echo '<pre>';
-                print_r($row[0]);
-                echo '</pre>';
+
 
                 echo '<script language="javascript">';
                 echo 'alert("Email Already taken")';
                 echo console_log("taken");
                 echo '</script>';
+                $_SESSION['taken?'] = 'Taken';
                 header("Location: add-teacher.php?emailTaken=Error");
             } else {
-                echo '<pre>';
-                print_r($row[0]);
-                echo '</pre>';
+
                 echo '<script language="javascript">';
                 echo 'alert("Not taken")';
                 echo console_log("Not Taken");
                 echo '</script>';
+                $_SESSION['taken?'] = 'not Taken';
                 header("Location: add-teacher.php?Approved=");
 
             }
@@ -38,6 +37,10 @@ include_once '../dbConnect/DbConnect.php';
         }
     }
 
+
+echo '<pre>';
+print_r($_SESSION);
+echo '</pre>';
 
 
 ?>
@@ -56,6 +59,6 @@ include_once '../dbConnect/DbConnect.php';
 </head>
 
 <body>
-test
+
 </body>
 </html>
