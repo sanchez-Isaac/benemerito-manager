@@ -3,7 +3,17 @@ session_start();
 include_once '../dbConnect/DbConnect.php';
 $con = get_db();
 
+$query2 = 'SELECT teacher_id FROM teacher';
 
+$result = pg_query($con, $query2);
+while ($row = pg_fetch_array($result)){
+    $id = $row['login_id'];
+
+    console_log( $id );
+}
+$login_id = ($id+1);
+
+console_log( $login_id );
 
 
 
@@ -68,8 +78,8 @@ if($_SESSION['add-teach-pass'] !== ""){
 
 
 
-$query = "INSERT INTO teacher (adm_name, middle_name, last_name, birthdate, zoomoffice, email, password, mobile_phone, home_phone) 
-VALUES ('$name','$middle','$last','$birth','$zoom','$email','$pass','$mobile','$tel');";
+$query = "INSERT INTO teacher (teacher_id, adm_name, middle_name, last_name, birthdate, zoomoffice, email, password, mobile_phone, home_phone) 
+VALUES ($login_id, $name,$middle,$last,$birth,$zoom,$email,$pass,$mobile,$tel);";
 pg_query($con ,$query);
 pg_close($con);
 
