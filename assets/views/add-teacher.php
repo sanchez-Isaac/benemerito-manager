@@ -3,17 +3,10 @@ session_start();
 include_once '../dbConnect/DbConnect.php';
 $con = get_db();
 
-$query2 = 'SELECT teacher_id FROM teacher';
 
-$result = pg_query($con, $query2);
-while ($row = pg_fetch_array($result)){
-    $id = $row['login_id'];
 
-    console_log( $id );
-}
-$login_id = ($id+1);
 
-console_log( $login_id );
+
 
 
 
@@ -34,7 +27,16 @@ $zoom = null;
 $mobile = null;
 $tel = null;
 $pass = null;
+$id = 0;
 
+$query2 = 'SELECT teacher_id FROM teacher';
+
+$result = pg_query($con, $query2);
+while ($row = pg_fetch_array($result)){
+    $id = $row['teacher_id'];
+
+}
+$login_id = ($id+1);
 
 
 
