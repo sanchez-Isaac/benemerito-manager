@@ -1,7 +1,7 @@
 <?php
 
 
-    $email = $_SESSION['add-teach-emails'] =  pg_escape_string($_POST['add-recipient-emails']);
+    $email = $_SESSION['add-teach-emails'];
 
     $queryEmail = ("SELECT 'email' FROM 'teacher' WHERE email = '$email'");
     $con3 = get_db();
