@@ -98,7 +98,7 @@ if (isset($_SESSION['teach_phone'])){
 }
 
 
-if ($_SESSION['taken?'] = 'not Taken') {
+if ($_SESSION['taken?'] == 'not Taken') {
     echo '<script language="javascript">';
     echo 'alert("Teacher Submitted to the Database")';
     echo '</script>';

@@ -8,7 +8,7 @@ include_once '../dbConnect/DbConnect.php';
 
     $queryEmail = ("SELECT email FROM teacher WHERE email = '$email'");
     $con3 = get_db();
-    $_SESSION['query'] = $queryEmail;
+
 
 
     $result = pg_query($con3, $queryEmail);

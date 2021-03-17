@@ -16,11 +16,12 @@ print_r($_SESSION);
 echo '</pre>';
 
 
-if($_SESSION['taken?'] = 'Taken') {
+if($_SESSION['taken?'] == 'Taken') {
     echo '<script language="javascript">';
     echo 'alert("Email Already taken")';
     echo '</script>';
 }
+else
 if (isset($_SESSION['taken?'])){
     unset ($_SESSION['taken?']);
 }
