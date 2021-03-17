@@ -220,7 +220,7 @@ if(isset($_POST['Submitting'])) {
                         <form method="post" action="teacher-reg.php?">
                         <td> <label for="inputEmail" class="form-labels">Email:</label></td>
                         <td> <input type="email" class="form-control" name="add-recipient-emails" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required>  </td>
-                    <td><button type="button" value="checkValid" name="valid?" class="btn btn-primary" id="checkValidBtn" onclick="checkValid()">Validate</button></td></td>
+                    <td><button type="submit" value="checkValid" name="valid?" class="btn btn-primary" id="checkValidBtn" onclick="checkValid()">Validate</button></td></td>
                         </form>
                     </tr>
                     <tr>
