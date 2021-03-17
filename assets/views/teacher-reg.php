@@ -18,6 +18,37 @@ echo '</pre>';
 
 
 
+
+
+
+
+
+if(isset($_POST['valid?'])) {
+
+    $email = $_SESSION['add-teach-emails'] =  pg_escape_string($_POST['add-recipient-emails']);
+
+    $queryEmail = ("SELECT 'email' FROM 'teacher' WHERE email = '$email'");
+    $con3 = get_db();
+
+
+
+    $result = pg_query($con3, $queryEmail);
+    if (pg_num_rows($result) == 1) {
+
+        echo '<script language="javascript">';
+        echo 'alert("Email Already taken")';
+        echo '</script>';
+
+        }
+    }
+
+
+
+
+
+
+
+
 if(isset($_POST['Submitting'])) {
 
 
@@ -56,7 +87,7 @@ if(isset($_POST['Submitting'])) {
     }
     ?>
 
-    <script  src="/assets/js/jquery.min.js"></script>
+
 
 
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -186,9 +217,11 @@ if(isset($_POST['Submitting'])) {
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
+                        <form type="post">
                         <td> <label for="inputEmail" class="form-labels">Email:</label></td>
                         <td> <input type="email" class="form-control" name="add-recipient-emails" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required>  </td>
-                    <td><button type="button" value="checkValid" name="checkValid" class="btn btn-primary" id="checkValidBtn" onclick="checkValid()">Validate</button></td></td>
+                    <td><button type="button" value="checkValid" name="valid?" class="btn btn-primary" id="checkValidBtn" onclick="checkValid()">Validate</button></td></td>
+                        </form>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -291,9 +324,10 @@ if(isset($_POST['Submitting'])) {
     </footer>
 </div><!-- End: Footer Basic -->
 
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="/assets/js/checkUniqueEmail.js"></script>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/checkUniqueEmail.js"></script>
 
 </body>
 
