@@ -18,6 +18,9 @@ function pre_r($array)
     echo '</pre>';
 }
 
+
+
+
 $name = null;
 $middle = null;
 $last = null;
@@ -81,18 +84,10 @@ if($_SESSION['add-teach-pass'] !== ""){
 
 
 $query = "INSERT INTO teacher (teacher_id, adm_name, middle_name, last_name, birthdate, zoomoffice, email, password, mobile_phone, home_phone) VALUES ($login_id,$name,$middle,$last,$birth,$zoom,$email,$pass,$mobile,$tel);";
+$_SESSION['query'] = $query;
 pg_query($con ,$query);
 pg_close($con);
 
-
-
-function console_log( $data ){
-    echo '<script>';
-    echo 'console.log('. json_encode( $data ) .')';
-    echo '</script>';
-
-
-}
 
 
 
@@ -108,6 +103,7 @@ unset ($_SESSION['add-teach-zooms']);
 unset ($_SESSION['add-teach-mobiles'] );
 unset ($_SESSION['add-teach-tel'] );
 unset ($_SESSION['add-teach-pass'] );
+
 
 
 header("Location: teachersView.php?edition=Success");
