@@ -6,10 +6,6 @@ $con = get_db();
 
 
 
-
-
-
-
 pre_r($_SESSION);
 function pre_r($array)
 {
@@ -83,7 +79,8 @@ if($_SESSION['add-teach-pass'] !== ""){
 
 
 
-$query = "INSERT INTO teacher (teacher_id, adm_name, middle_name, last_name, birthdate, zoomoffice, email, password, mobile_phone, home_phone) VALUES ($login_id,'$name','$middle','$last','$birth','$zoom','$email','$pass',$mobile,$tel);";
+$query = "INSERT INTO teacher (teacher_id, adm_name, middle_name, last_name, birthdate, zoomoffice, email, password, mobile_phone, home_phone) 
+VALUES ($login_id,'$name','$middle','$last','$birth','$zoom','$email','$pass',$mobile,$tel);";
 $_SESSION['query'] = $query;
 pg_query($con ,$query);
 pg_close($con);

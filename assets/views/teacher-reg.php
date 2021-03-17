@@ -187,7 +187,8 @@ if(isset($_POST['Submitting'])) {
                     </tr>
                     <tr>
                         <td> <label for="inputEmail" class="form-labels">Email:</label></td>
-                        <td> <input type="email" class="form-control" name="add-recipient-emails" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required></td>
+                        <td> <input type="email" class="form-control" name="add-recipient-emails" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required>  </td>
+                    <td><button type="button" value="checkValid" name="checkValid" class="btn btn-primary" id="checkValidBtn" onclick="checkValid()">Validate</button></td></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -240,7 +241,7 @@ if(isset($_POST['Submitting'])) {
         <div class="row">
             <!-- Start: cancel and Save btn-->
             <div class="col-md-12 btndiv">
-                <button type="submit" value="Submitting" name="Submitting" class="btn btn-success" id="addbtn">Add</button>
+                <button disabled type="submit" value="Submitting" name="Submitting" class="btn btn-success" id="addbtn">Add</button>
                 <button type="button" class="btn btn-danger"id="cancelbtn">Cancel</button>
 
             </div><!-- end: cancel and Save btn-->
@@ -292,7 +293,7 @@ if(isset($_POST['Submitting'])) {
 
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="/assets/js/editProfile.js"></script>
+<script src="/assets/js/checkUniqueEmail.js"></script>
 
 </body>
 
