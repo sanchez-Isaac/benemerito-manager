@@ -87,7 +87,7 @@ function console_log( $data ){
 
 
 
-
+/*
 unset ($_SESSION['add-teach-names']);
 unset ($_SESSION['add-teach-middles']);
 unset ($_SESSION['add-teach-lasts'] );
@@ -97,6 +97,6 @@ unset ($_SESSION['add-teach-zooms']);
 unset ($_SESSION['add-teach-mobiles'] );
 unset ($_SESSION['add-teach-tel'] );
 unset ($_SESSION['add-teach-pass'] );
+*/
 
-
-header("Location: teachersView.php?edition=Success");
+//header("Location: teachersView.php?edition=Success");
