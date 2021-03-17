@@ -21,14 +21,17 @@ echo '</pre>';
 if(isset($_POST['Submitting'])) {
 
 
-    $_SESSION['recipient-names'] = pg_escape_string($_POST['recipient-names']);
-    $_SESSION['recipient-middles'] = pg_escape_string($_POST['recipient-middles']);
-    $_SESSION['recipient-lasts'] = pg_escape_string($_POST['recipient-lasts']);
-    $_SESSION['recipient-births'] = pg_escape_string($_POST['recipient-births']);
-    $_SESSION['recipient-emails'] =  pg_escape_string($_POST['recipient-emails']);
-    $_SESSION['recipient-zooms'] = pg_escape_string($_POST['recipient-zooms']);
+    $_SESSION['add-teach-names'] = pg_escape_string($_POST['add-recipient-names']);
+    $_SESSION['add-teach-middles'] = pg_escape_string($_POST['add-recipient-middles']);
+    $_SESSION['add-teach-lasts'] = pg_escape_string($_POST['add-recipient-lasts']);
+    $_SESSION['add-teach-births'] = pg_escape_string($_POST['add-recipient-births']);
+    $_SESSION['add-teach-emails'] =  pg_escape_string($_POST['add-recipient-emails']);
+    $_SESSION['add-teach-zooms'] = pg_escape_string($_POST['add-recipient-zooms']);
+    $_SESSION['add-teach-mobiles'] = pg_escape_string($_POST['add-recipient-mobiles']);
+    $_SESSION['add-teach-tel'] = pg_escape_string($_POST['add-recipient-tels']);
+    $_SESSION['add-teach-pass'] = pg_escape_string($_POST['add-recipient-passs']);
 
-    header("Location: editProfile.php?Approved=");
+    header("Location: add-teacher.php?Approved=");
 
 }
 
@@ -151,69 +154,70 @@ if(isset($_POST['Submitting'])) {
         <div class="row">
             <!-- Start: registration Form-->
             <div class="col-11 col-sm-11 col-md-6">
-
+                <form method="post" action="teacher-reg.php?">
                 <table style="width:100%">
                     <tr>
                         <td><label for="inputName" class="form-labels">First Name:</label></td>
-                        <td><input type="text" class="form-control" id="inputName" required></td>
+                        <td><input type="text" name="add-recipient-names" class="form-control" id="inputName" required></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td><label for="inputMiddle" class="form-labels">Middle Name:</label></td>
-                        <td><input type="text" class="form-control" id="inputMiddle"></td>
+                        <td><input type="text" class="form-control" name="add-recipient-middles" id="inputMiddle"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td><label for="inputLast" class="form-labels">Last Name:</label></td>
-                        <td><input type="text" class="form-control" id="inputLast" required></td>
+                        <td><input type="text" class="form-control" name="add-recipient-lasts" id="inputLast" required></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td><label for="inputBirth" class="form-labels">Birthdate:</label></td>
-                        <td> <input type="date" class="form-control" id="inputBirth" required></td>
+                        <td> <input type="date" class="form-control" name="add-recipient-births" id="inputBirth" required></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td> <label for="inputEmail" class="form-labels">Email:</label></td>
-                        <td> <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required></td>
+                        <td> <input type="email" class="form-control" name="add-recipient-emails" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td><label for="inputZoom" class="form-labels">Zoom:</label></td>
-                        <td><input type="url" class="form-control" id="inputZoom"></td>
+                        <td><input type="url" class="form-control" name="add-recipient-zooms" id="inputZoom"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td><label for="inputMPhone" class="form-labels">Mobile:</label></td>
-                        <td><input type="tel" class="form-control" id="inputMPhone" required></td>
+                        <td><input type="tel" class="form-control" name="add-recipient-mobiles" id="inputMPhone" required></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td><label for="inputPhone" class="form-labels">Telephone:</label></td>
-                        <td><input type="tel" class="form-control" id="inputPhone"></td>
+                        <td><input type="tel" class="form-control" name="add-recipient-tels" id="inputPhone"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td><label for="inputPass" class="form-labels">Password:</label></td>
-                        <td><input size="16" type="password" name="inputPass" class="form-control" id="inputPass" placeholder="*******" pattern=".{5,10}" required title="5 to 10 characters" ></td>
+                        <td><input size="16" type="password" name="add-recipient-passs" class="form-control" id="inputPass" placeholder="*******" pattern=".{5,10}" required title="5 to 10 characters" ></td>
                     </tr>
                 </table>
+
             </div><!-- End: registration Form-->
 
             <!-- Start: Icon Image-->
@@ -235,7 +239,7 @@ if(isset($_POST['Submitting'])) {
         <div class="row">
             <!-- Start: cancel and Save btn-->
             <div class="col-md-12 btndiv">
-                <button type="button" class="btn btn-success" id="addbtn">Add</button>
+                <button type="button" value="Submitting" name="Submitting" class="btn btn-success" id="addbtn">Add</button>
                 <button type="button" class="btn btn-danger"id="cancelbtn">Cancel</button>
 
             </div><!-- end: cancel and Save btn-->
