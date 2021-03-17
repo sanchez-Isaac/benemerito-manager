@@ -11,7 +11,7 @@ include_once '../dbConnect/DbConnect.php';
 
 
     $result = pg_query($con3, $queryEmail);
-    if (pg_num_rows($result) == $email) {
+    if (pg_num_rows($result) == 1) {
 
 
 
