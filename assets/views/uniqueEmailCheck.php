@@ -17,7 +17,7 @@ include_once '../dbConnect/DbConnect.php';
 
                 echo '<script language="javascript">';
                 echo 'alert("Email Already taken")';
-                echo console.log("taken");
+
                 echo '</script>';
                 $_SESSION['taken?'] = 'Taken';
                 header("Location: add-teacher.php?emailTaken=Error");
@@ -25,7 +25,7 @@ include_once '../dbConnect/DbConnect.php';
 
                 echo '<script language="javascript">';
                 echo 'alert("Not taken")';
-                echo console.log("Not Taken");
+
                 echo '</script>';
                 $_SESSION['taken?'] = 'not Taken';
                 header("Location: add-teacher.php?Approved=");
