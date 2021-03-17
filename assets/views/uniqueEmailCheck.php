@@ -13,7 +13,7 @@ include_once '../dbConnect/DbConnect.php';
     $result = pg_query($con3, $queryEmail);
     if (pg_num_rows($result) > 0) {
         while ($row = pg_fetch_array($result)) {
-            if ($row = $email) {
+            if ($row[0] = $email) {
 /*
                 echo '<script language="javascript">';
                 echo 'alert("Email Already taken")';
