@@ -44,7 +44,7 @@ if(isset($_POST['Submitting'])) {
     $_SESSION['add-teach-tel'] = pg_escape_string($_POST['add-recipient-tels']);
     $_SESSION['add-teach-pass'] = pg_escape_string($_POST['add-recipient-passs']);
 
-    header("Location: uniqueEmailCheck?Approved=");
+    header("Location: uniqueEmailCheck.php");
 
 }
 
@@ -199,11 +199,9 @@ if(isset($_POST['Submitting'])) {
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <form method="post" action="teacher-reg.php">
                         <td> <label for="inputEmail" class="form-labels">Email:</label></td>
                         <td> <input type="email" class="form-control" name="add-recipient-emails" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required value="<?php if(isset($_SESSION['add-teach-emails']))echo $_SESSION['add-teach-emails']; ?>">  </td>
 
-                        </form>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -256,7 +254,7 @@ if(isset($_POST['Submitting'])) {
         <div class="row">
             <!-- Start: cancel and Save btn-->
             <div class="col-md-12 btndiv">
-                <button disabled type="submit" value="Submitting" name="Submitting" class="btn btn-success" id="addbtn">Add</button>
+                <button type="submit" value="Submitting" name="Submitting" class="btn btn-success" id="addbtn">Add</button>
                 <button type="button" class="btn btn-danger"id="cancelbtn">Cancel</button>
 
             </div><!-- end: cancel and Save btn-->
