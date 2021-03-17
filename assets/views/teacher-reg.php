@@ -23,28 +23,6 @@ echo '</pre>';
 
 
 
-if(isset($_POST['valid?'])) {
-
-    $email = $_SESSION['add-teach-emails'] =  pg_escape_string($_POST['add-recipient-emails']);
-
-    $queryEmail = ("SELECT 'email' FROM 'teacher' WHERE email = '$email'");
-    $con3 = get_db();
-
-
-
-    $result = pg_query($con3, $queryEmail);
-    if (pg_num_rows($result) == 1) {
-
-        $_SESSION['emails-unique'] = 'taken';
-        echo '<script language="javascript">';
-        echo 'alert("Email Already taken")';
-        echo '</script>';
-
-        }
-    else{
-        $_SESSION['emails-unique'] = 'not taken';
-    }
-    }
 
 
 
@@ -66,7 +44,7 @@ if(isset($_POST['Submitting'])) {
     $_SESSION['add-teach-tel'] = pg_escape_string($_POST['add-recipient-tels']);
     $_SESSION['add-teach-pass'] = pg_escape_string($_POST['add-recipient-passs']);
 
-    header("Location: add-teacher.php?Approved=");
+    header("Location: uniqueEmailCheck?Approved=");
 
 }
 
@@ -193,14 +171,14 @@ if(isset($_POST['Submitting'])) {
                 <table style="width:100%">
                     <tr>
                         <td><label for="inputName" class="form-labels">First Name:</label></td>
-                        <td><input type="text" name="add-recipient-names" class="form-control" id="inputName" required></td>
+                        <td><input type="text" name="add-recipient-names" class="form-control" id="inputName" value="<?php if(isset($_SESSION['add-teach-names']))echo $_SESSION['add-teach-names']; ?>" required></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td><label for="inputMiddle" class="form-labels">Middle Name:</label></td>
-                        <td><input type="text" class="form-control" name="add-recipient-middles" id="inputMiddle"></td>
+                        <td><input type="text" class="form-control" name="add-recipient-middles" id="inputMiddle" value="<?php if(isset($_SESSION['add-teach-middles']))echo $_SESSION['add-teach-middles']; ?>"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -208,14 +186,14 @@ if(isset($_POST['Submitting'])) {
 
                     <tr>
                         <td><label for="inputLast" class="form-labels">Last Name:</label></td>
-                        <td><input type="text" class="form-control" name="add-recipient-lasts" id="inputLast" required></td>
+                        <td><input type="text" class="form-control" name="add-recipient-lasts" id="inputLast" required value="<?php if(isset($_SESSION['add-teach-lasts']))echo $_SESSION['add-teach-lasts']; ?>"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td><label for="inputBirth" class="form-labels">Birthdate:</label></td>
-                        <td> <input type="date" class="form-control" name="add-recipient-births" id="inputBirth" required></td>
+                        <td> <input type="date" class="form-control" name="add-recipient-births" id="inputBirth" required value="<?php if(isset($_SESSION['add-teach-births']))echo $_SESSION['add-teach-births']; ?>"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -223,7 +201,7 @@ if(isset($_POST['Submitting'])) {
                     <tr>
                         <form method="post" action="teacher-reg.php">
                         <td> <label for="inputEmail" class="form-labels">Email:</label></td>
-                        <td> <input type="email" class="form-control" name="add-recipient-emails" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required>  </td>
+                        <td> <input type="email" class="form-control" name="add-recipient-emails" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required value="<?php if(isset($_SESSION['add-teach-emails']))echo $_SESSION['add-teach-emails']; ?>">  </td>
                     <td><button type="submit" value="checkValid" name="valid?" class="btn btn-primary" id="checkValidBtn" onclick="checkValid()">Validate</button></td></td>
                         </form>
                     </tr>
@@ -232,21 +210,21 @@ if(isset($_POST['Submitting'])) {
                     </tr>
                     <tr>
                         <td><label for="inputZoom" class="form-labels">Zoom:</label></td>
-                        <td><input type="url" class="form-control" name="add-recipient-zooms" id="inputZoom"></td>
+                        <td><input type="url" class="form-control" name="add-recipient-zooms" id="inputZoom" value="<?php echo $_SESSION['add-teach-zooms']; ?>"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td><label for="inputMPhone" class="form-labels">Mobile:</label></td>
-                        <td><input type="tel" class="form-control" name="add-recipient-mobiles" id="inputMPhone" required></td>
+                        <td><input type="tel" class="form-control" name="add-recipient-mobiles" id="inputMPhone" required value="<?php if(isset($_SESSION['add-teach-mobiles'])) echo $_SESSION['add-teach-mobiles']; ?>"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td><label for="inputPhone" class="form-labels">Telephone:</label></td>
-                        <td><input type="tel" class="form-control" name="add-recipient-tels" id="inputPhone"></td>
+                        <td><input type="tel" class="form-control" name="add-recipient-tels" id="inputPhone" value="<?php if(isset($_SESSION['add-teach-tel']))echo $_SESSION['add-teach-tel']; ?>"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
