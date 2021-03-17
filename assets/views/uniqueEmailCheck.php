@@ -20,7 +20,7 @@ include_once '../dbConnect/DbConnect.php';
 
                 echo '</script>';
                 $_SESSION['taken?'] = 'Taken';
-                header("Location: add-teacher.php?emailTaken=Error");
+                header("Location: teacher-reg.php?emailTaken=Error");
             } else {
 
                 echo '<script language="javascript">';

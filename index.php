@@ -15,7 +15,11 @@ else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged 
     header('location: assets/views/teacher_Home.php?Login=True');
 }
 
-
+if($_SESSION['taken?'] = 'Taken') {
+    echo '<script language="javascript">';
+    echo 'alert("Email Already taken")';
+    echo '</script>';
+}
 
 
 
