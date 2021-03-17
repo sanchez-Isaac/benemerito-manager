@@ -5,7 +5,7 @@ include_once '../dbConnect/DbConnect.php';
 
     $email = $_SESSION['add-teach-emails'];
 
-    $queryEmail = ("SELECT 'email' FROM 'teacher' WHERE email = '$email'");
+    $queryEmail = ("SELECT email FROM teacher WHERE email = '$email'");
     $con3 = get_db();
 
 
