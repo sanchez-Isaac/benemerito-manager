@@ -35,11 +35,15 @@ if(isset($_POST['valid?'])) {
     $result = pg_query($con3, $queryEmail);
     if (pg_num_rows($result) == 1) {
 
+        $_SESSION['emails-unique'] = 'taken';
         echo '<script language="javascript">';
         echo 'alert("Email Already taken")';
         echo '</script>';
 
         }
+    else{
+        $_SESSION['emails-unique'] = 'not taken';
+    }
     }
 
 
