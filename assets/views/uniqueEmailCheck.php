@@ -17,6 +17,7 @@ include_once '../dbConnect/DbConnect.php';
 
                 echo '<script language="javascript">';
                 echo 'alert("Email Already taken")';
+                echo console_log("taken");
                 echo '</script>';
                 header("Location: add-teacher.php?emailTaken=Error");
             } else {
