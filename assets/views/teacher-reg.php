@@ -149,12 +149,12 @@ if(isset($_POST['Submitting'])) {
 </div>
 
 
-<form>
+<form method="post" action="teacher-reg.php?">
     <div class="container">
         <div class="row">
             <!-- Start: registration Form-->
             <div class="col-11 col-sm-11 col-md-6">
-                <form method="post" action="teacher-reg.php?">
+
                 <table style="width:100%">
                     <tr>
                         <td><label for="inputName" class="form-labels">First Name:</label></td>
