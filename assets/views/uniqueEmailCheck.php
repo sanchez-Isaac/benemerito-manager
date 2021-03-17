@@ -8,13 +8,11 @@ include_once '../dbConnect/DbConnect.php';
 
     $queryEmail = ("SELECT email FROM teacher WHERE email = '$email'");
     $con3 = get_db();
-$_SESSION['query'] = $queryEmail;
+    $_SESSION['query'] = $queryEmail;
 
 
     $result = pg_query($con3, $queryEmail);
-    if (pg_num_rows($result) > 0) {
-        while ($row = pg_fetch_array($result)) {
-            if ($row[0] = $email) {
+    if (pg_num_rows($result) == 1) {
 
 
                 echo '<script language="javascript">';
@@ -32,9 +30,8 @@ $_SESSION['query'] = $queryEmail;
                 $_SESSION['taken?'] = 'not Taken';
                 header("Location: add-teacher.php?Approved=");
 
-            }
 
-        }
+
     }
 
 
