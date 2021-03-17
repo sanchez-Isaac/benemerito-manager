@@ -240,7 +240,7 @@ if(isset($_POST['Submitting'])) {
         <div class="row">
             <!-- Start: cancel and Save btn-->
             <div class="col-md-12 btndiv">
-                <button type="button" value="Submitting" name="Submitting" class="btn btn-success" id="addbtn">Add</button>
+                <button type="submit" value="Submitting" name="Submitting" class="btn btn-success" id="addbtn">Add</button>
                 <button type="button" class="btn btn-danger"id="cancelbtn">Cancel</button>
 
             </div><!-- end: cancel and Save btn-->
