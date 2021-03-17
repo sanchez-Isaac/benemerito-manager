@@ -11,19 +11,21 @@ include_once '../dbConnect/DbConnect.php';
 
 
     $result = pg_query($con3, $queryEmail);
-    if (pg_num_rows($result) == 1) {
+    if (pg_num_rows($result) > 0) {
+        while ($row = pg_fetch_array($result)) {
+            if ($row = $email) {
 
+                echo '<script language="javascript">';
+                echo 'alert("Email Already taken")';
+                echo '</script>';
+                header("Location: add-teacher.php?emailTaken=Error");
+            } else {
+                header("Location: add-teacher.php?Approved=");
 
-
-        echo '<script language="javascript">';
-        echo 'alert("Email Already taken")';
-        echo '</script>';
-        header("Location: add-teacher.php?emailTaken=Error");
+            }
+        }
     }
-    else{
-        header("Location: add-teacher.php?Approved=");
 
-    }
 
 ?>
 <!doctype html>
