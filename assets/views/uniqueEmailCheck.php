@@ -1,4 +1,6 @@
 <?php
+session_start();
+include_once '../dbConnect/DbConnect.php';
 
 
     $email = $_SESSION['add-teach-emails'];
