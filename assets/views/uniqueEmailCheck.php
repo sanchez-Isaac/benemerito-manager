@@ -21,6 +21,10 @@ include_once '../dbConnect/DbConnect.php';
                 echo '</script>';
                 header("Location: add-teacher.php?emailTaken=Error");
             } else {
+                echo '<script language="javascript">';
+                echo 'alert("Not taken")';
+                echo console_log("Not Taken");
+                echo '</script>';
                 header("Location: add-teacher.php?Approved=");
 
             }
@@ -39,7 +43,7 @@ include_once '../dbConnect/DbConnect.php';
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
 
 </head>
 
