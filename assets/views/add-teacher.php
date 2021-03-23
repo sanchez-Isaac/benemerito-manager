@@ -102,4 +102,4 @@ unset ($_SESSION['add-teach-pass'] );
 
 
 
-header("Location: teachersView.php?edition=Success");
+header("Location: teachersView.php");

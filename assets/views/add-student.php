@@ -91,8 +91,10 @@ unset ($_SESSION['add-stud-emails'] );
 unset ($_SESSION['add-stud-tutemails']);
 unset ($_SESSION['add-stud-mobiles'] );
 unset ($_SESSION['add-stud-tel'] );
+unset ($_SESSION['add-stud-tutortels'] );
 
 
 
 
-header("Location: studentsView.php?edition=Success");
+
+header("Location: studentsView.php");
