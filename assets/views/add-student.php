@@ -66,8 +66,8 @@ if($_SESSION['add-stud-mobiles'] !== ""){
     $mobile = $_SESSION['add-stud-mobiles'];
 }
 
-if($_SESSION['add-teach-tutortels'] !== ""){
-    $tel = $_SESSION['add-teach-tutortels'];
+if($_SESSION['add-stud-tutortels'] !== ""){
+    $tel = $_SESSION['add-stud-tutortels'];
 }
 
 

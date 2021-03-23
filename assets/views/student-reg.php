@@ -183,14 +183,14 @@ if(isset($_POST['Submitting'])) {
                 <table style="width:100%">
                     <tr>
                         <td><label for="inputName" class="form-labels">First Name:</label></td>
-                        <td><input type="text" name="add-recipient-names" class="form-control" id="inputName" value="<?php if(isset($_SESSION['add-teach-names']))echo $_SESSION['add-teach-names']; ?>" required></td>
+                        <td><input type="text" name="add-recipient-names" class="form-control" id="inputName" value="<?php if(isset($_SESSION['add-stud-names']))echo $_SESSION['add-stud-names']; ?>" required></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td><label for="inputMiddle" class="form-labels">Middle Name:</label></td>
-                        <td><input type="text" class="form-control" name="add-recipient-middles" id="inputMiddle" value="<?php if(isset($_SESSION['add-teach-middles']))echo $_SESSION['add-teach-middles']; ?>"></td>
+                        <td><input type="text" class="form-control" name="add-recipient-middles" id="inputMiddle" value="<?php if(isset($_SESSION['add-stud-middles']))echo $_SESSION['add-stud-middles']; ?>"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -198,21 +198,21 @@ if(isset($_POST['Submitting'])) {
 
                     <tr>
                         <td><label for="inputLast" class="form-labels">Last Name:</label></td>
-                        <td><input type="text" class="form-control" name="add-recipient-lasts" id="inputLast" required value="<?php if(isset($_SESSION['add-teach-lasts']))echo $_SESSION['add-teach-lasts']; ?>"></td>
+                        <td><input type="text" class="form-control" name="add-recipient-lasts" id="inputLast" required value="<?php if(isset($_SESSION['add-stud-lasts']))echo $_SESSION['add-stud-lasts']; ?>"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td><label for="inputBirth" class="form-labels">Birthdate:</label></td>
-                        <td> <input type="date" class="form-control" name="add-recipient-births" id="inputBirth" required value="<?php if(isset($_SESSION['add-teach-births']))echo $_SESSION['add-teach-births']; ?>"></td>
+                        <td> <input type="date" class="form-control" name="add-recipient-births" id="inputBirth" required value="<?php if(isset($_SESSION['add-stud-births']))echo $_SESSION['add-stud-births']; ?>"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td> <label for="inputEmail" class="form-labels">Student Email:</label></td>
-                        <td> <input type="email" class="form-control" name="add-recipient-emails" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required value="<?php if(isset($_SESSION['add-teach-emails']))echo $_SESSION['add-teach-emails']; ?>">  </td>
+                        <td> <input type="email" class="form-control" name="add-recipient-emails" id="inputEmail" aria-describedby="emailHelp" placeholder="you@example.com" required value="<?php if(isset($_SESSION['add-stud-emails']))echo $_SESSION['add-stud-emails']; ?>">  </td>
 
                     </tr>
                     <tr>
@@ -227,7 +227,7 @@ if(isset($_POST['Submitting'])) {
                     </tr>
                     <tr>
                         <td><label for="inputMPhone" class="form-labels">Student Phone:</label></td>
-                        <td><input type="tel" class="form-control" name="add-recipient-mobiles" id="inputMPhone" required value="<?php if(isset($_SESSION['add-teach-mobiles'])) echo $_SESSION['add-teach-mobiles']; ?>"></td>
+                        <td><input type="tel" class="form-control" name="add-recipient-mobiles" id="inputMPhone" required value="<?php if(isset($_SESSION['add-stud-mobiles'])) echo $_SESSION['add-stud-mobiles']; ?>"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
