@@ -8,9 +8,7 @@ include_once '../dbConnect/DbConnect.php';
 
     //$queryEmail = ("SELECT email FROM teacher WHERE email = '$email'");
 
-$queryEmail = ("SELECT email FROM admin WHERE email = '$email' 
-                UNION 
-                SELECT email FROM teacher WHERE email = '$email';");
+$queryEmail = ("SELECT email FROM student WHERE email = '$email';");
 
     $con3 = get_db();
 

@@ -14,6 +14,20 @@ if (!isset($_SESSION['username'])) {
 }
 
 
+if ($_SESSION['taken?'] == 'not Taken') {
+    echo '<script language="javascript">';
+    echo 'alert("Student Submitted to the Database")';
+    echo '</script>';
+}
+
+if (isset($_SESSION['taken?'])){
+    unset ($_SESSION['taken?']);
+}
+
+
+
+
+
 pre_r($_SESSION);
 function pre_r($array)
 {
