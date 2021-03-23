@@ -56,7 +56,7 @@ if(isset($_POST['Submitting'])) {
 
 
 
-    header("Location: uniqueEmailCheck.php?Approved=");
+    header("Location: uniqueEmailCheckStud.php?Approved=");
 
 }
 
