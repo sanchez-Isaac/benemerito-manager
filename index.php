@@ -23,8 +23,12 @@ if(isset($_POST['login_btn'])){
     $username = pg_escape_string($_POST['username']);
     $password = (pg_escape_string($_POST['password']));
 
-    //$password = md5(pg_escape_string($_POST['password']));
-    // $password= md5($password); // Hashes the passwords (this is only to register new users)
+   // $password = md5(pg_escape_string($_POST['password']));
+    $password2= password_hash($password); // Hashes the passwords (this is only to register new users)
+    $_SESSION['passwordhashed'] = $password2;
+
+
+
     $query = "SELECT * FROM admin WHERE email = '$username' AND password = '$password'";
     $resultLogin = pg_query( $con, $query);
 
@@ -45,7 +49,7 @@ WHERE  email = '$username' and password = '$password';";
 
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in";
-        $_SESSION['username'] = $username;
+       c
         header("location: assets/views/adminHome.php");
     }
     else if(pg_num_rows($resultLogin) != 1) { // NEW LINE FOR SECOND LOGIN

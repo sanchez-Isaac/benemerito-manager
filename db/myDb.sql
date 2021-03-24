@@ -35,7 +35,7 @@ CREATE TABLE "admin" (
   "birthdate" date not null,
   "zoomoffice" varchar(250),
   "email" varchar(50) not null,
-  "password" varchar(50) not null,
+  "password" varchar(500) not null,
   "home_phone" varchar(500) ,
   "mobile_phone" varchar(500) ,
   PRIMARY KEY ("admin_id")
@@ -49,7 +49,7 @@ CREATE TABLE "teacher" (
   "birthdate" date not null,
   "zoomoffice" varchar(250),
   "email" varchar(50) not null,
-  "password" varchar(50) not null,
+  "password" varchar(500) not null,
   "home_phone" varchar(500) ,
   "mobile_phone" varchar(500) ,
   PRIMARY KEY ("teacher_id")
@@ -119,6 +119,10 @@ ADD FOREIGN KEY ("class_id") REFERENCES "class" ("class_id");
 ALTER TABLE "comm_assist" 
 ADD FOREIGN KEY ("student_id") REFERENCES "student" ("student_id");
 
+
+/*change the datatype*/
+ALTER TABLE teacher
+    ALTER COLUMN password TYPE varchar(800);
 
 
 
