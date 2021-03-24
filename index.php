@@ -49,7 +49,7 @@ WHERE  email = '$username' and password = '$password';";
 
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in";
-       c
+
         header("location: assets/views/adminHome.php");
     }
     else if(pg_num_rows($resultLogin) != 1) { // NEW LINE FOR SECOND LOGIN
