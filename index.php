@@ -24,7 +24,7 @@ if(isset($_POST['login_btn'])){
     $password = (pg_escape_string($_POST['password']));
 
    // $password = md5(pg_escape_string($_POST['password']));
-    $password2= password_hash($password); // Hashes the passwords (this is only to register new users)
+    $password2= password_hash($password,PASSWORD_DEFAULT); // Hashes the passwords (this is only to register new users)
     $_SESSION['passwordhashed'] = $password2;
 
 
